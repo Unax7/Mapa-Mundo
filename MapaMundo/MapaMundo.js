@@ -1,6 +1,6 @@
 const f = (codigo) => `https://flagcdn.com/w160/${codigo}.png`;
 
-// BASE DE DATOS MUNDIAL (ESPAÑOL, INGLÉS E IDIOMA NATIVO)
+// Base de Datos
 const baseDatosMundo = {
     "africa": {
         nombre: { es: "África", en: "Africa", nat: "Africa" },
@@ -355,7 +355,7 @@ const textosJuego = {
         pregPais: "¿A qué país pertenece esta bandera?",
         pregCapital: "¿Cuál es la capital de este país?",
         placeholder: "Escribe y pulsa Enter...",
-        saltar: "⏭Saltar",
+        saltar: "Saltar",
         btnAcabar: "Acabar",
         tiempoAgotado: "Tiempo agotado",
         hasPerdido: "Has fallado",
