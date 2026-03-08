@@ -227,6 +227,906 @@ const baseDatosMundo = {
     }
 };
 
+// DICCIONARIO DE ÁREAS (en km²) HECHO A MEDIDA
+const areasPaises = {
+    // África (54)
+    "Angola": 1246700, "Argelia": 2381741, "Benín": 114763, "Botsuana": 581730, "Burkina Faso": 274200,
+    "Burundi": 27834, "Cabo Verde": 4033, "Camerún": 475442, "Chad": 1284000, "Comoras": 1861,
+    "Costa de Marfil": 322463, "Egipto": 1002450, "Eritrea": 117600, "Esuatini": 17364, "Etiopía": 1104300,
+    "Gabón": 267668, "Gambia": 11295, "Ghana": 238533, "Guinea": 245857, "Guinea Ecuatorial": 28051,
+    "Guinea Bisáu": 36125, "Kenia": 580367, "Lesoto": 30355, "Liberia": 111369, "Libia": 1759540,
+    "Madagascar": 587041, "Malaui": 118484, "Malí": 1240192, "Marruecos": 446550, "Mauricio": 2040,
+    "Mauritania": 1030700, "Mozambique": 801590, "Namibia": 825615, "Níger": 1267000, "Nigeria": 923768,
+    "República Centroafricana": 622984, "República Democrática del Congo": 2344858, "República del Congo": 342000,
+    "Ruanda": 26338, "Santo Tomé y Príncipe": 964, "Senegal": 196722, "Seychelles": 452, "Sierra Leona": 71740,
+    "Somalia": 637657, "Sudáfrica": 1221037, "Sudán": 1886068, "Sudán del Sur": 619745, "Tanzania": 945087,
+    "Togo": 56785, "Túnez": 163610, "Uganda": 241550, "Yibuti": 23200, "Zambia": 752612, "Zimbabue": 390757,
+
+    // América (35)
+    "Antigua y Barbuda": 442, "Argentina": 2780400, "Bahamas": 13943, "Barbados": 430, "Belice": 22966,
+    "Bolivia": 1098581, "Brasil": 8515767, "Canadá": 9984670, "Chile": 756102, "Colombia": 1141748,
+    "Costa Rica": 51100, "Cuba": 109884, "Dominica": 751, "Ecuador": 283561, "El Salvador": 21041,
+    "Estados Unidos": 9372610, "Granada": 344, "Guatemala": 108889, "Guyana": 214969, "Haití": 27750,
+    "Honduras": 112492, "Jamaica": 10991, "México": 1964375, "Nicaragua": 130373, "Panamá": 75417,
+    "Paraguay": 406752, "Perú": 1285216, "República Dominicana": 48670, "San Cristóbal y Nieves": 261,
+    "San Vicente y las Granadinas": 389, "Santa Lucía": 616, "Surinam": 163820, "Trinidad y Tobago": 5128,
+    "Uruguay": 176215, "Venezuela": 916445,
+
+    // Asia (47)
+    "Afganistán": 652864, "Arabia Saudita": 2149690, "Armenia": 29743, "Azerbaiyán": 86600, "Bangladés": 147570,
+    "Baréin": 760, "Myanmar": 676578, "Brunéi": 5765, "Bután": 38394, "Camboya": 181035, "Catar": 11586,
+    "China": 9596960, "Corea del Norte": 120540, "Corea del Sur": 100210, "Emiratos Árabes": 83600,
+    "Filipinas": 300000, "Georgia": 69700, "India": 3287263, "Indonesia": 1904569, "Irak": 438317,
+    "Irán": 1648195, "Israel": 22072, "Japón": 377975, "Jordania": 89342, "Kazajistán": 2724900,
+    "Kirguistán": 199951, "Kuwait": 17818, "Laos": 236800, "Líbano": 10452, "Malasia": 330803,
+    "Maldivas": 300, "Mongolia": 1564110, "Nepal": 147181, "Omán": 309500, "Pakistán": 881913,
+    "Palestina": 6020, "Singapur": 719, "Siria": 185180, "Sri Lanka": 65610, "Tailandia": 513120,
+    "Taiwán": 36193, "Tayikistán": 143100, "Timor Oriental": 14874, "Turkmenistán": 488100, "Uzbekistán": 447400,
+    "Vietnam": 331212, "Yemen": 527968,
+
+    // Europa (48)
+    "Albania": 28748, "Alemania": 357022, "Andorra": 468, "Austria": 83871, "Bélgica": 30528,
+    "Bielorrusia": 207600, "Bosnia y Herzegovina": 51197, "Bulgaria": 110879, "Chipre": 9251, "Croacia": 56594,
+    "Dinamarca": 43094, "Eslovaquia": 49035, "Eslovenia": 20273, "España": 505990, "Estonia": 45228,
+    "Finlandia": 338145, "Francia": 551695, "Grecia": 131957, "Hungría": 93028, "Irlanda": 70273,
+    "Islandia": 103000, "Italia": 301340, "Kosovo": 10887, "Letonia": 64589, "Liechtenstein": 160,
+    "Lituania": 65300, "Luxemburgo": 2586, "Macedonia del Norte": 25713, "Malta": 316, "Moldavia": 33851,
+    "Mónaco": 2, "Montenegro": 13812, "Noruega": 323802, "País Vasco": 20664, "Países Bajos": 41543,
+    "Polonia": 312685, "Portugal": 92090, "Reino Unido": 242900, "República Checa": 78865, "Rumania": 238391,
+    "Rusia": 17098242, "San Marino": 61, "Serbia": 88361, "Suecia": 450295, "Suiza": 41284,
+    "Turquía": 783562, "Ucrania": 603500, "Vaticano": 0.44,
+
+    // Oceanía (14)
+    "Australia": 7692024, "Fiyi": 18274, "Islas Marshall": 181, "Islas Salomón": 28896, "Kiribati": 811,
+    "Micronesia": 702, "Nauru": 21, "Nueva Zelanda": 268838, "Palaos": 459, "Papúa Nueva Guinea": 462840,
+    "Samoa": 2831, "Tonga": 747, "Tuvalu": 26, "Vanuatu": 12189
+};
+
+// ÍNDICE DE CALIDAD CLIMÁTICA (1 - 198 puntos / ranking exacto)
+const climaPaises = {
+    // África (54)
+    "Angola": 113, "Argelia": 69, "Benín": 75, "Botsuana": 82, "Burkina Faso": 10,
+    "Burundi": 118, "Cabo Verde": 187, "Camerún": 73, "Chad": 16, "Comoras": 110,
+    "Costa de Marfil": 76, "Egipto": 81, "Eritrea": 70, "Esuatini": 147, "Etiopía": 111,
+    "Gabón": 7, "Gambia": 79, "Ghana": 80, "Guinea": 74, "Guinea Ecuatorial": 6,
+    "Guinea Bisáu": 78, "Kenia": 182, "Lesoto": 115, "Liberia": 5, "Libia": 71,
+    "Madagascar": 120, "Malaui": 119, "Malí": 13, "Marruecos": 162, "Mauricio": 186,
+    "Mauritania": 12, "Mozambique": 117, "Namibia": 112, "Níger": 17, "Nigeria": 72,
+    "República Centroafricana": 1, "República Democrática del Congo": 9, "República del Congo": 8,
+    "Ruanda": 161, "Santo Tomé y Príncipe": 116, "Senegal": 83, "Seychelles": 181, "Sierra Leona": 4,
+    "Somalia": 11, "Sudáfrica": 84, "Sudán": 15, "Sudán del Sur": 14, "Tanzania": 146,
+    "Togo": 77, "Túnez": 144, "Uganda": 160, "Yibuti": 18, "Zambia": 114, "Zimbabue": 145,
+
+    // América (35)
+    "Antigua y Barbuda": 180, "Argentina": 143, "Bahamas": 189, "Barbados": 185, "Belice": 121,
+    "Bolivia": 64, "Brasil": 127, "Canadá": 21, "Chile": 159, "Colombia": 142,
+    "Costa Rica": 190, "Cuba": 158, "Dominica": 179, "Ecuador": 178, "El Salvador": 124,
+    "Estados Unidos": 125, "Granada": 177, "Guatemala": 157, "Guyana": 2, "Haití": 65,
+    "Honduras": 123, "Jamaica": 176, "México": 141, "Nicaragua": 68, "Panamá": 67,
+    "Paraguay": 66, "Perú": 126, "República Dominicana": 175, "San Cristóbal y Nieves": 174,
+    "San Vicente y las Granadinas": 156, "Santa Lucía": 173, "Surinam": 3, "Trinidad y Tobago": 155,
+    "Uruguay": 172, "Venezuela": 122,
+
+    // Asia (47)
+    "Afganistán": 43, "Arabia Saudita": 38, "Armenia": 104, "Azerbaiyán": 108, "Bangladés": 48,
+    "Baréin": 36, "Myanmar": 56, "Brunéi": 53, "Bután": 51, "Camboya": 58, "Catar": 35,
+    "China": 105, "Corea del Norte": 32, "Corea del Sur": 106, "Emiratos Árabes": 37,
+    "Filipinas": 63, "Georgia": 109, "India": 47, "Indonesia": 62, "Irak": 41,
+    "Irán": 50, "Israel": 171, "Japón": 135, "Jordania": 134, "Kazajistán": 39,
+    "Kirguistán": 45, "Kuwait": 33, "Laos": 57, "Líbano": 184, "Malasia": 59,
+    "Maldivas": 154, "Mongolia": 19, "Nepal": 107, "Omán": 34, "Pakistán": 49,
+    "Palestina": 170, "Singapur": 54, "Siria": 133, "Sri Lanka": 52, "Tailandia": 61,
+    "Taiwán": 132, "Tayikistán": 44, "Timor Oriental": 31, "Turkmenistán": 40, "Uzbekistán": 46,
+    "Vietnam": 60, "Yemen": 42,
+
+    // Europa (48)
+    "Albania": 169, "Alemania": 97, "Andorra": 140, "Austria": 98, "Bélgica": 94,
+    "Bielorrusia": 29, "Bosnia y Herzegovina": 139, "Bulgaria": 86, "Chipre": 193, "Croacia": 153,
+    "Dinamarca": 90, "Eslovaquia": 89, "Eslovenia": 138, "España": 198, "Estonia": 26,
+    "Finlandia": 23, "Francia": 168, "Grecia": 197, "Hungría": 102, "Irlanda": 91,
+    "Islandia": 22, "Italia": 192, "Kosovo": 101, "Letonia": 27, "Liechtenstein": 96,
+    "Lituania": 28, "Luxemburgo": 95, "Macedonia del Norte": 136, "Malta": 196, "Moldavia": 100,
+    "Mónaco": 195, "Montenegro": 167, "Noruega": 24, "País Vasco": 152, "Países Bajos": 93,
+    "Polonia": 87, "Portugal": 194, "Reino Unido": 92, "República Checa": 88, "Rumania": 103,
+    "Rusia": 20, "San Marino": 188, "Serbia": 137, "Suecia": 25, "Suiza": 99,
+    "Turquía": 85, "Ucrania": 30, "Vaticano": 191,
+
+    // Oceanía (14)
+    "Australia": 166, "Fiyi": 183, "Islas Marshall": 151, "Islas Salomón": 128, "Kiribati": 150,
+    "Micronesia": 130, "Nauru": 129, "Nueva Zelanda": 131, "Palaos": 149, "Papúa Nueva Guinea": 55,
+    "Samoa": 165, "Tonga": 164, "Tuvalu": 148, "Vanuatu": 163
+};
+
+// ÍNDICE DE CORRUPCIÓN (0.0 = Transparente | 100.0 = Máxima Corrupción)
+const corrupcionPaises = {
+    // África (54)
+    "Angola": 67.0, "Argelia": 67.0, "Benín": 57.0, "Botsuana": 41.0, "Burkina Faso": 62.0,
+    "Burundi": 80.0, "Cabo Verde": 40.0, "Camerún": 73.0, "Chad": 80.0, "Comoras": 80.0,
+    "Costa de Marfil": 60.0, "Egipto": 65.0, "Eritrea": 78.0, "Esuatini": 70.0, "Etiopía": 63.0,
+    "Gabón": 72.0, "Gambia": 65.0, "Ghana": 57.0, "Guinea": 74.0, "Guinea Ecuatorial": 83.0,
+    "Guinea Bisáu": 79.0, "Kenia": 69.0, "Lesoto": 61.0, "Liberia": 75.0, "Libia": 82.0,
+    "Madagascar": 75.0, "Malaui": 66.0, "Malí": 72.0, "Marruecos": 62.0, "Mauricio": 49.0,
+    "Mauritania": 70.0, "Mozambique": 75.0, "Namibia": 51.0, "Níger": 68.0, "Nigeria": 75.0,
+    "República Centroafricana": 76.0, "República Democrática del Congo": 80.0, "República del Congo": 78.0,
+    "Ruanda": 47.0, "Santo Tomé y Príncipe": 55.0, "Senegal": 57.0, "Seychelles": 29.0, "Sierra Leona": 65.0,
+    "Somalia": 89.0, "Sudáfrica": 59.0, "Sudán": 80.0, "Sudán del Sur": 87.0, "Tanzania": 60.0,
+    "Togo": 69.0, "Túnez": 60.0, "Uganda": 74.0, "Yibuti": 70.0, "Zambia": 63.0, "Zimbabue": 76.0,
+
+    // América (35)
+    "Antigua y Barbuda": 52.0, "Argentina": 63.0, "Bahamas": 36.0, "Barbados": 31.0, "Belice": 57.0,
+    "Bolivia": 71.0, "Brasil": 64.0, "Canadá": 24.0, "Chile": 34.0, "Colombia": 60.0,
+    "Costa Rica": 45.0, "Cuba": 58.0, "Dominica": 47.0, "Ecuador": 66.0, "El Salvador": 69.0,
+    "Estados Unidos": 31.0, "Granada": 48.0, "Guatemala": 77.0, "Guyana": 60.0, "Haití": 83.0,
+    "Honduras": 77.0, "Jamaica": 56.0, "México": 69.0, "Nicaragua": 83.0, "Panamá": 65.0,
+    "Paraguay": 72.0, "Perú": 67.0, "República Dominicana": 65.0, "San Cristóbal y Nieves": 55.0,
+    "San Vicente y las Granadinas": 40.0, "Santa Lucía": 45.0, "Surinam": 62.0, "Trinidad y Tobago": 58.0,
+    "Uruguay": 27.0, "Venezuela": 87.0,
+
+    // Asia (47)
+    "Afganistán": 80.0, "Arabia Saudita": 48.0, "Armenia": 53.0, "Azerbaiyán": 77.0, "Bangladés": 76.0,
+    "Baréin": 58.0, "Myanmar": 80.0, "Brunéi": 40.0, "Bután": 32.0, "Camboya": 78.0, "Catar": 42.0,
+    "China": 55.0, "Corea del Norte": 83.0, "Corea del Sur": 37.0, "Emiratos Árabes": 32.0,
+    "Filipinas": 66.0, "Georgia": 47.0, "India": 61.0, "Indonesia": 66.0, "Irak": 77.0,
+    "Irán": 76.0, "Israel": 37.0, "Japón": 27.0, "Jordania": 54.0, "Kazajistán": 61.0,
+    "Kirguistán": 74.0, "Kuwait": 54.0, "Laos": 72.0, "Líbano": 76.0, "Malasia": 50.0,
+    "Maldivas": 61.0, "Mongolia": 67.0, "Nepal": 65.0, "Omán": 57.0, "Pakistán": 72.0,
+    "Palestina": 65.0, "Singapur": 17.0, "Siria": 87.0, "Sri Lanka": 66.0, "Tailandia": 65.0,
+    "Taiwán": 33.0, "Tayikistán": 80.0, "Timor Oriental": 57.0, "Turkmenistán": 82.0, "Uzbekistán": 67.0,
+    "Vietnam": 59.0, "Yemen": 84.0,
+
+    // Europa (48)
+    "Albania": 63.0, "Alemania": 22.0, "Andorra": 30.0, "Austria": 29.0, "Bélgica": 27.0,
+    "Bielorrusia": 63.0, "Bosnia y Herzegovina": 65.0, "Bulgaria": 55.0, "Chipre": 47.0, "Croacia": 50.0,
+    "Dinamarca": 10.0, "Eslovaquia": 46.0, "Eslovenia": 44.0, "España": 40.0, "Estonia": 24.0,
+    "Finlandia": 13.0, "Francia": 29.0, "Grecia": 51.0, "Hungría": 58.0, "Irlanda": 23.0,
+    "Islandia": 28.0, "Italia": 44.0, "Kosovo": 59.0, "Letonia": 40.0, "Liechtenstein": 20.0,
+    "Lituania": 39.0, "Luxemburgo": 22.0, "Macedonia del Norte": 58.0, "Malta": 49.0, "Moldavia": 58.0,
+    "Mónaco": 25.0, "Montenegro": 54.0, "Noruega": 16.0, "País Vasco": 24.0, "Países Bajos": 18.0,
+    "Polonia": 46.0, "Portugal": 39.0, "Reino Unido": 29.0, "República Checa": 43.0, "Rumania": 54.0,
+    "Rusia": 74.0, "San Marino": 30.0, "Serbia": 64.0, "Suecia": 18.0, "Suiza": 18.0,
+    "Turquía": 66.0, "Ucrania": 64.0, "Vaticano": 30.0,
+
+    // Oceanía (14)
+    "Australia": 25.0, "Fiyi": 48.0, "Islas Marshall": 55.0, "Islas Salomón": 57.0, "Kiribati": 55.0,
+    "Micronesia": 55.0, "Nauru": 55.0, "Nueva Zelanda": 15.0, "Palaos": 55.0, "Papúa Nueva Guinea": 71.0,
+    "Samoa": 56.0, "Tonga": 57.0, "Tuvalu": 55.0, "Vanuatu": 52.0
+};
+
+// ÍNDICE DE POTENCIA DEPORTIVA (1 - 198 puntos / ranking exacto)
+const deportesPaises = {
+    // África (54)
+    "Angola": 111, "Argelia": 144, "Benín": 50, "Botsuana": 1, "Burkina Faso": 55,
+    "Burundi": 90, "Cabo Verde": 45, "Camerún": 128, "Chad": 54, "Comoras": 38,
+    "Costa de Marfil": 130, "Egipto": 146, "Eritrea": 41, "Esuatini": 36, "Etiopía": 160,
+    "Gabón": 85, "Gambia": 46, "Ghana": 129, "Guinea": 84, "Guinea Ecuatorial": 42,
+    "Guinea Bisáu": 43, "Kenia": 181, "Lesoto": 35, "Liberia": 48, "Libia": 9,
+    "Madagascar": 87, "Malaui": 34, "Malí": 56, "Marruecos": 159, "Mauricio": 86,
+    "Mauritania": 49, "Mozambique": 89, "Namibia": 112, "Níger": 57, "Nigeria": 145,
+    "República Centroafricana": 53, "República Democrática del Congo": 92, "República del Congo": 52,
+    "Ruanda": 91, "Santo Tomé y Príncipe": 44, "Senegal": 131, "Seychelles": 37, "Sierra Leona": 47,
+    "Somalia": 39, "Sudáfrica": 161, "Sudán": 110, "Sudán del Sur": 33, "Tanzania": 88,
+    "Togo": 51, "Túnez": 143, "Uganda": 127, "Yibuti": 40, "Zambia": 113, "Zimbabue": 16,
+
+    // América (35)
+    "Antigua y Barbuda": 15, "Argentina": 179, "Bahamas": 69, "Barbados": 68, "Belice": 65,
+    "Bolivia": 79, "Brasil": 187, "Canadá": 185, "Chile": 134, "Colombia": 162,
+    "Costa Rica": 76, "Cuba": 183, "Dominica": 13, "Ecuador": 133, "El Salvador": 74,
+    "Estados Unidos": 198, "Granada": 10, "Guatemala": 73, "Guyana": 67, "Haití": 71,
+    "Honduras": 75, "Jamaica": 180, "México": 163, "Nicaragua": 72, "Panamá": 77,
+    "Paraguay": 80, "Perú": 78, "República Dominicana": 136, "San Cristóbal y Nieves": 14,
+    "San Vicente y las Granadinas": 11, "Santa Lucía": 12, "Surinam": 66, "Trinidad y Tobago": 70,
+    "Uruguay": 132, "Venezuela": 135,
+
+    // Asia (47)
+    "Afganistán": 59, "Arabia Saudita": 105, "Armenia": 123, "Azerbaiyán": 124, "Bangladés": 60,
+    "Baréin": 102, "Myanmar": 62, "Brunéi": 18, "Bután": 19, "Camboya": 64, "Catar": 104,
+    "China": 197, "Corea del Norte": 142, "Corea del Sur": 189, "Emiratos Árabes": 103,
+    "Filipinas": 107, "Georgia": 151, "India": 150, "Indonesia": 149, "Irak": 97,
+    "Irán": 156, "Israel": 115, "Japón": 192, "Jordania": 99, "Kazajistán": 158,
+    "Kirguistán": 83, "Kuwait": 101, "Laos": 63, "Líbano": 98, "Malasia": 108,
+    "Maldivas": 20, "Mongolia": 93, "Nepal": 61, "Omán": 96, "Pakistán": 95,
+    "Palestina": 17, "Singapur": 109, "Siria": 100, "Sri Lanka": 94, "Tailandia": 148,
+    "Taiwán": 147, "Tayikistán": 82, "Timor Oriental": 21, "Turkmenistán": 81, "Uzbekistán": 157,
+    "Vietnam": 106, "Yemen": 58,
+
+    // Europa (48)
+    "Albania": 118, "Alemania": 193, "Andorra": 6, "Austria": 169, "Bélgica": 170,
+    "Bielorrusia": 155, "Bosnia y Herzegovina": 119, "Bulgaria": 154, "Chipre": 117, "Croacia": 166,
+    "Dinamarca": 172, "Eslovaquia": 152, "Eslovenia": 153, "España": 186, "Estonia": 137,
+    "Finlandia": 140, "Francia": 194, "Grecia": 165, "Hungría": 184, "Irlanda": 141,
+    "Islandia": 116, "Italia": 190, "Kosovo": 114, "Letonia": 138, "Liechtenstein": 4,
+    "Lituania": 139, "Luxemburgo": 8, "Macedonia del Norte": 120, "Malta": 7, "Moldavia": 122,
+    "Mónaco": 3, "Montenegro": 121, "Noruega": 174, "País Vasco": 125, "Países Bajos": 188,
+    "Polonia": 177, "Portugal": 164, "Reino Unido": 196, "República Checa": 173, "Rumania": 176,
+    "Rusia": 195, "San Marino": 5, "Serbia": 167, "Suecia": 175, "Suiza": 171,
+    "Turquía": 168, "Ucrania": 178, "Vaticano": 2,
+
+    // Oceanía (14)
+    "Australia": 191, "Fiyi": 126, "Islas Marshall": 25, "Islas Salomón": 28, "Kiribati": 26,
+    "Micronesia": 27, "Nauru": 22, "Nueva Zelanda": 182, "Palaos": 24, "Papúa Nueva Guinea": 30,
+    "Samoa": 32, "Tonga": 31, "Tuvalu": 23, "Vanuatu": 29
+};
+
+// ÍNDICE DE DESARROLLO HUMANO (0.000 - 1.000)
+const desarrolloPaises = {
+    // África (54)
+    "Angola": 0.586, "Argelia": 0.745, "Benín": 0.525, "Botsuana": 0.693, "Burkina Faso": 0.449,
+    "Burundi": 0.426, "Cabo Verde": 0.662, "Camerún": 0.576, "Chad": 0.394, "Comoras": 0.558,
+    "Costa de Marfil": 0.550, "Egipto": 0.731, "Eritrea": 0.492, "Esuatini": 0.597, "Etiopía": 0.498,
+    "Gabón": 0.706, "Gambia": 0.500, "Ghana": 0.632, "Guinea": 0.465, "Guinea Ecuatorial": 0.596,
+    "Guinea Bisáu": 0.483, "Kenia": 0.575, "Lesoto": 0.514, "Liberia": 0.481, "Libia": 0.718,
+    "Madagascar": 0.501, "Malaui": 0.512, "Malí": 0.428, "Marruecos": 0.683, "Mauricio": 0.802,
+    "Mauritania": 0.556, "Mozambique": 0.446, "Namibia": 0.615, "Níger": 0.400, "Nigeria": 0.535,
+    "República Centroafricana": 0.404, "República Democrática del Congo": 0.479, "República del Congo": 0.571,
+    "Ruanda": 0.534, "Santo Tomé y Príncipe": 0.618, "Senegal": 0.511, "Seychelles": 0.785, "Sierra Leona": 0.477,
+    "Somalia": 0.361, "Sudáfrica": 0.713, "Sudán": 0.508, "Sudán del Sur": 0.385, "Tanzania": 0.549,
+    "Togo": 0.539, "Túnez": 0.731, "Uganda": 0.525, "Yibuti": 0.509, "Zambia": 0.565, "Zimbabue": 0.593,
+
+    // América (35)
+    "Antigua y Barbuda": 0.788, "Argentina": 0.842, "Bahamas": 0.812, "Barbados": 0.790, "Belice": 0.683,
+    "Bolivia": 0.692, "Brasil": 0.754, "Canadá": 0.936, "Chile": 0.855, "Colombia": 0.752,
+    "Costa Rica": 0.809, "Cuba": 0.764, "Dominica": 0.720, "Ecuador": 0.740, "El Salvador": 0.675,
+    "Estados Unidos": 0.921, "Granada": 0.795, "Guatemala": 0.627, "Guyana": 0.714, "Haití": 0.535,
+    "Honduras": 0.621, "Jamaica": 0.709, "México": 0.758, "Nicaragua": 0.667, "Panamá": 0.805,
+    "Paraguay": 0.717, "Perú": 0.762, "República Dominicana": 0.767, "San Cristóbal y Nieves": 0.777,
+    "San Vicente y las Granadinas": 0.751, "Santa Lucía": 0.715, "Surinam": 0.730, "Trinidad y Tobago": 0.810,
+    "Uruguay": 0.809, "Venezuela": 0.691,
+
+    // Asia (47)
+    "Afganistán": 0.478, "Arabia Saudita": 0.875, "Armenia": 0.759, "Azerbaiyán": 0.745, "Bangladés": 0.661,
+    "Baréin": 0.875, "Myanmar": 0.585, "Brunéi": 0.829, "Bután": 0.666, "Camboya": 0.593, "Catar": 0.855,
+    "China": 0.768, "Corea del Norte": 0.732, "Corea del Sur": 0.925, "Emiratos Árabes": 0.911,
+    "Filipinas": 0.699, "Georgia": 0.802, "India": 0.633, "Indonesia": 0.705, "Irak": 0.686,
+    "Irán": 0.774, "Israel": 0.919, "Japón": 0.925, "Jordania": 0.720, "Kazajistán": 0.811,
+    "Kirguistán": 0.692, "Kuwait": 0.831, "Laos": 0.607, "Líbano": 0.706, "Malasia": 0.803,
+    "Maldivas": 0.747, "Mongolia": 0.739, "Nepal": 0.602, "Omán": 0.816, "Pakistán": 0.544,
+    "Palestina": 0.715, "Singapur": 0.939, "Siria": 0.577, "Sri Lanka": 0.782, "Tailandia": 0.800,
+    "Taiwán": 0.926, "Tayikistán": 0.685, "Timor Oriental": 0.607, "Turkmenistán": 0.745, "Uzbekistán": 0.727,
+    "Vietnam": 0.703, "Yemen": 0.455,
+
+    // Europa (48)
+    "Albania": 0.796, "Alemania": 0.942, "Andorra": 0.858, "Austria": 0.916, "Bélgica": 0.937,
+    "Bielorrusia": 0.808, "Bosnia y Herzegovina": 0.780, "Bulgaria": 0.795, "Chipre": 0.896, "Croacia": 0.858,
+    "Dinamarca": 0.948, "Eslovaquia": 0.848, "Eslovenia": 0.918, "España": 0.905, "Estonia": 0.890,
+    "Finlandia": 0.940, "Francia": 0.903, "Grecia": 0.887, "Hungría": 0.846, "Irlanda": 0.945,
+    "Islandia": 0.959, "Italia": 0.895, "Kosovo": 0.742, "Letonia": 0.863, "Liechtenstein": 0.919,
+    "Lituania": 0.875, "Luxemburgo": 0.930, "Macedonia del Norte": 0.770, "Malta": 0.895, "Moldavia": 0.767,
+    "Mónaco": 0.956, "Montenegro": 0.832, "Noruega": 0.961, "País Vasco": 0.937, "Países Bajos": 0.941,
+    "Polonia": 0.876, "Portugal": 0.866, "Reino Unido": 0.929, "República Checa": 0.889, "Rumania": 0.821,
+    "Rusia": 0.822, "San Marino": 0.853, "Serbia": 0.802, "Suecia": 0.947, "Suiza": 0.962,
+    "Turquía": 0.838, "Ucrania": 0.773, "Vaticano": 0.900,
+
+    // Oceanía (14)
+    "Australia": 0.951, "Fiyi": 0.730, "Islas Marshall": 0.639, "Islas Salomón": 0.564, "Kiribati": 0.624,
+    "Micronesia": 0.628, "Nauru": 0.696, "Nueva Zelanda": 0.937, "Palaos": 0.767, "Papúa Nueva Guinea": 0.558,
+    "Samoa": 0.707, "Tonga": 0.745, "Tuvalu": 0.641, "Vanuatu": 0.607
+};
+
+// PRODUCTO INTERIOR BRUTO (PIB) NOMINAL (en Millones de USD $)
+const economiaPaises = {
+    // África (54)
+    "Angola": 114000, "Argelia": 239000, "Benín": 19000, "Botsuana": 19000, "Burkina Faso": 20000,
+    "Burundi": 3000, "Cabo Verde": 2500, "Camerún": 49000, "Chad": 13000, "Comoras": 1300,
+    "Costa de Marfil": 79000, "Egipto": 398000, "Eritrea": 2600, "Esuatini": 4800, "Etiopía": 156000,
+    "Gabón": 20000, "Gambia": 2300, "Ghana": 76000, "Guinea": 23000, "Guinea Ecuatorial": 12000,
+    "Guinea Bisáu": 1900, "Kenia": 112000, "Lesoto": 2000, "Liberia": 4300, "Libia": 40000,
+    "Madagascar": 15000, "Malaui": 13000, "Malí": 21000, "Marruecos": 147000, "Mauricio": 14000,
+    "Mauritania": 10000, "Mozambique": 21000, "Namibia": 13000, "Níger": 17000, "Nigeria": 362000,
+    "República Centroafricana": 2700, "República Democrática del Congo": 69000, "República del Congo": 15000,
+    "Ruanda": 13000, "Santo Tomé y Príncipe": 600, "Senegal": 31000, "Seychelles": 2100, "Sierra Leona": 3500,
+    "Somalia": 8700, "Sudáfrica": 377000, "Sudán": 25000, "Sudán del Sur": 4600, "Tanzania": 84000,
+    "Togo": 9000, "Túnez": 51000, "Uganda": 49000, "Yibuti": 3800, "Zambia": 29000, "Zimbabue": 32000,
+
+    // América (35)
+    "Antigua y Barbuda": 1900, "Argentina": 621000, "Bahamas": 13000, "Barbados": 6000, "Belice": 3200,
+    "Bolivia": 45000, "Brasil": 2126000, "Canadá": 2117000, "Chile": 317000, "Colombia": 363000,
+    "Costa Rica": 85000, "Cuba": 107000, "Dominica": 650, "Ecuador": 118000, "El Salvador": 35000,
+    "Estados Unidos": 26950000, "Granada": 1300, "Guatemala": 102000, "Guyana": 16000, "Haití": 26000,
+    "Honduras": 34000, "Jamaica": 19000, "México": 1811000, "Nicaragua": 17000, "Panamá": 83000,
+    "Paraguay": 44000, "Perú": 264000, "República Dominicana": 121000, "San Cristóbal y Nieves": 1000,
+    "San Vicente y las Granadinas": 1000, "Santa Lucía": 2400, "Surinam": 3800, "Trinidad y Tobago": 28000,
+    "Uruguay": 77000, "Venezuela": 92000,
+
+    // Asia (47)
+    "Afganistán": 14000, "Arabia Saudita": 1069000, "Armenia": 24000, "Azerbaiyán": 72000, "Bangladés": 446000,
+    "Baréin": 44000, "Myanmar": 63000, "Brunéi": 15000, "Bután": 2900, "Camboya": 30000, "Catar": 235000,
+    "China": 17700000, "Corea del Norte": 18000, "Corea del Sur": 1706000, "Emiratos Árabes": 504000,
+    "Filipinas": 436000, "Georgia": 30000, "India": 3732000, "Indonesia": 1417000, "Irak": 254000,
+    "Irán": 366000, "Israel": 509000, "Japón": 4232000, "Jordania": 50000, "Kazajistán": 259000,
+    "Kirguistán": 12000, "Kuwait": 159000, "Laos": 14000, "Líbano": 21000, "Malasia": 434000,
+    "Maldivas": 6900, "Mongolia": 19000, "Nepal": 41000, "Omán": 108000, "Pakistán": 338000,
+    "Palestina": 18000, "Singapur": 497000, "Siria": 12000, "Sri Lanka": 74000, "Tailandia": 512000,
+    "Taiwán": 751000, "Tayikistán": 11000, "Timor Oriental": 3200, "Turkmenistán": 81000, "Uzbekistán": 90000,
+    "Vietnam": 433000, "Yemen": 21000,
+
+    // Europa (48)
+    "Albania": 23000, "Alemania": 4429000, "Andorra": 3800, "Austria": 526000, "Bélgica": 624000,
+    "Bielorrusia": 68000, "Bosnia y Herzegovina": 28000, "Bulgaria": 101000, "Chipre": 32000, "Croacia": 80000,
+    "Dinamarca": 405000, "Eslovaquia": 132000, "Eslovenia": 68000, "España": 1580000, "Estonia": 40000,
+    "Finlandia": 297000, "Francia": 3049000, "Grecia": 239000, "Hungría": 212000, "Irlanda": 545000,
+    "Islandia": 30000, "Italia": 2186000, "Kosovo": 10000, "Letonia": 46000, "Liechtenstein": 7000,
+    "Lituania": 77000, "Luxemburgo": 85000, "Macedonia del Norte": 14000, "Malta": 20000, "Moldavia": 16000,
+    "Mónaco": 8000, "Montenegro": 7000, "Noruega": 485000, "País Vasco": 85000, "Países Bajos": 1118000,
+    "Polonia": 808000, "Portugal": 287000, "Reino Unido": 3332000, "República Checa": 330000, "Rumania": 350000,
+    "Rusia": 1862000, "San Marino": 1800, "Serbia": 75000, "Suecia": 593000, "Suiza": 884000,
+    "Turquía": 1154000, "Ucrania": 173000, "Vaticano": 21,
+
+    // Oceanía (14)
+    "Australia": 1687000, "Fiyi": 5400, "Islas Marshall": 280, "Islas Salomón": 1600, "Kiribati": 240,
+    "Micronesia": 460, "Nauru": 150, "Nueva Zelanda": 249000, "Palaos": 260, "Papúa Nueva Guinea": 31000,
+    "Samoa": 930, "Tonga": 540, "Tuvalu": 60, "Vanuatu": 1100
+};
+
+// ÍNDICE DE CALIDAD EDUCATIVA (0.0 - 100.0 puntos)
+const educacionPaises = {
+    // África (54)
+    "Angola": 61.2, "Argelia": 74.5, "Benín": 42.4, "Botsuana": 78.8, "Burkina Faso": 39.2,
+    "Burundi": 51.4, "Cabo Verde": 76.8, "Camerún": 67.1, "Chad": 22.3, "Comoras": 56.8,
+    "Costa de Marfil": 47.2, "Egipto": 71.9, "Eritrea": 56.6, "Esuatini": 77.5, "Etiopía": 49.8,
+    "Gabón": 74.7, "Gambia": 50.8, "Ghana": 69.0, "Guinea": 32.0, "Guinea Ecuatorial": 75.3,
+    "Guinea Bisáu": 45.6, "Kenia": 71.5, "Lesoto": 69.4, "Liberia": 48.3, "Libia": 81.0,
+    "Madagascar": 61.6, "Malaui": 52.1, "Malí": 33.1, "Marruecos": 68.8, "Mauricio": 86.3,
+    "Mauritania": 53.5, "Mozambique": 50.7, "Namibia": 76.6, "Níger": 19.1, "Nigeria": 60.0,
+    "República Centroafricana": 35.4, "República Democrática del Congo": 61.0, "República del Congo": 65.3,
+    "Ruanda": 63.2, "Santo Tomé y Príncipe": 72.8, "Senegal": 51.9, "Seychelles": 85.9, "Sierra Leona": 43.2,
+    "Somalia": 30.8, "Sudáfrica": 75.0, "Sudán": 55.7, "Sudán del Sur": 32.5, "Tanzania": 67.9,
+    "Togo": 58.7, "Túnez": 76.8, "Uganda": 66.5, "Yibuti": 57.9, "Zambia": 72.7, "Zimbabue": 78.7,
+
+    // América (35)
+    "Antigua y Barbuda": 85.0, "Argentina": 87.0, "Bahamas": 86.2, "Barbados": 88.6, "Belice": 76.7,
+    "Bolivia": 80.5, "Brasil": 83.2, "Canadá": 96.5, "Chile": 86.4, "Colombia": 82.1,
+    "Costa Rica": 85.9, "Cuba": 90.8, "Dominica": 82.0, "Ecuador": 81.8, "El Salvador": 77.0,
+    "Estados Unidos": 93.5, "Granada": 84.6, "Guatemala": 71.5, "Guyana": 78.5, "Haití": 58.0,
+    "Honduras": 73.2, "Jamaica": 79.1, "México": 82.4, "Nicaragua": 74.8, "Panamá": 81.4,
+    "Paraguay": 79.0, "Perú": 81.5, "República Dominicana": 78.8, "San Cristóbal y Nieves": 83.8,
+    "San Vicente y las Granadinas": 82.0, "Santa Lucía": 81.1, "Surinam": 80.6, "Trinidad y Tobago": 85.0,
+    "Uruguay": 86.7, "Venezuela": 80.1,
+
+    // Asia (47)
+    "Afganistán": 35.3, "Arabia Saudita": 85.3, "Armenia": 88.8, "Azerbaiyán": 87.8, "Bangladés": 69.9,
+    "Baréin": 86.5, "Myanmar": 71.1, "Brunéi": 87.2, "Bután": 66.6, "Camboya": 70.5, "Catar": 88.3,
+    "China": 89.8, "Corea del Norte": 85.0, "Corea del Sur": 97.8, "Emiratos Árabes": 89.8,
+    "Filipinas": 81.3, "Georgia": 87.6, "India": 72.4, "Indonesia": 80.7, "Irak": 75.6,
+    "Irán": 81.5, "Israel": 92.8, "Japón": 97.5, "Jordania": 84.2, "Kazajistán": 88.8,
+    "Kirguistán": 86.6, "Kuwait": 84.1, "Laos": 70.7, "Líbano": 83.9, "Malasia": 86.6,
+    "Maldivas": 82.7, "Mongolia": 84.4, "Nepal": 65.9, "Omán": 83.7, "Pakistán": 55.0,
+    "Palestina": 82.2, "Singapur": 98.5, "Siria": 74.4, "Sri Lanka": 85.7, "Tailandia": 82.8,
+    "Taiwán": 96.5, "Tayikistán": 85.8, "Timor Oriental": 62.1, "Turkmenistán": 84.8, "Uzbekistán": 86.0,
+    "Vietnam": 84.8, "Yemen": 55.1,
+
+    // Europa (48)
+    "Albania": 84.1, "Alemania": 95.2, "Andorra": 88.0, "Austria": 94.0, "Bélgica": 94.5,
+    "Bielorrusia": 89.9, "Bosnia y Herzegovina": 83.0, "Bulgaria": 85.4, "Chipre": 88.1, "Croacia": 88.3,
+    "Dinamarca": 96.0, "Eslovaquia": 89.6, "Eslovenia": 92.7, "España": 91.4, "Estonia": 95.8,
+    "Finlandia": 98.2, "Francia": 93.8, "Grecia": 89.7, "Hungría": 88.1, "Irlanda": 96.2,
+    "Islandia": 95.0, "Italia": 92.2, "Kosovo": 80.9, "Letonia": 91.9, "Liechtenstein": 93.0,
+    "Lituania": 92.8, "Luxemburgo": 94.0, "Macedonia del Norte": 82.8, "Malta": 87.5, "Moldavia": 84.4,
+    "Mónaco": 92.0, "Montenegro": 84.7, "Noruega": 96.5, "País Vasco": 94.2, "Países Bajos": 95.9,
+    "Polonia": 93.5, "Portugal": 89.4, "Reino Unido": 95.0, "República Checa": 92.0, "Rumania": 85.8,
+    "Rusia": 89.7, "San Marino": 88.9, "Serbia": 86.8, "Suecia": 96.1, "Suiza": 95.5,
+    "Turquía": 84.2, "Ucrania": 86.8, "Vaticano": 90.0,
+
+    // Oceanía (14)
+    "Australia": 96.8, "Fiyi": 81.1, "Islas Marshall": 75.3, "Islas Salomón": 64.1, "Kiribati": 74.0,
+    "Micronesia": 73.0, "Nauru": 72.5, "Nueva Zelanda": 96.4, "Palaos": 83.5, "Papúa Nueva Guinea": 58.2,
+    "Samoa": 80.0, "Tonga": 82.4, "Tuvalu": 78.0, "Vanuatu": 68.2
+};
+
+// ÍNDICE DE FELICIDAD (Escala 0.000 - 10.000)
+const felicidadPaises = {
+    // África (54)
+    "Angola": 4.186, "Argelia": 5.329, "Benín": 4.377, "Botsuana": 3.435, "Burkina Faso": 4.111,
+    "Burundi": 3.775, "Cabo Verde": 4.927, "Camerún": 4.973, "Chad": 4.397, "Comoras": 3.545,
+    "Costa de Marfil": 5.053, "Egipto": 4.170, "Eritrea": 3.590, "Esuatini": 4.396, "Etiopía": 4.241,
+    "Gabón": 5.065, "Gambia": 4.279, "Ghana": 4.605, "Guinea": 4.717, "Guinea Ecuatorial": 4.300,
+    "Guinea Bisáu": 4.432, "Kenia": 4.487, "Lesoto": 3.186, "Liberia": 4.042, "Libia": 5.866,
+    "Madagascar": 4.019, "Malaui": 3.495, "Malí": 3.982, "Marruecos": 4.903, "Mauricio": 5.902,
+    "Mauritania": 4.724, "Mozambique": 4.954, "Namibia": 4.631, "Níger": 4.501, "Nigeria": 4.981,
+    "República Centroafricana": 3.221, "República Democrática del Congo": 3.207, "República del Congo": 5.267,
+    "Ruanda": 3.138, "Santo Tomé y Príncipe": 4.885, "Senegal": 4.855, "Seychelles": 5.400, "Sierra Leona": 3.138,
+    "Somalia": 3.930, "Sudáfrica": 5.275, "Sudán": 3.972, "Sudán del Sur": 2.650, "Tanzania": 3.694,
+    "Togo": 4.137, "Túnez": 4.374, "Uganda": 4.432, "Yibuti": 4.320, "Zambia": 3.982, "Zimbabue": 3.204,
+
+    // América (35)
+    "Antigua y Barbuda": 5.860, "Argentina": 6.024, "Bahamas": 6.100, "Barbados": 5.950, "Belice": 5.956,
+    "Bolivia": 5.559, "Brasil": 6.125, "Canadá": 6.961, "Chile": 6.334, "Colombia": 5.630,
+    "Costa Rica": 7.023, "Cuba": 5.350, "Dominica": 5.600, "Ecuador": 5.533, "El Salvador": 6.120,
+    "Estados Unidos": 6.894, "Granada": 5.500, "Guatemala": 6.150, "Guyana": 5.900, "Haití": 3.207,
+    "Honduras": 6.022, "Jamaica": 5.703, "México": 6.330, "Nicaragua": 6.392, "Panamá": 6.405,
+    "Paraguay": 5.738, "Perú": 5.526, "República Dominicana": 5.569, "San Cristóbal y Nieves": 5.800,
+    "San Vicente y las Granadinas": 5.700, "Santa Lucía": 5.600, "Surinam": 5.500, "Trinidad y Tobago": 6.100,
+    "Uruguay": 6.492, "Venezuela": 5.211,
+
+    // Asia (47)
+    "Afganistán": 1.721, "Arabia Saudita": 6.406, "Armenia": 5.342, "Azerbaiyán": 5.173, "Bangladés": 4.282,
+    "Baréin": 6.173, "Myanmar": 4.394, "Brunéi": 5.800, "Bután": 5.300, "Camboya": 4.393, "Catar": 6.374,
+    "China": 5.818, "Corea del Norte": 3.200, "Corea del Sur": 5.951, "Emiratos Árabes": 6.571,
+    "Filipinas": 5.523, "Georgia": 5.109, "India": 4.036, "Indonesia": 5.399, "Irak": 4.941,
+    "Irán": 4.876, "Israel": 7.473, "Japón": 6.129, "Jordania": 4.120, "Kazajistán": 6.144,
+    "Kirguistán": 5.825, "Kuwait": 6.106, "Laos": 5.111, "Líbano": 2.392, "Malasia": 6.012,
+    "Maldivas": 5.198, "Mongolia": 5.840, "Nepal": 5.360, "Omán": 5.850, "Pakistán": 4.555,
+    "Palestina": 4.908, "Singapur": 6.587, "Siria": 3.462, "Sri Lanka": 4.442, "Tailandia": 5.843,
+    "Taiwán": 6.535, "Tayikistán": 5.330, "Timor Oriental": 5.000, "Turkmenistán": 5.474, "Uzbekistán": 6.014,
+    "Vietnam": 5.763, "Yemen": 3.150,
+
+    // Europa (48)
+    "Albania": 5.277, "Alemania": 6.892, "Andorra": 6.800, "Austria": 7.097, "Bélgica": 6.859,
+    "Bielorrusia": 5.821, "Bosnia y Herzegovina": 5.633, "Bulgaria": 5.466, "Chipre": 6.130, "Croacia": 6.125,
+    "Dinamarca": 7.586, "Eslovaquia": 6.258, "Eslovenia": 6.650, "España": 6.436, "Estonia": 6.455,
+    "Finlandia": 7.804, "Francia": 6.661, "Grecia": 5.931, "Hungría": 6.041, "Irlanda": 6.911,
+    "Islandia": 7.530, "Italia": 6.404, "Kosovo": 6.362, "Letonia": 6.213, "Liechtenstein": 7.100,
+    "Lituania": 6.763, "Luxemburgo": 7.228, "Macedonia del Norte": 5.254, "Malta": 6.300, "Moldavia": 5.819,
+    "Mónaco": 7.100, "Montenegro": 5.722, "Noruega": 7.315, "País Vasco": 7.050, "Países Bajos": 7.403,
+    "Polonia": 6.260, "Portugal": 5.968, "Reino Unido": 6.796, "República Checa": 6.845, "Rumania": 6.589,
+    "Rusia": 5.661, "San Marino": 6.600, "Serbia": 6.144, "Suecia": 7.395, "Suiza": 7.240,
+    "Turquía": 4.614, "Ucrania": 5.071, "Vaticano": 6.500,
+
+    // Oceanía (14)
+    "Australia": 7.095, "Fiyi": 5.800, "Islas Marshall": 5.400, "Islas Salomón": 5.300, "Kiribati": 5.200,
+    "Micronesia": 5.100, "Nauru": 5.000, "Nueva Zelanda": 7.123, "Palaos": 5.700, "Papúa Nueva Guinea": 4.900,
+    "Samoa": 5.500, "Tonga": 5.400, "Tuvalu": 5.100, "Vanuatu": 5.300
+};
+
+// ÍNDICE DE PRESTIGIO GASTRONÓMICO (0.0 - 100.0 puntos)
+const gastronomiaPaises = {
+    // África (54)
+    "Angola": 62.4, "Argelia": 78.5, "Benín": 58.2, "Botsuana": 55.4, "Burkina Faso": 54.1,
+    "Burundi": 51.0, "Cabo Verde": 66.8, "Camerún": 65.3, "Chad": 50.5, "Comoras": 56.7,
+    "Costa de Marfil": 68.2, "Egipto": 81.4, "Eritrea": 64.6, "Esuatini": 52.3, "Etiopía": 84.5,
+    "Gabón": 59.7, "Gambia": 58.8, "Ghana": 71.0, "Guinea": 55.2, "Guinea Ecuatorial": 57.3,
+    "Guinea Bisáu": 54.6, "Kenia": 69.5, "Lesoto": 51.8, "Liberia": 56.4, "Libia": 68.0,
+    "Madagascar": 65.1, "Malaui": 53.2, "Malí": 59.1, "Marruecos": 88.7, "Mauricio": 75.3,
+    "Mauritania": 57.5, "Mozambique": 66.4, "Namibia": 60.5, "Níger": 52.1, "Nigeria": 77.8,
+    "República Centroafricana": 49.5, "República Democrática del Congo": 61.0, "República del Congo": 59.3,
+    "Ruanda": 55.6, "Santo Tomé y Príncipe": 60.8, "Senegal": 76.2, "Seychelles": 72.5, "Sierra Leona": 56.0,
+    "Somalia": 63.4, "Sudáfrica": 82.1, "Sudán": 61.7, "Sudán del Sur": 48.5, "Tanzania": 68.9,
+    "Togo": 58.0, "Túnez": 80.2, "Uganda": 64.5, "Yibuti": 57.9, "Zambia": 58.7, "Zimbabue": 59.4,
+
+    // América (35)
+    "Antigua y Barbuda": 67.5, "Argentina": 89.2, "Bahamas": 71.2, "Barbados": 70.5, "Belice": 68.4,
+    "Bolivia": 77.6, "Brasil": 88.5, "Canadá": 81.4, "Chile": 84.3, "Colombia": 85.7,
+    "Costa Rica": 76.8, "Cuba": 80.5, "Dominica": 66.0, "Ecuador": 83.9, "El Salvador": 78.2,
+    "Estados Unidos": 87.5, "Granada": 69.1, "Guatemala": 79.4, "Guyana": 67.8, "Haití": 71.5,
+    "Honduras": 77.1, "Jamaica": 82.6, "México": 96.8, "Nicaragua": 75.5, "Panamá": 78.9,
+    "Paraguay": 76.2, "Perú": 95.5, "República Dominicana": 81.0, "San Cristóbal y Nieves": 65.5,
+    "San Vicente y las Granadinas": 66.2, "Santa Lucía": 68.0, "Surinam": 70.3, "Trinidad y Tobago": 75.4,
+    "Uruguay": 82.0, "Venezuela": 83.5,
+
+    // Asia (47)
+    "Afganistán": 73.2, "Arabia Saudita": 76.5, "Armenia": 79.8, "Azerbaiyán": 78.4, "Bangladés": 77.1,
+    "Baréin": 71.5, "Myanmar": 78.9, "Brunéi": 69.5, "Bután": 68.2, "Camboya": 79.5, "Catar": 75.0,
+    "China": 95.8, "Corea del Norte": 68.0, "Corea del Sur": 92.4, "Emiratos Árabes": 80.5,
+    "Filipinas": 85.2, "Georgia": 87.5, "India": 94.6, "Indonesia": 90.5, "Irak": 78.0,
+    "Irán": 86.3, "Israel": 84.2, "Japón": 98.5, "Jordania": 81.5, "Kazajistán": 74.6,
+    "Kirguistán": 72.1, "Kuwait": 73.8, "Laos": 77.4, "Líbano": 89.5, "Malasia": 91.2,
+    "Maldivas": 70.4, "Mongolia": 66.5, "Nepal": 76.8, "Omán": 74.2, "Pakistán": 85.8,
+    "Palestina": 82.1, "Singapur": 91.8, "Siria": 86.5, "Sri Lanka": 83.4, "Tailandia": 94.2,
+    "Taiwán": 90.8, "Tayikistán": 73.5, "Timor Oriental": 65.2, "Turkmenistán": 70.8, "Uzbekistán": 79.2,
+    "Vietnam": 93.5, "Yemen": 75.4,
+
+    // Europa (48)
+    "Albania": 81.2, "Alemania": 85.4, "Andorra": 76.5, "Austria": 86.8, "Bélgica": 88.2,
+    "Bielorrusia": 74.5, "Bosnia y Herzegovina": 82.4, "Bulgaria": 83.6, "Chipre": 85.1, "Croacia": 87.9,
+    "Dinamarca": 89.5, "Eslovaquia": 78.5, "Eslovenia": 81.4, "España": 97.4, "Estonia": 77.2,
+    "Finlandia": 78.8, "Francia": 98.2, "Grecia": 94.8, "Hungría": 85.6, "Irlanda": 79.5,
+    "Islandia": 76.4, "Italia": 99.5, "Kosovo": 79.0, "Letonia": 76.5, "Liechtenstein": 75.0,
+    "Lituania": 78.1, "Luxemburgo": 81.0, "Macedonia del Norte": 83.2, "Malta": 82.5, "Moldavia": 79.4,
+    "Mónaco": 86.0, "Montenegro": 80.5, "Noruega": 80.2, "País Vasco": 96.5, "Países Bajos": 82.4,
+    "Polonia": 86.5, "Portugal": 92.8, "Reino Unido": 83.5, "República Checa": 84.2, "Rumania": 85.0,
+    "Rusia": 82.7, "San Marino": 87.0, "Serbia": 86.4, "Suecia": 84.5, "Suiza": 88.0,
+    "Turquía": 93.6, "Ucrania": 84.8, "Vaticano": 78.0,
+
+    // Oceanía (14)
+    "Australia": 86.5, "Fiyi": 71.4, "Islas Marshall": 60.5, "Islas Salomón": 59.2, "Kiribati": 57.8,
+    "Micronesia": 58.4, "Nauru": 55.0, "Nueva Zelanda": 83.2, "Palaos": 62.5, "Papúa Nueva Guinea": 63.8,
+    "Samoa": 68.5, "Tonga": 66.2, "Tuvalu": 56.5, "Vanuatu": 64.0
+};
+
+// ÍNDICE DE LIMPIEZA Y DESEMPEÑO AMBIENTAL (0.0 - 100.0 puntos)
+const limpiezaPaises = {
+    // África (54)
+    "Angola": 30.5, "Argelia": 46.2, "Benín": 33.1, "Botsuana": 54.0, "Burkina Faso": 35.5,
+    "Burundi": 32.8, "Cabo Verde": 52.9, "Camerún": 36.5, "Chad": 28.1, "Comoras": 42.5,
+    "Costa de Marfil": 32.7, "Egipto": 43.5, "Eritrea": 31.7, "Esuatini": 44.2, "Etiopía": 34.4,
+    "Gabón": 53.1, "Gambia": 36.9, "Ghana": 39.5, "Guinea": 31.6, "Guinea Ecuatorial": 41.8,
+    "Guinea Bisáu": 34.0, "Kenia": 41.0, "Lesoto": 37.2, "Liberia": 32.3, "Libia": 44.7,
+    "Madagascar": 33.5, "Malaui": 38.3, "Malí": 33.0, "Marruecos": 46.5, "Mauricio": 61.2,
+    "Mauritania": 32.1, "Mozambique": 34.8, "Namibia": 50.1, "Níger": 32.0, "Nigeria": 33.4,
+    "República Centroafricana": 32.8, "República Democrática del Congo": 33.0, "República del Congo": 40.1,
+    "Ruanda": 46.8, "Santo Tomé y Príncipe": 48.5, "Senegal": 39.7, "Seychelles": 65.5, "Sierra Leona": 34.4,
+    "Somalia": 25.4, "Sudáfrica": 49.9, "Sudán": 31.5, "Sudán del Sur": 28.0, "Tanzania": 38.2,
+    "Togo": 34.2, "Túnez": 49.3, "Uganda": 35.8, "Yibuti": 38.1, "Zambia": 38.4, "Zimbabue": 43.5,
+
+    // América (35)
+    "Antigua y Barbuda": 60.1, "Argentina": 54.1, "Bahamas": 62.5, "Barbados": 58.6, "Belice": 55.0,
+    "Bolivia": 43.4, "Brasil": 55.2, "Canadá": 71.0, "Chile": 65.4, "Colombia": 52.9,
+    "Costa Rica": 63.8, "Cuba": 56.4, "Dominica": 59.2, "Ecuador": 54.5, "El Salvador": 50.3,
+    "Estados Unidos": 71.1, "Granada": 57.5, "Guatemala": 42.3, "Guyana": 48.2, "Haití": 26.1,
+    "Honduras": 45.6, "Jamaica": 53.4, "México": 52.3, "Nicaragua": 48.4, "Panamá": 55.9,
+    "Paraguay": 50.4, "Perú": 49.6, "República Dominicana": 51.0, "San Cristóbal y Nieves": 58.8,
+    "San Vicente y las Granadinas": 59.0, "Santa Lucía": 59.4, "Surinam": 52.5, "Trinidad y Tobago": 57.1,
+    "Uruguay": 58.8, "Venezuela": 46.4,
+
+    // Asia (47)
+    "Afganistán": 22.6, "Arabia Saudita": 53.2, "Armenia": 56.5, "Azerbaiyán": 52.4, "Bangladés": 29.5,
+    "Baréin": 51.0, "Myanmar": 26.4, "Brunéi": 62.1, "Bután": 53.6, "Camboya": 38.1, "Catar": 53.0,
+    "China": 48.4, "Corea del Norte": 38.0, "Corea del Sur": 66.5, "Emiratos Árabes": 62.4,
+    "Filipinas": 43.1, "Georgia": 55.6, "India": 28.9, "Indonesia": 41.5, "Irak": 37.4,
+    "Irán": 44.5, "Israel": 65.8, "Japón": 75.3, "Jordania": 53.6, "Kazajistán": 52.8,
+    "Kirguistán": 43.2, "Kuwait": 54.2, "Laos": 36.8, "Líbano": 43.3, "Malasia": 58.1,
+    "Maldivas": 55.8, "Mongolia": 44.6, "Nepal": 36.5, "Omán": 51.5, "Pakistán": 31.5,
+    "Palestina": 45.1, "Singapur": 72.8, "Siria": 35.8, "Sri Lanka": 46.7, "Tailandia": 49.7,
+    "Taiwán": 68.5, "Tayikistán": 42.1, "Timor Oriental": 40.2, "Turkmenistán": 45.6, "Uzbekistán": 46.3,
+    "Vietnam": 39.0, "Yemen": 33.2,
+
+    // Europa (48)
+    "Albania": 55.2, "Alemania": 77.2, "Andorra": 74.5, "Austria": 78.4, "Bélgica": 73.3,
+    "Bielorrusia": 59.5, "Bosnia y Herzegovina": 48.5, "Bulgaria": 59.1, "Chipre": 69.6, "Croacia": 66.5,
+    "Dinamarca": 82.5, "Eslovaquia": 68.4, "Eslovenia": 73.5, "España": 73.0, "Estonia": 71.4,
+    "Finlandia": 80.2, "Francia": 76.5, "Grecia": 70.1, "Hungría": 65.0, "Irlanda": 75.8,
+    "Islandia": 78.8, "Italia": 71.6, "Kosovo": 47.5, "Letonia": 68.9, "Liechtenstein": 76.0,
+    "Lituania": 69.3, "Luxemburgo": 78.5, "Macedonia del Norte": 54.3, "Malta": 75.2, "Moldavia": 52.8,
+    "Mónaco": 79.0, "Montenegro": 58.4, "Noruega": 77.5, "País Vasco": 79.5, "Países Bajos": 75.0,
+    "Polonia": 63.8, "Portugal": 71.2, "Reino Unido": 81.3, "República Checa": 69.8, "Rumania": 60.3,
+    "Rusia": 56.2, "San Marino": 72.5, "Serbia": 55.5, "Suecia": 79.8, "Suiza": 81.5,
+    "Turquía": 48.8, "Ucrania": 50.8, "Vaticano": 85.0,
+
+    // Oceanía (14)
+    "Australia": 74.1, "Fiyi": 55.4, "Islas Marshall": 51.5, "Islas Salomón": 43.2, "Kiribati": 47.0,
+    "Micronesia": 49.5, "Nauru": 45.2, "Nueva Zelanda": 73.8, "Palaos": 57.4, "Papúa Nueva Guinea": 38.5,
+    "Samoa": 54.0, "Tonga": 56.2, "Tuvalu": 50.8, "Vanuatu": 48.0
+};
+
+// ESPERANZA DE VIDA AL NACER (en años)
+const longevidadPaises = {
+    // África (54)
+    "Angola": 61.6, "Argelia": 76.4, "Benín": 59.8, "Botsuana": 61.1, "Burkina Faso": 59.3,
+    "Burundi": 61.7, "Cabo Verde": 74.0, "Camerún": 60.3, "Chad": 52.5, "Comoras": 63.4,
+    "Costa de Marfil": 58.6, "Egipto": 70.2, "Eritrea": 66.3, "Esuatini": 57.1, "Etiopía": 65.0,
+    "Gabón": 65.8, "Gambia": 62.6, "Ghana": 63.8, "Guinea": 58.9, "Guinea Ecuatorial": 60.6,
+    "Guinea Bisáu": 59.6, "Kenia": 61.4, "Lesoto": 53.1, "Liberia": 60.7, "Libia": 71.9,
+    "Madagascar": 64.5, "Malaui": 62.9, "Malí": 58.9, "Marruecos": 74.0, "Mauricio": 73.6,
+    "Mauritania": 64.4, "Mozambique": 59.3, "Namibia": 59.3, "Níger": 61.6, "Nigeria": 52.7,
+    "República Centroafricana": 53.9, "República Democrática del Congo": 59.2, "República del Congo": 63.5,
+    "Ruanda": 66.1, "Santo Tomé y Príncipe": 67.6, "Senegal": 67.1, "Seychelles": 73.4, "Sierra Leona": 60.1,
+    "Somalia": 55.3, "Sudáfrica": 62.3, "Sudán": 65.3, "Sudán del Sur": 55.0, "Tanzania": 66.2,
+    "Togo": 61.6, "Túnez": 73.8, "Uganda": 62.9, "Yibuti": 62.3, "Zambia": 61.2, "Zimbabue": 59.3,
+
+    // América (35)
+    "Antigua y Barbuda": 78.5, "Argentina": 75.4, "Bahamas": 71.6, "Barbados": 77.3, "Belice": 70.5,
+    "Bolivia": 63.6, "Brasil": 72.8, "Canadá": 82.6, "Chile": 78.9, "Colombia": 72.8,
+    "Costa Rica": 77.0, "Cuba": 73.7, "Dominica": 72.8, "Ecuador": 73.7, "El Salvador": 70.7,
+    "Estados Unidos": 76.3, "Granada": 74.9, "Guatemala": 69.2, "Guyana": 65.7, "Haití": 63.2,
+    "Honduras": 70.1, "Jamaica": 70.5, "México": 70.2, "Nicaragua": 73.8, "Panamá": 76.2,
+    "Paraguay": 70.3, "Perú": 72.4, "República Dominicana": 72.6, "San Cristóbal y Nieves": 71.7,
+    "San Vicente y las Granadinas": 69.6, "Santa Lucía": 71.1, "Surinam": 70.3, "Trinidad y Tobago": 73.0,
+    "Uruguay": 78.0, "Venezuela": 70.6,
+
+    // Asia (47)
+    "Afganistán": 62.0, "Arabia Saudita": 76.9, "Armenia": 72.0, "Azerbaiyán": 69.4, "Bangladés": 72.4,
+    "Baréin": 78.8, "Myanmar": 65.7, "Brunéi": 74.6, "Bután": 71.8, "Camboya": 69.6, "Catar": 79.3,
+    "China": 78.2, "Corea del Norte": 73.3, "Corea del Sur": 83.7, "Emiratos Árabes": 79.2,
+    "Filipinas": 69.3, "Georgia": 71.7, "India": 67.2, "Indonesia": 67.6, "Irak": 70.4,
+    "Irán": 73.9, "Israel": 82.6, "Japón": 84.8, "Jordania": 74.3, "Kazajistán": 69.4,
+    "Kirguistán": 70.0, "Kuwait": 78.7, "Laos": 68.1, "Líbano": 75.0, "Malasia": 74.9,
+    "Maldivas": 79.9, "Mongolia": 71.0, "Nepal": 68.4, "Omán": 72.5, "Pakistán": 66.1,
+    "Palestina": 73.5, "Singapur": 83.4, "Siria": 72.1, "Sri Lanka": 76.4, "Tailandia": 78.7,
+    "Taiwán": 80.8, "Tayikistán": 71.6, "Timor Oriental": 67.7, "Turkmenistán": 69.3, "Uzbekistán": 70.9,
+    "Vietnam": 73.6, "Yemen": 63.8,
+
+    // Europa (48)
+    "Albania": 76.8, "Alemania": 80.6, "Andorra": 83.0, "Austria": 81.3, "Bélgica": 81.9,
+    "Bielorrusia": 72.4, "Bosnia y Herzegovina": 75.3, "Bulgaria": 71.8, "Chipre": 81.2, "Croacia": 77.6,
+    "Dinamarca": 81.4, "Eslovaquia": 74.6, "Eslovenia": 80.7, "España": 83.0, "Estonia": 77.1,
+    "Finlandia": 82.0, "Francia": 82.3, "Grecia": 80.1, "Hungría": 74.5, "Irlanda": 82.0,
+    "Islandia": 82.7, "Italia": 82.9, "Kosovo": 76.8, "Letonia": 73.6, "Liechtenstein": 83.3,
+    "Lituania": 73.7, "Luxemburgo": 82.6, "Macedonia del Norte": 73.8, "Malta": 82.5, "Moldavia": 68.8,
+    "Mónaco": 85.9, "Montenegro": 73.8, "Noruega": 83.2, "País Vasco": 83.6, "Países Bajos": 81.4,
+    "Polonia": 75.6, "Portugal": 81.0, "Reino Unido": 80.7, "República Checa": 77.3, "Rumania": 72.8,
+    "Rusia": 69.4, "San Marino": 83.0, "Serbia": 72.8, "Suecia": 83.0, "Suiza": 84.0,
+    "Turquía": 76.0, "Ucrania": 69.6, "Vaticano": 82.5,
+
+    // Oceanía (14)
+    "Australia": 83.3, "Fiyi": 67.1, "Islas Marshall": 65.3, "Islas Salomón": 70.3, "Kiribati": 59.4,
+    "Micronesia": 70.7, "Nauru": 63.6, "Nueva Zelanda": 82.1, "Palaos": 66.0, "Papúa Nueva Guinea": 65.4,
+    "Samoa": 72.8, "Tonga": 71.0, "Tuvalu": 64.5, "Vanuatu": 70.4
+};
+
+// ÍNDICE DE BIODIVERSIDAD Y RIQUEZA NATURAL (0.0 - 100.0 puntos)
+const naturalezaPaises = {
+    // África (54)
+    "Angola": 78.5, "Argelia": 45.2, "Benín": 54.1, "Botsuana": 72.0, "Burkina Faso": 48.5,
+    "Burundi": 51.2, "Cabo Verde": 42.8, "Camerún": 83.4, "Chad": 44.5, "Comoras": 61.0,
+    "Costa de Marfil": 71.5, "Egipto": 25.4, "Eritrea": 41.2, "Esuatini": 58.6, "Etiopía": 75.2,
+    "Gabón": 86.7, "Gambia": 52.4, "Ghana": 68.9, "Guinea": 64.3, "Guinea Ecuatorial": 79.1,
+    "Guinea Bisáu": 62.5, "Kenia": 88.3, "Lesoto": 46.8, "Liberia": 76.4, "Libia": 18.5,
+    "Madagascar": 94.2, "Malaui": 63.8, "Malí": 38.5, "Marruecos": 56.4, "Mauricio": 65.2,
+    "Mauritania": 28.4, "Mozambique": 81.6, "Namibia": 69.5, "Níger": 32.1, "Nigeria": 73.8,
+    "República Centroafricana": 77.2, "República Democrática del Congo": 93.5, "República del Congo": 84.6,
+    "Ruanda": 67.4, "Santo Tomé y Príncipe": 72.1, "Senegal": 55.8, "Seychelles": 82.5, "Sierra Leona": 65.9,
+    "Somalia": 35.6, "Sudáfrica": 91.8, "Sudán": 40.2, "Sudán del Sur": 68.5, "Tanzania": 90.4,
+    "Togo": 53.2, "Túnez": 43.8, "Uganda": 82.1, "Yibuti": 31.5, "Zambia": 79.3, "Zimbabue": 74.6,
+
+    // América (35)
+    "Antigua y Barbuda": 55.4, "Argentina": 85.6, "Bahamas": 62.1, "Barbados": 48.5, "Belice": 81.2,
+    "Bolivia": 89.4, "Brasil": 99.5, "Canadá": 88.2, "Chile": 82.7, "Colombia": 98.4,
+    "Costa Rica": 95.8, "Cuba": 76.5, "Dominica": 83.0, "Ecuador": 96.2, "El Salvador": 64.3,
+    "Estados Unidos": 92.5, "Granada": 65.8, "Guatemala": 84.1, "Guyana": 87.5, "Haití": 38.2,
+    "Honduras": 79.6, "Jamaica": 71.4, "México": 97.1, "Nicaragua": 80.5, "Panamá": 88.9,
+    "Paraguay": 74.2, "Perú": 97.8, "República Dominicana": 73.6, "San Cristóbal y Nieves": 52.4,
+    "San Vicente y las Granadinas": 61.2, "Santa Lucía": 64.7, "Surinam": 86.3, "Trinidad y Tobago": 68.5,
+    "Uruguay": 62.8, "Venezuela": 94.7,
+
+    // Asia (47)
+    "Afganistán": 42.5, "Arabia Saudita": 24.8, "Armenia": 58.4, "Azerbaiyán": 61.2, "Bangladés": 65.3,
+    "Baréin": 15.2, "Myanmar": 86.5, "Brunéi": 81.4, "Bután": 85.7, "Camboya": 78.2, "Catar": 14.5,
+    "China": 95.2, "Corea del Norte": 62.8, "Corea del Sur": 68.4, "Emiratos Árabes": 22.1,
+    "Filipinas": 91.5, "Georgia": 72.6, "India": 93.8, "Indonesia": 98.7, "Irak": 31.4,
+    "Irán": 64.5, "Israel": 51.2, "Japón": 76.8, "Jordania": 34.6, "Kazajistán": 63.2,
+    "Kirguistán": 67.5, "Kuwait": 12.8, "Laos": 82.3, "Líbano": 48.5, "Malasia": 94.6,
+    "Maldivas": 59.4, "Mongolia": 55.8, "Nepal": 79.4, "Omán": 28.5, "Pakistán": 56.2,
+    "Palestina": 36.4, "Singapur": 45.2, "Siria": 38.7, "Sri Lanka": 84.5, "Tailandia": 87.2,
+    "Taiwán": 75.4, "Tayikistán": 61.8, "Timor Oriental": 69.2, "Turkmenistán": 35.1, "Uzbekistán": 44.6,
+    "Vietnam": 89.3, "Yemen": 33.2,
+
+    // Europa (48)
+    "Albania": 68.4, "Alemania": 66.5, "Andorra": 71.2, "Austria": 74.8, "Bélgica": 52.4,
+    "Bielorrusia": 65.3, "Bosnia y Herzegovina": 73.1, "Bulgaria": 75.6, "Chipre": 58.2, "Croacia": 78.5,
+    "Dinamarca": 55.6, "Eslovaquia": 72.4, "Eslovenia": 81.5, "España": 79.2, "Estonia": 74.1,
+    "Finlandia": 83.4, "Francia": 78.6, "Grecia": 71.5, "Hungría": 61.2, "Irlanda": 58.7,
+    "Islandia": 64.3, "Italia": 76.4, "Kosovo": 66.8, "Letonia": 73.5, "Liechtenstein": 68.4,
+    "Lituania": 71.2, "Luxemburgo": 56.8, "Macedonia del Norte": 70.5, "Malta": 32.1, "Moldavia": 54.6,
+    "Mónaco": 10.5, "Montenegro": 79.6, "Noruega": 84.2, "País Vasco": 82.5, "Países Bajos": 48.5,
+    "Polonia": 68.7, "Portugal": 72.8, "Reino Unido": 59.4, "República Checa": 69.5, "Rumania": 77.8,
+    "Rusia": 89.5, "San Marino": 25.4, "Serbia": 71.4, "Suecia": 82.1, "Suiza": 79.8,
+    "Turquía": 75.2, "Ucrania": 63.8, "Vaticano": 5.0,
+
+    // Oceanía (14)
+    "Australia": 96.4, "Fiyi": 82.5, "Islas Marshall": 45.2, "Islas Salomón": 86.1, "Kiribati": 38.4,
+    "Micronesia": 75.8, "Nauru": 18.5, "Nueva Zelanda": 88.7, "Palaos": 84.2, "Papúa Nueva Guinea": 95.1,
+    "Samoa": 78.6, "Tonga": 62.4, "Tuvalu": 34.2, "Vanuatu": 81.5
+};
+
+// POBLACIÓN TOTAL (en número de habitantes)
+const poblacionPaises = {
+    // África (54)
+    "Angola": 36680000, "Argelia": 45600000, "Benín": 13700000, "Botsuana": 2670000, "Burkina Faso": 23200000,
+    "Burundi": 13200000, "Cabo Verde": 598000, "Camerún": 28600000, "Chad": 18200000, "Comoras": 850000,
+    "Costa de Marfil": 28800000, "Egipto": 112700000, "Eritrea": 3740000, "Esuatini": 1210000, "Etiopía": 126500000,
+    "Gabón": 2430000, "Gambia": 2770000, "Ghana": 34100000, "Guinea": 14100000, "Guinea Ecuatorial": 1710000,
+    "Guinea Bisáu": 2150000, "Kenia": 55100000, "Lesoto": 2330000, "Liberia": 5410000, "Libia": 6880000,
+    "Madagascar": 30300000, "Malaui": 20900000, "Malí": 23200000, "Marruecos": 37800000, "Mauricio": 1260000,
+    "Mauritania": 4860000, "Mozambique": 33800000, "Namibia": 2600000, "Níger": 27200000, "Nigeria": 223800000,
+    "República Centroafricana": 5740000, "República Democrática del Congo": 102200000, "República del Congo": 6100000,
+    "Ruanda": 14000000, "Santo Tomé y Príncipe": 231000, "Senegal": 17700000, "Seychelles": 119000, "Sierra Leona": 8790000,
+    "Somalia": 18100000, "Sudáfrica": 60400000, "Sudán": 48100000, "Sudán del Sur": 11000000, "Tanzania": 67400000,
+    "Togo": 9050000, "Túnez": 12400000, "Uganda": 48500000, "Yibuti": 1130000, "Zambia": 20500000, "Zimbabue": 16600000,
+
+    // América (35)
+    "Antigua y Barbuda": 94000, "Argentina": 46600000, "Bahamas": 412000, "Barbados": 281000, "Belice": 410000,
+    "Bolivia": 12300000, "Brasil": 216400000, "Canadá": 38700000, "Chile": 19600000, "Colombia": 52000000,
+    "Costa Rica": 5210000, "Cuba": 11200000, "Dominica": 73000, "Ecuador": 18100000, "El Salvador": 6360000,
+    "Estados Unidos": 339900000, "Granada": 126000, "Guatemala": 18000000, "Guyana": 813000, "Haití": 11700000,
+    "Honduras": 10500000, "Jamaica": 2820000, "México": 128400000, "Nicaragua": 7040000, "Panamá": 4460000,
+    "Paraguay": 7450000, "Perú": 34300000, "República Dominicana": 11300000, "San Cristóbal y Nieves": 47000,
+    "San Vicente y las Granadinas": 103000, "Santa Lucía": 179000, "Surinam": 623000, "Trinidad y Tobago": 1530000,
+    "Uruguay": 3420000, "Venezuela": 28800000,
+
+    // Asia (47)
+    "Afganistán": 42200000, "Arabia Saudita": 36900000, "Armenia": 2770000, "Azerbaiyán": 10400000, "Bangladés": 172900000,
+    "Baréin": 1480000, "Myanmar": 54500000, "Brunéi": 452000, "Bután": 787000, "Camboya": 16900000, "Catar": 2710000,
+    "China": 1425600000, "Corea del Norte": 26100000, "Corea del Sur": 51700000, "Emiratos Árabes": 9510000,
+    "Filipinas": 117300000, "Georgia": 3720000, "India": 1428600000, "Indonesia": 277500000, "Irak": 45500000,
+    "Irán": 89100000, "Israel": 9790000, "Japón": 123200000, "Jordania": 11300000, "Kazajistán": 19600000,
+    "Kirguistán": 6730000, "Kuwait": 4310000, "Laos": 7630000, "Líbano": 5350000, "Malasia": 34300000,
+    "Maldivas": 521000, "Mongolia": 3440000, "Nepal": 30800000, "Omán": 4640000, "Pakistán": 240400000,
+    "Palestina": 5370000, "Singapur": 6010000, "Siria": 23200000, "Sri Lanka": 21800000, "Tailandia": 71800000,
+    "Taiwán": 23900000, "Tayikistán": 10100000, "Timor Oriental": 1360000, "Turkmenistán": 6510000, "Uzbekistán": 35600000,
+    "Vietnam": 98800000, "Yemen": 34400000,
+
+    // Europa (48)
+    "Albania": 2830000, "Alemania": 83200000, "Andorra": 79000, "Austria": 8950000, "Bélgica": 11600000,
+    "Bielorrusia": 9190000, "Bosnia y Herzegovina": 3210000, "Bulgaria": 6680000, "Chipre": 1260000, "Croacia": 3850000,
+    "Dinamarca": 5930000, "Eslovaquia": 5420000, "Eslovenia": 2110000, "España": 48300000, "Estonia": 1350000,
+    "Finlandia": 5540000, "Francia": 68000000, "Grecia": 10300000, "Hungría": 9590000, "Irlanda": 5280000,
+    "Islandia": 382000, "Italia": 58800000, "Kosovo": 1760000, "Letonia": 1870000, "Liechtenstein": 39000,
+    "Lituania": 2750000, "Luxemburgo": 654000, "Macedonia del Norte": 2060000, "Malta": 535000, "Moldavia": 2530000,
+    "Mónaco": 36000, "Montenegro": 617000, "Noruega": 5470000, "País Vasco": 2200000, "Países Bajos": 17800000,
+    "Polonia": 36700000, "Portugal": 10400000, "Reino Unido": 67700000, "República Checa": 10800000, "Rumania": 19000000,
+    "Rusia": 143800000, "San Marino": 33000, "Serbia": 7140000, "Suecia": 10500000, "Suiza": 8840000,
+    "Turquía": 85800000, "Ucrania": 36700000, "Vaticano": 800,
+
+    // Oceanía (14)
+    "Australia": 26400000, "Fiyi": 936000, "Islas Marshall": 41000, "Islas Salomón": 740000, "Kiribati": 133000,
+    "Micronesia": 115000, "Nauru": 12000, "Nueva Zelanda": 5220000, "Palaos": 18000, "Papúa Nueva Guinea": 10300000,
+    "Samoa": 225000, "Tonga": 107000, "Tuvalu": 11000, "Vanuatu": 334000
+};
+
+// ÍNDICE DE CALIDAD DEL SISTEMA SANITARIO (0.0 - 100.0 puntos)
+const sanidadPaises = {
+    // África (54)
+    "Angola": 35.4, "Argelia": 58.2, "Benín": 40.1, "Botsuana": 55.6, "Burkina Faso": 34.2,
+    "Burundi": 32.5, "Cabo Verde": 54.8, "Camerún": 42.1, "Chad": 28.4, "Comoras": 38.7,
+    "Costa de Marfil": 41.5, "Egipto": 56.3, "Eritrea": 33.1, "Esuatini": 44.2, "Etiopía": 39.8,
+    "Gabón": 48.7, "Gambia": 37.6, "Ghana": 52.4, "Guinea": 34.9, "Guinea Ecuatorial": 40.2,
+    "Guinea Bisáu": 31.8, "Kenia": 58.1, "Lesoto": 36.5, "Liberia": 35.2, "Libia": 45.6,
+    "Madagascar": 36.2, "Malaui": 38.4, "Malí": 35.8, "Marruecos": 57.5, "Mauricio": 68.4,
+    "Mauritania": 39.1, "Mozambique": 34.5, "Namibia": 53.2, "Níger": 32.7, "Nigeria": 48.5,
+    "República Centroafricana": 26.8, "República Democrática del Congo": 30.5, "República del Congo": 39.4,
+    "Ruanda": 56.7, "Santo Tomé y Príncipe": 44.8, "Senegal": 47.2, "Seychelles": 65.3, "Sierra Leona": 32.4,
+    "Somalia": 24.5, "Sudáfrica": 66.8, "Sudán": 38.5, "Sudán del Sur": 25.1, "Tanzania": 46.3,
+    "Togo": 37.8, "Túnez": 62.4, "Uganda": 45.1, "Yibuti": 38.6, "Zambia": 44.7, "Zimbabue": 41.2,
+
+    // América (35)
+    "Antigua y Barbuda": 62.5, "Argentina": 72.8, "Bahamas": 64.1, "Barbados": 68.5, "Belice": 58.4,
+    "Bolivia": 55.2, "Brasil": 68.4, "Canadá": 82.5, "Chile": 75.6, "Colombia": 74.2,
+    "Costa Rica": 78.5, "Cuba": 71.4, "Dominica": 59.2, "Ecuador": 68.9, "El Salvador": 61.5,
+    "Estados Unidos": 76.8, "Granada": 60.4, "Guatemala": 56.8, "Guyana": 54.3, "Haití": 34.5,
+    "Honduras": 57.1, "Jamaica": 62.8, "México": 70.5, "Nicaragua": 58.6, "Panamá": 69.4,
+    "Paraguay": 60.2, "Perú": 65.8, "República Dominicana": 63.4, "San Cristóbal y Nieves": 61.8,
+    "San Vicente y las Granadinas": 59.5, "Santa Lucía": 62.1, "Surinam": 58.7, "Trinidad y Tobago": 65.2,
+    "Uruguay": 76.4, "Venezuela": 45.8,
+
+    // Asia (47)
+    "Afganistán": 29.4, "Arabia Saudita": 74.5, "Armenia": 62.8, "Azerbaiyán": 60.5, "Bangladés": 52.4,
+    "Baréin": 73.6, "Myanmar": 42.1, "Brunéi": 72.5, "Bután": 58.4, "Camboya": 50.6, "Catar": 78.2,
+    "China": 75.4, "Corea del Norte": 45.2, "Corea del Sur": 92.5, "Emiratos Árabes": 79.6,
+    "Filipinas": 62.5, "Georgia": 64.8, "India": 60.2, "Indonesia": 64.5, "Irak": 48.6,
+    "Irán": 66.8, "Israel": 84.5, "Japón": 93.8, "Jordania": 70.4, "Kazajistán": 63.2,
+    "Kirguistán": 55.4, "Kuwait": 71.8, "Laos": 48.5, "Líbano": 65.2, "Malasia": 82.4,
+    "Maldivas": 66.8, "Mongolia": 54.2, "Nepal": 51.5, "Omán": 72.6, "Pakistán": 53.8,
+    "Palestina": 58.4, "Singapur": 91.2, "Siria": 40.5, "Sri Lanka": 68.5, "Tailandia": 85.6,
+    "Taiwán": 95.4, "Tayikistán": 54.8, "Timor Oriental": 46.2, "Turkmenistán": 56.4, "Uzbekistán": 58.6,
+    "Vietnam": 66.4, "Yemen": 32.5,
+
+    // Europa (48)
+    "Albania": 61.2, "Alemania": 86.4, "Andorra": 85.6, "Austria": 88.2, "Bélgica": 87.5,
+    "Bielorrusia": 65.4, "Bosnia y Herzegovina": 58.6, "Bulgaria": 64.2, "Chipre": 74.8, "Croacia": 71.5,
+    "Dinamarca": 89.4, "Eslovaquia": 70.2, "Eslovenia": 78.6, "España": 88.9, "Estonia": 79.5,
+    "Finlandia": 88.6, "Francia": 90.2, "Grecia": 76.4, "Hungría": 68.5, "Irlanda": 81.2,
+    "Islandia": 86.8, "Italia": 85.4, "Kosovo": 54.2, "Letonia": 70.8, "Liechtenstein": 84.5,
+    "Lituania": 75.4, "Luxemburgo": 88.1, "Macedonia del Norte": 60.5, "Malta": 82.6, "Moldavia": 56.4,
+    "Mónaco": 87.2, "Montenegro": 62.8, "Noruega": 89.5, "País Vasco": 89.5, "Países Bajos": 88.8,
+    "Polonia": 72.4, "Portugal": 81.6, "Reino Unido": 84.2, "República Checa": 79.4, "Rumania": 65.8,
+    "Rusia": 62.5, "San Marino": 82.4, "Serbia": 64.5, "Suecia": 87.8, "Suiza": 89.2,
+    "Turquía": 75.8, "Ucrania": 58.2, "Vaticano": 80.0,
+
+    // Oceanía (14)
+    "Australia": 87.6, "Fiyi": 60.4, "Islas Marshall": 52.1, "Islas Salomón": 45.8, "Kiribati": 48.2,
+    "Micronesia": 54.6, "Nauru": 50.5, "Nueva Zelanda": 86.4, "Palaos": 58.2, "Papúa Nueva Guinea": 44.5,
+    "Samoa": 56.8, "Tonga": 55.4, "Tuvalu": 51.2, "Vanuatu": 53.6
+};
+
+// ÍNDICE DE SEGURIDAD Y PAZ (0.0 - 100.0 puntos)
+const seguridadPaises = {
+    // África (54)
+    "Angola": 55.4, "Argelia": 65.2, "Benín": 62.1, "Botsuana": 75.4, "Burkina Faso": 28.5,
+    "Burundi": 35.2, "Cabo Verde": 78.5, "Camerún": 42.1, "Chad": 31.4, "Comoras": 60.5,
+    "Costa de Marfil": 54.2, "Egipto": 58.4, "Eritrea": 45.2, "Esuatini": 52.4, "Etiopía": 38.5,
+    "Gabón": 62.1, "Gambia": 65.4, "Ghana": 72.8, "Guinea": 48.5, "Guinea Ecuatorial": 56.4,
+    "Guinea Bisáu": 54.2, "Kenia": 52.1, "Lesoto": 58.4, "Liberia": 55.2, "Libia": 25.4,
+    "Madagascar": 58.6, "Malaui": 64.2, "Malí": 26.8, "Marruecos": 70.5, "Mauricio": 82.4,
+    "Mauritania": 55.6, "Mozambique": 45.2, "Namibia": 71.5, "Níger": 30.5, "Nigeria": 35.4,
+    "República Centroafricana": 22.4, "República Democrática del Congo": 20.5, "República del Congo": 52.4,
+    "Ruanda": 74.5, "Santo Tomé y Príncipe": 70.2, "Senegal": 68.4, "Seychelles": 75.6, "Sierra Leona": 65.4,
+    "Somalia": 15.4, "Sudáfrica": 42.5, "Sudán": 18.5, "Sudán del Sur": 16.2, "Tanzania": 64.5,
+    "Togo": 60.2, "Túnez": 62.8, "Uganda": 54.2, "Yibuti": 60.5, "Zambia": 68.4, "Zimbabue": 58.2,
+
+    // América (35)
+    "Antigua y Barbuda": 72.5, "Argentina": 64.5, "Bahamas": 65.2, "Barbados": 75.4, "Belice": 55.2,
+    "Bolivia": 62.4, "Brasil": 48.5, "Canadá": 85.4, "Chile": 68.5, "Colombia": 45.2,
+    "Costa Rica": 78.4, "Cuba": 65.8, "Dominica": 74.5, "Ecuador": 42.5, "El Salvador": 65.4,
+    "Estados Unidos": 62.5, "Granada": 76.2, "Guatemala": 48.5, "Guyana": 55.4, "Haití": 20.5,
+    "Honduras": 42.4, "Jamaica": 45.8, "México": 40.5, "Nicaragua": 52.4, "Panamá": 68.5,
+    "Paraguay": 62.4, "Perú": 55.8, "República Dominicana": 58.4, "San Cristóbal y Nieves": 70.5,
+    "San Vicente y las Granadinas": 72.4, "Santa Lucía": 71.5, "Surinam": 65.2, "Trinidad y Tobago": 52.4,
+    "Uruguay": 78.5, "Venezuela": 35.4,
+
+    // Asia (47)
+    "Afganistán": 12.5, "Arabia Saudita": 75.4, "Armenia": 68.5, "Azerbaiyán": 62.4, "Bangladés": 58.4,
+    "Baréin": 72.5, "Myanmar": 22.4, "Brunéi": 82.5, "Bután": 85.4, "Camboya": 65.4, "Catar": 86.5,
+    "China": 78.4, "Corea del Norte": 45.2, "Corea del Sur": 88.5, "Emiratos Árabes": 85.4,
+    "Filipinas": 55.4, "Georgia": 72.5, "India": 58.4, "Indonesia": 68.5, "Irak": 25.4,
+    "Irán": 52.4, "Israel": 45.2, "Japón": 92.5, "Jordania": 70.5, "Kazajistán": 68.4,
+    "Kirguistán": 62.5, "Kuwait": 80.5, "Laos": 68.4, "Líbano": 35.2, "Malasia": 82.4,
+    "Maldivas": 75.2, "Mongolia": 78.5, "Nepal": 68.4, "Omán": 84.5, "Pakistán": 38.5,
+    "Palestina": 28.5, "Singapur": 95.4, "Siria": 14.5, "Sri Lanka": 62.4, "Tailandia": 65.8,
+    "Taiwán": 90.5, "Tayikistán": 65.4, "Timor Oriental": 68.2, "Turkmenistán": 65.4, "Uzbekistán": 70.5,
+    "Vietnam": 78.4, "Yemen": 13.4,
+
+    // Europa (48)
+    "Albania": 68.5, "Alemania": 82.4, "Andorra": 92.5, "Austria": 88.5, "Bélgica": 78.4,
+    "Bielorrusia": 65.4, "Bosnia y Herzegovina": 72.4, "Bulgaria": 75.4, "Chipre": 80.5, "Croacia": 85.4,
+    "Dinamarca": 92.8, "Eslovaquia": 82.5, "Eslovenia": 88.4, "España": 85.6, "Estonia": 84.5,
+    "Finlandia": 90.5, "Francia": 74.5, "Grecia": 78.5, "Hungría": 82.4, "Irlanda": 86.5,
+    "Islandia": 96.5, "Italia": 80.4, "Kosovo": 65.4, "Letonia": 80.5, "Liechtenstein": 94.5,
+    "Lituania": 82.4, "Luxemburgo": 88.5, "Macedonia del Norte": 70.5, "Malta": 84.5, "Moldavia": 68.5,
+    "Mónaco": 95.4, "Montenegro": 75.4, "Noruega": 90.2, "País Vasco": 87.5, "Países Bajos": 85.4,
+    "Polonia": 84.5, "Portugal": 88.4, "Reino Unido": 76.5, "República Checa": 86.4, "Rumania": 78.5,
+    "Rusia": 32.5, "San Marino": 94.2, "Serbia": 72.4, "Suecia": 78.5, "Suiza": 93.5,
+    "Turquía": 58.4, "Ucrania": 25.4, "Vaticano": 90.0,
+
+    // Oceanía (14)
+    "Australia": 85.4, "Fiyi": 72.4, "Islas Marshall": 75.2, "Islas Salomón": 68.4, "Kiribati": 78.5,
+    "Micronesia": 76.4, "Nauru": 75.4, "Nueva Zelanda": 92.4, "Palaos": 80.5, "Papúa Nueva Guinea": 45.2,
+    "Samoa": 78.4, "Tonga": 76.5, "Tuvalu": 82.4, "Vanuatu": 78.5
+};
+
+// LLEGADA DE TURISTAS ANUALES (en número de visitantes)
+const turismoPaises = {
+    // África (54)
+    "Angola": 218000, "Argelia": 2400000, "Benín": 340000, "Botsuana": 1830000, "Burkina Faso": 140000,
+    "Burundi": 300000, "Cabo Verde": 750000, "Camerún": 1100000, "Chad": 87000, "Comoras": 45000,
+    "Costa de Marfil": 2000000, "Egipto": 13000000, "Eritrea": 142000, "Esuatini": 840000, "Etiopía": 810000,
+    "Gabón": 550000, "Gambia": 620000, "Ghana": 1130000, "Guinea": 110000, "Guinea Ecuatorial": 150000,
+    "Guinea Bisáu": 52000, "Kenia": 2050000, "Lesoto": 1190000, "Liberia": 80000, "Libia": 15000,
+    "Madagascar": 486000, "Malaui": 870000, "Malí": 150000, "Marruecos": 13000000, "Mauricio": 1400000,
+    "Mauritania": 150000, "Mozambique": 2750000, "Namibia": 1500000, "Níger": 170000, "Nigeria": 1900000,
+    "República Centroafricana": 120000, "República Democrática del Congo": 350000, "República del Congo": 200000,
+    "Ruanda": 1700000, "Santo Tomé y Príncipe": 34000, "Senegal": 1370000, "Seychelles": 384000, "Sierra Leona": 71000,
+    "Somalia": 1000, "Sudáfrica": 10200000, "Sudán": 800000, "Sudán del Sur": 65000, "Tanzania": 1500000,
+    "Togo": 570000, "Túnez": 9400000, "Uganda": 1500000, "Yibuti": 114000, "Zambia": 1100000, "Zimbabue": 2300000,
+
+    // América (35)
+    "Antigua y Barbuda": 270000, "Argentina": 7400000, "Bahamas": 1800000, "Barbados": 680000, "Belice": 500000,
+    "Bolivia": 1200000, "Brasil": 6400000, "Canadá": 22100000, "Chile": 4500000, "Colombia": 4500000,
+    "Costa Rica": 3100000, "Cuba": 4200000, "Dominica": 90000, "Ecuador": 2400000, "El Salvador": 2500000,
+    "Estados Unidos": 79300000, "Granada": 160000, "Guatemala": 2500000, "Guyana": 315000, "Haití": 938000,
+    "Honduras": 1200000, "Jamaica": 2700000, "México": 45000000, "Nicaragua": 1200000, "Panamá": 2500000,
+    "Paraguay": 1200000, "Perú": 4400000, "República Dominicana": 7100000, "San Cristóbal y Nieves": 120000,
+    "San Vicente y las Granadinas": 85000, "Santa Lucía": 420000, "Surinam": 280000, "Trinidad y Tobago": 390000,
+    "Uruguay": 3200000, "Venezuela": 600000,
+
+    // Asia (47)
+    "Afganistán": 15000, "Arabia Saudita": 17500000, "Armenia": 1900000, "Azerbaiyán": 3200000, "Bangladés": 320000,
+    "Baréin": 3800000, "Myanmar": 4300000, "Brunéi": 330000, "Bután": 315000, "Camboya": 6600000, "Catar": 2100000,
+    "China": 65700000, "Corea del Norte": 100000, "Corea del Sur": 17500000, "Emiratos Árabes": 22700000,
+    "Filipinas": 8200000, "Georgia": 9300000, "India": 17900000, "Indonesia": 16100000, "Irak": 1500000,
+    "Irán": 9000000, "Israel": 4500000, "Japón": 31800000, "Jordania": 5300000, "Kazajistán": 8500000,
+    "Kirguistán": 8500000, "Kuwait": 8500000, "Laos": 4700000, "Líbano": 1900000, "Malasia": 26100000,
+    "Maldivas": 1700000, "Mongolia": 577000, "Nepal": 1190000, "Omán": 3200000, "Pakistán": 900000,
+    "Palestina": 600000, "Singapur": 19100000, "Siria": 1500000, "Sri Lanka": 1900000, "Tailandia": 39800000,
+    "Taiwán": 11800000, "Tayikistán": 1200000, "Timor Oriental": 82000, "Turkmenistán": 15000, "Uzbekistán": 6700000,
+    "Vietnam": 18000000, "Yemen": 250000,
+
+    // Europa (48)
+    "Albania": 6400000, "Alemania": 39500000, "Andorra": 3100000, "Austria": 31800000, "Bélgica": 9500000,
+    "Bielorrusia": 11500000, "Bosnia y Herzegovina": 1200000, "Bulgaria": 9300000, "Chipre": 3900000, "Croacia": 17300000,
+    "Dinamarca": 33000000, "Eslovaquia": 2500000, "Eslovenia": 4700000, "España": 85200000, "Estonia": 3300000,
+    "Finlandia": 3300000, "Francia": 90000000, "Grecia": 31300000, "Hungría": 16900000, "Irlanda": 10900000,
+    "Islandia": 2000000, "Italia": 64500000, "Kosovo": 200000, "Letonia": 1900000, "Liechtenstein": 98000,
+    "Lituania": 2900000, "Luxemburgo": 1000000, "Macedonia del Norte": 750000, "Malta": 2700000, "Moldavia": 170000,
+    "Mónaco": 360000, "Montenegro": 2500000, "Noruega": 5900000, "País Vasco": 4200000, "Países Bajos": 20100000,
+    "Polonia": 21100000, "Portugal": 24600000, "Reino Unido": 39400000, "República Checa": 10800000, "Rumania": 2600000,
+    "Rusia": 24400000, "San Marino": 84000, "Serbia": 1800000, "Suecia": 7600000, "Suiza": 11800000,
+    "Turquía": 51200000, "Ucrania": 14200000, "Vaticano": 6000000,
+
+    // Oceanía (14)
+    "Australia": 9400000, "Fiyi": 890000, "Islas Marshall": 6000, "Islas Salomón": 29000, "Kiribati": 7000,
+    "Micronesia": 18000, "Nauru": 2500, "Nueva Zelanda": 3800000, "Palaos": 94000, "Papúa Nueva Guinea": 210000,
+    "Samoa": 180000, "Tonga": 54000, "Tuvalu": 3000, "Vanuatu": 120000
+};
+
+
+const configEstadisticas = {
+    "area": { titulo: "Área", unidad: "km²", datos: areasPaises },
+    "poblacion": { titulo: "Población", unidad: "hab.", datos: poblacionPaises },
+    "clima": { titulo: "Clima", unidad: "pts", datos: climaPaises},
+    "corrupcion" : { titulo: "Corrupción", unidad: "pts", datos: corrupcionPaises},
+    "deportes": { titulo: "Deportes", unidad: "pts", datos: deportesPaises},
+    "desarrollo": { titulo: "Desarrollo", unidad: "IDH", datos: desarrolloPaises},
+    "economia": { titulo: "Economía", unidad: "PIB", datos: economiaPaises},
+    "educacion": { titulo: "Educación", unidad: "pts", datos: educacionPaises},
+    "felicidad": { titulo: "Felicidad", unidad: "pts", datos: felicidadPaises},
+    "gastronomia": { titulo: "Gastronomía", unidad: "pts", datos: gastronomiaPaises},
+    "limpieza": { titulo: "Limpieza", unidad: "pts", datos: limpiezaPaises},
+    "longevidad": { titulo: "Longevidad", unidad: "años", datos: longevidadPaises},
+    "naturaleza": { titulo: "Naturaleza", unidad: "pts", datos: naturalezaPaises},
+    "sanidad": { titulo: "Sanidad", unidad: "pts", datos: sanidadPaises},
+    "seguridad": { titulo: "Seguridad", unidad: "pts", datos: seguridadPaises},
+    "turismo": { titulo: "Turismo", unidad: "visitantes", datos: turismoPaises}
+};
+
 // ESTADO DE LA APLICACIÓN Y 3 IDIOMAS POSIBLES
 const idiomasDisponibles = ['es', 'en', 'nat'];
 let indiceIdioma = 0; // Empieza en 0 (Español)
@@ -251,6 +1151,11 @@ const contenedorJuegoActivo = document.getElementById('contenedor-juego-activo')
 
 // FUNCIÓN PRINCIPAL PARA DIBUJAR TODO SEGÚN EL IDIOMA
 function renderizarAtlas() {
+
+    // LIMPIEZA DE PANTALLAS: Nos aseguramos de que solo se vea el Atlas
+    document.getElementById('vista-estadisticas').style.display = 'none';
+    document.getElementById('vista-juegos').style.display = 'none';
+    document.getElementById('vista-atlas').style.display = 'block';
     // 1. Limpiamos contenedores
     menuPaises.innerHTML = ''; 
     contenedorAtlas.innerHTML = '';
@@ -419,6 +1324,7 @@ const textosNavegacion = {
     es: {
         paises: "🌍 Países ▼",
         juegos: "🎮 Juegos ▼",
+        stats: "📊 Estadísticas",
         contra: "⏱️ Contrarreloj",
         muerte: "💀 Muerte Súbita",
         adivinar: "❓ Trivial",
@@ -428,6 +1334,7 @@ const textosNavegacion = {
     en: {
         paises: "🌍 Countries ▼",
         juegos: "🎮 Games ▼",
+        stats: "📊 Statistics",
         contra: "⏱️ Time Attack",
         muerte: "💀 Sudden Death",
         adivinar: "❓ Trivial",
@@ -1021,6 +1928,9 @@ if (btnNavCapitales) btnNavCapitales.textContent = uiNav.capitales;
 const btnNavMemory = document.getElementById('nav-btn-memory');
 if (btnNavMemory) btnNavMemory.textContent = uiNav.memory;
 
+const btnNavStats = document.getElementById('nav-btn-stats');
+if (btnNavStats) btnNavStats.textContent = uiNav.stats;
+
     if (vistaJuegos.style.display === 'block') {
         mostrarJuego(modoPrincipal); 
     }
@@ -1184,9 +2094,190 @@ function mostrarResultadosTrios() {
     `;
 }
 
+// FUNCIÓN PARA MOSTRAR SOLO EL ATLAS (MAPA)
+function mostrarAtlas() {
+    // 1. Apagamos las otras pantallas
+    document.getElementById('vista-juegos').style.display = 'none';
+    document.getElementById('vista-estadisticas').style.display = 'none';
+    
+    // 2. Encendemos SOLO la de los países
+    document.getElementById('vista-atlas').style.display = 'block';
+    
+    // 3. Ocultamos la ventanita flotante por si se quedó pillada
+    const ventana = document.getElementById('ventana-info');
+    if (ventana) ventana.style.display = 'none';
+}
+
+// FUNCIÓN PARA MOSTRAR SOLO LAS ESTADÍSTICAS
+function mostrarEstadisticas() {
+    // 1. Limpieza de pantallas
+    document.getElementById('vista-atlas').style.display = 'none';
+    document.getElementById('vista-juegos').style.display = 'none';
+    if (typeof ventanaFlotante !== 'undefined') ventanaFlotante.style.display = 'none';
+    
+    document.getElementById('vista-estadisticas').style.display = 'block';
+
+    // 2. Dibujar la cuadrícula por primera vez (por defecto cogerá "Área")
+    actualizarCuadriculaEstadisticas();
+}
+
+window.onload = () => {
+    actualizarCuadriculaEstadisticas();
+};
+
+// Separamos la generación del contenido para que sea más limpio
+function generarContenidoEstadisticas() {
+    const contenedor = document.getElementById('contenedor-grid-estadisticas');
+    contenedor.innerHTML = ''; // Limpieza total para que no se acumulen
+
+    let listaPaises = [];
+    for (const cont in baseDatosMundo) {
+        listaPaises = listaPaises.concat(baseDatosMundo[cont].paises);
+    }
+
+    // Ordenar A-Z
+    listaPaises.sort((a, b) => a.nombre[idiomaActual].localeCompare(b.nombre[idiomaActual]));
+
+    listaPaises.forEach(pais => {
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'tarjeta-stats'; // Usaremos esta clase en el CSS
+        tarjeta.innerHTML = `
+            <img src="${pais.bandera}" alt="Bandera de ${pais.nombre[idiomaActual]}">
+            <p>${pais.nombre[idiomaActual]}</p>
+        `;
+        contenedor.appendChild(tarjeta);
+    });
+}
+
+function cambiarOrden() {
+    const btn = document.getElementById('btn-orden');
+    if (ordenActual === 'mayor') {
+        ordenActual = 'menor';
+        btn.innerText = '🔽';
+    } else if (ordenActual === 'menor') {
+        ordenActual = 'alfabetico';
+        btn.innerText = '🔤';
+    } else {
+        ordenActual = 'mayor';
+        btn.innerText = '🔼';
+    }
+    actualizarCuadriculaEstadisticas();
+}
+
+// Asegúrate de que esta variable esté fuera de las funciones
+let ordenActual = 'alfabetico'; 
+
+function actualizarCuadriculaEstadisticas() {
+    const selector = document.getElementById("selector-estadistica");
+    const contenedor = document.getElementById("contenedor-paises");
+    
+    if (!selector || !contenedor) return;
+
+    const idEst = selector.value;
+    const config = configEstadisticas[idEst];
+
+    // SEGURIDAD: Si el diccionario no existe, limpiamos y salimos sin error
+    if (!config || !config.datos) {
+        contenedor.innerHTML = `<p style="text-align:center; padding:20px;">Datos de "${idEst}" no disponibles aún.</p>`;
+        return;
+    }
+
+    // 1. Convertir a lista para poder trabajar
+    let lista = Object.keys(config.datos).map(nombre => ({
+        nombre: nombre,
+        valor: config.datos[nombre]
+    }));
+
+    // 2. CÁLCULO DE RANKING REAL (Siempre de mayor a menor)
+    // Hacemos una copia para no desordenar la original
+    let rankingParaCalculo = [...lista].sort((a, b) => b.valor - a.valor);
+    
+    lista.forEach(pais => {
+        pais.puestoMundial = rankingParaCalculo.findIndex(p => p.nombre === pais.nombre) + 1;
+    });
+
+    // 3. ORDENAR PARA MOSTRAR (Según el botón de la derecha)
+    if (ordenActual === 'mayor') {
+        lista.sort((a, b) => b.valor - a.valor);
+    } else if (ordenActual === 'menor') {
+        lista.sort((a, b) => a.valor - b.valor);
+    } else {
+        lista.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    }
+
+    // 4. PINTAR LAS TARJETAS
+    contenedor.innerHTML = "";
+    lista.forEach(item => {
+        let banderaPath = "";
+        // Buscamos la bandera en tu base de datos original
+        for (const cont in baseDatosMundo) {
+            const encontrado = baseDatosMundo[cont].paises.find(p => p.nombre.es === item.nombre);
+            if (encontrado) {
+                banderaPath = encontrado.bandera;
+                break;
+            }
+        }
+
+        // Dentro del bucle en tu función actualizarCuadriculaEstadisticas:
+
+const tarjeta = document.createElement("div");
+tarjeta.className = "tarjeta-pais-est";
+
+// Solo si el puesto mundial calculado es el 1, lleva la clase 'oro'
+const claseEspecial = (item.puestoMundial === 1) ? "oro-campeon" : "";
+
+// ESTRUCTURA HTML: Badge -> Bandera -> Nombre -> Valor
+tarjeta.innerHTML = `
+    <div class="ranking-badge ${claseEspecial}">#${item.puestoMundial}</div>
+    
+    <div class="marco-bandera-est">
+        <img src="${banderaPath}" alt="${item.nombre}">
+    </div>
+    
+    <h3>${item.nombre}</h3>
+    <p><strong>${item.valor.toLocaleString()}</strong> ${config.unidad}</p>
+`;
+contenedor.appendChild(tarjeta);
+        });
+}
+
+// --- VIGILANTES DE PANTALLA ---
+// 1. Si hace clic en el botón principal "Países"
+document.getElementById('nav-btn-paises').addEventListener('click', function() {
+    document.getElementById('vista-estadisticas').style.display = 'none';
+    document.getElementById('vista-juegos').style.display = 'none';
+    document.getElementById('vista-atlas').style.display = 'block';
+});
+
+// 2. Si hace clic en CUALQUIER continente dentro del desplegable
+document.getElementById('menu-paises').addEventListener('click', function() {
+    document.getElementById('vista-estadisticas').style.display = 'none';
+    document.getElementById('vista-juegos').style.display = 'none';
+    document.getElementById('vista-atlas').style.display = 'block';
+});
+
 document.addEventListener('click', function(e) {
     if (!e.target.classList.contains('pais-item')) ventanaFlotante.style.display = 'none';
 });
 
 // Arrancar página
 renderizarAtlas();
+
+/*  
+Área.
+Clima.
+Corrupción.
+Deportes.
+Desarrollo.
+Economía.
+Educación.
+Felicidad.
+Gastronomía.
+Limpieza.
+Longevidad.
+Naturaleza.
+Población.
+Sanidad.
+Seguridad.
+Turismo.
+*/

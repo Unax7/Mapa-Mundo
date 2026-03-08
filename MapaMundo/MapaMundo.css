@@ -107,3 +107,298 @@ nav { background-color: #2c3e50; position: sticky; top: 0; z-index: 500; display
 .input-texto-juego:focus { outline: none; border-color: #18bc9c; box-shadow: 0 0 10px rgba(24, 188, 156, 0.5); }
 .input-texto-juego.correcto { background-color: #2ecc71; color: white; border-color: #27ae60; }
 .input-texto-juego.incorrecto { background-color: #e74c3c; color: white; border-color: #c0392b; }
+
+/* Aseguramos que cada contenedor ocupe su espacio y no se mezclen */
+.atlas-container, .juegos-container, .estadisticas-container {
+    width: 100%;
+    min-height: calc(100vh - 60px); /* Altura total menos el menú */
+    background-color: #f4f7f6; /* Un color de fondo limpio */
+    overflow-y: auto; /* Permite scroll interno si hay muchos países */
+}
+
+.tarjeta-stats {
+    width: 140px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.tarjeta-stats img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.tarjeta-stats p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+/* Contenedor principal centrado */
+.selector-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Contenedor del select para posicionar la flecha */
+.custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Ancho ideal */
+}
+
+.custom-select select {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #2c3e50;
+    background-color: #fff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    appearance: none; /* Quitamos la flecha fea del navegador */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Efecto al pasar el ratón */
+.custom-select select:hover {
+    border-color: #3b82f6;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al hacer click/foco */
+.custom-select select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* La flecha personalizada */
+.custom-select .arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234A5568'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Para que puedas clicar sobre la flecha */
+}
+
+.controles-estadisticas {
+    display: flex;
+    justify-content: space-between; /* Uno a la izquierda, otro a la derecha */
+    align-items: center;
+    max-width: 1200px; /* O el ancho de tu contenedor principal */
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* En móviles, para que no se amontonen, los ponemos uno debajo de otro */
+@media (max-width: 600px) {
+    .controles-estadisticas {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.contenedor-controles {
+    display: flex;
+    justify-content: space-between; /* Empuja los elementos a los extremos */
+    align-items: center;
+    max-width: 1000px; /* Ajusta esto al ancho de tu cuadrícula */
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.control-group {
+    position: relative;
+}
+
+.control-group select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    min-width: 200px;
+}
+
+.control-group select:hover {
+    border-color: #3498db;
+}
+
+/* En móviles se ponen uno sobre otro */
+@media (max-width: 600px) {
+    .contenedor-controles {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.header-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ESTO ARREGLA LA CUADRÍCULA */
+.cuadricula-dinamica {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- Ajustes para las Banderas Uniformes --- */
+
+.flag-container {
+    width: 120px;         /* Ancho fijo para el contenedor */
+    height: 80px;         /* Alto fijo para el contenedor */
+    margin: 0 auto 10px;  /* Centrado horizontal y margen inferior */
+    display: flex;        /* Usamos flexbox para centrar la imagen dentro */
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Fondo gris claro para banderas con blanco */
+    border-radius: 4px;   /* Un borde suave */
+    overflow: hidden;     /* Evita que sobresalga nada */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Un sutil efecto de profundidad */
+}
+
+.flag-container img {
+    max-width: 100%;      /* La imagen no puede ser más ancha que el contenedor */
+    max-height: 100%;     /* La imagen no puede ser más alta que el contenedor */
+    object-fit: contain;  /* ESCALA LA IMAGEN MANTENIENDO PROPORCIONES SIN DEFORMAR */
+    object-position: center; /* Asegura que esté centrada */
+}
+
+/* --- DISEÑO FINAL DE TARJETA ESTADÍSTICA --- */
+
+.tarjeta-pais-est {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 210px; /* Limitamos el ancho máximo para que no se estiren demasiado */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* El Marcador # SIEMPRE visible y arriba */
+.ranking-badge {
+    align-self: flex-start;
+    background-color: #34495e;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.ranking-badge.oro-campeon {
+    background: linear-gradient(135deg, #f1c40f, #d4af37) !important;
+    color: #000 !important;
+}
+
+/* EL MARCO: Lo hacemos más bajito */
+.marco-bandera-est {
+    width: 100% !important;
+    height: 110px !important; /* Reducido de 140px a 110px */
+    background-color: #f8f9fa; /* Fondo gris muy suave */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px; /* Añadimos margen interno para que la bandera no toque los bordes */
+    box-sizing: border-box;
+}
+
+/* LA IMAGEN: Ahora se ajusta con elegancia al nuevo tamaño */
+.marco-bandera-est img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important; /* Muestra la bandera completa sin recortar */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra suave para que resalte del fondo gris */
+    display: block;
+}
+
+/* Textos alineados */
+.tarjeta-pais-est h3 {
+    margin: 5px 0 !important;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.tarjeta-pais-est p {
+    margin: 0 !important;
+    font-size: 1rem;
+    text-align: center;
+    color: #4a5568;
+}
+
+/* 1. El contenedor ahora NO separa los elementos, los junta en el centro */
+.contenedor-cabecera-estadisticas {
+    display: flex;
+    justify-content: center; /* Junta todo en el medio */
+    align-items: center;
+    gap: 15px;               /* ESTA es la distancia real entre el select y el botón */
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* 2. Forzamos que el botón NO tenga márgenes que lo alejen */
+#btn-orden {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important; /* IMPORTANTE: Elimina cualquier empuje automático */
+    flex-shrink: 0;      /* Evita que se encoja */
+}
+
+/* 3. El selector también sin márgenes laterales */
+#selector-estadistica {
+    width: 350px;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid #3498db;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 !important; 
+}

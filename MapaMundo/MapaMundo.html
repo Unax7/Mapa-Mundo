@@ -15,7 +15,7 @@
         
         <ul class="menu-principal">
             <li class="dropdown">
-                <a href="#" class="dropbtn" id="nav-btn-paises">🌍 Países ▼</a>
+                <a href="#" class="dropbtn" id="nav-btn-paises" onclick="mostrarAtlas()">🌍 Países ▼</a>
                 <div class="dropdown-content" id="menu-paises">
                     </div>
             </li>
@@ -29,6 +29,10 @@
                     <a href="#" onclick="mostrarJuego('capitales')" id="nav-btn-capitales">🏛️ De 3 en 3</a>
                     <a href="#" onclick="mostrarJuego('memory')" id="nav-btn-memory">🧠 Memory</a>
                 </div>
+            </li>
+
+            <li class="dropdown">
+                    <a href="#" class="dropbtn" id="nav-btn-stats" onclick="mostrarEstadisticas()">📊 Estadísticas</a>
             </li>
         </ul>
         
@@ -47,6 +51,44 @@
         </div>
     </div>
 
+    <div id="vista-estadisticas" style="display: none; padding: 20px;">
+    <h2 style="text-align: center;">Estadísticas Mundiales</h2>
+    
+    <div class="contenedor-cabecera-estadisticas">
+    <div style="width: 50px;"></div> <div class="selector-principal">
+        <select id="selector-estadistica" onchange="actualizarCuadriculaEstadisticas()">
+            <option value="area">🌍 Área</option>
+            <option value="clima">☀️ Clima</option>
+            <option value="corrupcion">⚖️ Corrupción</option>
+            <option value="deportes">🏆 Deportes</option>
+            <option value="desarrollo">📈 Desarrollo</option>
+            <option value="economia">💰 Economía</option>
+            <option value="educacion">🎓 Educación</option>
+            <option value="felicidad">😊 Felicidad</option>
+            <option value="gastronomia">🥘 Gastronomía</option>
+            <option value="limpieza">🧼 Limpieza</option>
+            <option value="longevidad">🩺 Longevidad</option>
+            <option value="naturaleza">🌲 Naturaleza</option>
+            <option value="poblacion">👥 Población</option>
+            <option value="sanidad">🏥 Sanidad</option>
+            <option value="seguridad">🛡️ Seguridad</option>
+            <option value="turismo">✈️ Turismo</option>
+        </select>
+    </div>
+
+    <button id="btn-orden" onclick="cambiarOrden()">🔤</button>
+</div>
+
+<div id="contenedor-paises" class="cuadricula-dinamica"></div>
+
+<div id="contenedor-paises" class="cuadricula-paises"></div>
+    
+    <div style="width: 50px;"></div>
+</div>
+
+    <div id="contenedor-grid-estadisticas" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;"></div>
+</div>
+
     <div id="ventana-info" class="ventana-flotante">
         <img id="vf-bandera" src="" alt="Bandera">
         <h2 id="vf-nombre">Nombre</h2>
@@ -56,3 +98,6 @@
     <script src="MapaMundo.js"></script>
 </body>
 </html>
+
+
+
