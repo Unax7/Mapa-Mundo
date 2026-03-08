@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Mundial</title>
+    <link rel="icon" type="image/png" href="https://abs.twimg.com/emoji/v2/72x72/1f5fa.png">
+    <link rel="stylesheet" href="MapaMundo.css">
+</head>
+<body>
+<nav>
+        <div class="logo-contenedor">
+            <img src="https://abs.twimg.com/emoji/v2/72x72/1f5fa.png" alt="Logo Atlas" class="logo-menu">
+        </div>
+        
+        <ul class="menu-principal">
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id="nav-btn-paises">🌍 Países ▼</a>
+                <div class="dropdown-content" id="menu-paises">
+                    </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id="nav-btn-juegos">🎮 Juegos ▼</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="mostrarJuego('contrarreloj')" id="nav-btn-contra">⏱️ Contrarreloj</a>
+                    <a href="#" onclick="mostrarJuego('muertesubita')" id="nav-btn-muerte">💀 Muerte Súbita</a>
+                    <a href="#" onclick="mostrarJuego('adivinar')" id="nav-btn-adivinar">❓ Trivial</a>
+                    <a href="#" onclick="mostrarJuego('capitales')" id="nav-btn-capitales">🏛️ De 3 en 3</a>
+                    <a href="#" onclick="mostrarJuego('memory')" id="nav-btn-memory">🧠 Memory</a>
+                </div>
+            </li>
+        </ul>
+        
+        <button id="btn-idioma" class="btn-idioma">Español</button>
+    </nav>
+
+    <div id="vista-atlas" class="atlas-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/1200px-Simple_world_map.svg.png" alt="Mapa del Mundo" class="mapa-imagen">
+        <div id="atlas"></div>
+    </div>
+
+    <div id="vista-juegos" class="juegos-container" style="display: none;">
+        <h1 id="titulo-juego">Zona de Juegos</h1>
+        <div id="contenedor-juego-activo">
+            <p>Selecciona un juego del menú superior para empezar.</p>
+        </div>
+    </div>
+
+    <div id="ventana-info" class="ventana-flotante">
+        <img id="vf-bandera" src="" alt="Bandera">
+        <h2 id="vf-nombre">Nombre</h2>
+        <p id="vf-capital">Capital</p>
+    </div>
+
+    <script src="MapaMundo.js"></script>
+</body>
+</html>
