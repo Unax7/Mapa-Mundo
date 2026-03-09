@@ -1,4 +1,5 @@
-const f = (codigo) => `https://flagcdn.com/w160/${codigo}.png`;
+const f = (codigo) => `https://flagcdn.com/w1280/${codigo.toLowerCase()}.png`;
+
 
 // Base de Datos
 const baseDatosMundo = {
@@ -337,59 +338,59 @@ const climaPaises = {
     "Samoa": 165, "Tonga": 164, "Tuvalu": 148, "Vanuatu": 163
 };
 
-// ÍNDICE DE CORRUPCIÓN (0.0 = Transparente | 100.0 = Máxima Corrupción)
+// ÍNDICE DE CORRUPCIÓN (0.00 = Transparente | 100.00 = Máxima Corrupción)
 const corrupcionPaises = {
     // África (54)
-    "Angola": 67.0, "Argelia": 67.0, "Benín": 57.0, "Botsuana": 41.0, "Burkina Faso": 62.0,
-    "Burundi": 80.0, "Cabo Verde": 40.0, "Camerún": 73.0, "Chad": 80.0, "Comoras": 80.0,
-    "Costa de Marfil": 60.0, "Egipto": 65.0, "Eritrea": 78.0, "Esuatini": 70.0, "Etiopía": 63.0,
-    "Gabón": 72.0, "Gambia": 65.0, "Ghana": 57.0, "Guinea": 74.0, "Guinea Ecuatorial": 83.0,
-    "Guinea Bisáu": 79.0, "Kenia": 69.0, "Lesoto": 61.0, "Liberia": 75.0, "Libia": 82.0,
-    "Madagascar": 75.0, "Malaui": 66.0, "Malí": 72.0, "Marruecos": 62.0, "Mauricio": 49.0,
-    "Mauritania": 70.0, "Mozambique": 75.0, "Namibia": 51.0, "Níger": 68.0, "Nigeria": 75.0,
-    "República Centroafricana": 76.0, "República Democrática del Congo": 80.0, "República del Congo": 78.0,
-    "Ruanda": 47.0, "Santo Tomé y Príncipe": 55.0, "Senegal": 57.0, "Seychelles": 29.0, "Sierra Leona": 65.0,
-    "Somalia": 89.0, "Sudáfrica": 59.0, "Sudán": 80.0, "Sudán del Sur": 87.0, "Tanzania": 60.0,
-    "Togo": 69.0, "Túnez": 60.0, "Uganda": 74.0, "Yibuti": 70.0, "Zambia": 63.0, "Zimbabue": 76.0,
+    "Angola": 67.15, "Argelia": 67.82, "Benín": 57.45, "Botsuana": 41.22, "Burkina Faso": 62.31,
+    "Burundi": 80.12, "Cabo Verde": 40.56, "Camerún": 73.08, "Chad": 80.44, "Comoras": 80.91,
+    "Costa de Marfil": 60.27, "Egipto": 65.33, "Eritrea": 78.65, "Esuatini": 70.19, "Etiopía": 63.84,
+    "Gabón": 72.15, "Gambia": 65.71, "Ghana": 57.89, "Guinea": 74.32, "Guinea Ecuatorial": 83.11,
+    "Guinea Bisáu": 79.47, "Kenia": 69.25, "Lesoto": 61.05, "Liberia": 75.38, "Libia": 82.76,
+    "Madagascar": 75.92, "Malaui": 66.41, "Malí": 72.88, "Marruecos": 62.93, "Mauricio": 49.64,
+    "Mauritania": 70.83, "Mozambique": 75.14, "Namibia": 51.29, "Níger": 68.52, "Nigeria": 75.66,
+    "República Centroafricana": 76.21, "República Democrática del Congo": 80.73, "República del Congo": 78.18,
+    "Ruanda": 47.36, "Santo Tomé y Príncipe": 55.48, "Senegal": 57.11, "Seychelles": 29.85, "Sierra Leona": 65.09,
+    "Somalia": 89.42, "Sudáfrica": 59.77, "Sudán": 80.25, "Sudán del Sur": 87.59, "Tanzania": 60.81,
+    "Togo": 69.94, "Túnez": 60.16, "Uganda": 74.87, "Yibuti": 70.45, "Zambia": 63.24, "Zimbabue": 76.95,
 
     // América (35)
-    "Antigua y Barbuda": 52.0, "Argentina": 63.0, "Bahamas": 36.0, "Barbados": 31.0, "Belice": 57.0,
-    "Bolivia": 71.0, "Brasil": 64.0, "Canadá": 24.0, "Chile": 34.0, "Colombia": 60.0,
-    "Costa Rica": 45.0, "Cuba": 58.0, "Dominica": 47.0, "Ecuador": 66.0, "El Salvador": 69.0,
-    "Estados Unidos": 31.0, "Granada": 48.0, "Guatemala": 77.0, "Guyana": 60.0, "Haití": 83.0,
-    "Honduras": 77.0, "Jamaica": 56.0, "México": 69.0, "Nicaragua": 83.0, "Panamá": 65.0,
-    "Paraguay": 72.0, "Perú": 67.0, "República Dominicana": 65.0, "San Cristóbal y Nieves": 55.0,
-    "San Vicente y las Granadinas": 40.0, "Santa Lucía": 45.0, "Surinam": 62.0, "Trinidad y Tobago": 58.0,
-    "Uruguay": 27.0, "Venezuela": 87.0,
+    "Antigua y Barbuda": 52.18, "Argentina": 63.42, "Bahamas": 36.75, "Barbados": 31.29, "Belice": 57.63,
+    "Bolivia": 71.34, "Brasil": 64.88, "Canadá": 24.15, "Chile": 34.67, "Colombia": 60.52,
+    "Costa Rica": 45.91, "Cuba": 58.24, "Dominica": 47.88, "Ecuador": 66.19, "El Salvador": 69.45,
+    "Estados Unidos": 31.84, "Granada": 48.37, "Guatemala": 77.21, "Guyana": 60.95, "Haití": 83.56,
+    "Honduras": 77.89, "Jamaica": 56.41, "México": 69.76, "Nicaragua": 83.92, "Panamá": 65.14,
+    "Paraguay": 72.53, "Perú": 67.39, "República Dominicana": 65.82, "San Cristóbal y Nieves": 55.12,
+    "San Vicente y las Granadinas": 40.83, "Santa Lucía": 45.26, "Surinam": 62.77, "Trinidad y Tobago": 58.65,
+    "Uruguay": 27.43, "Venezuela": 87.16,
 
     // Asia (47)
-    "Afganistán": 80.0, "Arabia Saudita": 48.0, "Armenia": 53.0, "Azerbaiyán": 77.0, "Bangladés": 76.0,
-    "Baréin": 58.0, "Myanmar": 80.0, "Brunéi": 40.0, "Bután": 32.0, "Camboya": 78.0, "Catar": 42.0,
-    "China": 55.0, "Corea del Norte": 83.0, "Corea del Sur": 37.0, "Emiratos Árabes": 32.0,
-    "Filipinas": 66.0, "Georgia": 47.0, "India": 61.0, "Indonesia": 66.0, "Irak": 77.0,
-    "Irán": 76.0, "Israel": 37.0, "Japón": 27.0, "Jordania": 54.0, "Kazajistán": 61.0,
-    "Kirguistán": 74.0, "Kuwait": 54.0, "Laos": 72.0, "Líbano": 76.0, "Malasia": 50.0,
-    "Maldivas": 61.0, "Mongolia": 67.0, "Nepal": 65.0, "Omán": 57.0, "Pakistán": 72.0,
-    "Palestina": 65.0, "Singapur": 17.0, "Siria": 87.0, "Sri Lanka": 66.0, "Tailandia": 65.0,
-    "Taiwán": 33.0, "Tayikistán": 80.0, "Timor Oriental": 57.0, "Turkmenistán": 82.0, "Uzbekistán": 67.0,
-    "Vietnam": 59.0, "Yemen": 84.0,
+    "Afganistán": 80.68, "Arabia Saudita": 48.92, "Armenia": 53.47, "Azerbaiyán": 77.54, "Bangladés": 76.81,
+    "Baréin": 58.94, "Myanmar": 80.33, "Brunéi": 40.17, "Bután": 32.58, "Camboya": 78.41, "Catar": 42.66,
+    "China": 55.84, "Corea del Norte": 83.74, "Corea del Sur": 37.19, "Emiratos Árabes": 32.14,
+    "Filipinas": 66.83, "Georgia": 47.12, "India": 61.56, "Indonesia": 66.52, "Irak": 77.96,
+    "Irán": 76.35, "Israel": 37.81, "Japón": 27.89, "Jordania": 54.23, "Kazajistán": 61.94,
+    "Kirguistán": 74.63, "Kuwait": 54.78, "Laos": 72.39, "Líbano": 76.57, "Malasia": 50.46,
+    "Maldivas": 61.27, "Mongolia": 67.55, "Nepal": 65.68, "Omán": 57.82, "Pakistán": 72.91,
+    "Palestina": 65.49, "Singapur": 17.34, "Siria": 87.88, "Sri Lanka": 66.29, "Tailandia": 65.95,
+    "Taiwán": 33.45, "Tayikistán": 80.85, "Timor Oriental": 57.29, "Turkmenistán": 82.41, "Uzbekistán": 67.98,
+    "Vietnam": 59.23, "Yemen": 84.15,
 
     // Europa (48)
-    "Albania": 63.0, "Alemania": 22.0, "Andorra": 30.0, "Austria": 29.0, "Bélgica": 27.0,
-    "Bielorrusia": 63.0, "Bosnia y Herzegovina": 65.0, "Bulgaria": 55.0, "Chipre": 47.0, "Croacia": 50.0,
-    "Dinamarca": 10.0, "Eslovaquia": 46.0, "Eslovenia": 44.0, "España": 40.0, "Estonia": 24.0,
-    "Finlandia": 13.0, "Francia": 29.0, "Grecia": 51.0, "Hungría": 58.0, "Irlanda": 23.0,
-    "Islandia": 28.0, "Italia": 44.0, "Kosovo": 59.0, "Letonia": 40.0, "Liechtenstein": 20.0,
-    "Lituania": 39.0, "Luxemburgo": 22.0, "Macedonia del Norte": 58.0, "Malta": 49.0, "Moldavia": 58.0,
-    "Mónaco": 25.0, "Montenegro": 54.0, "Noruega": 16.0, "País Vasco": 24.0, "Países Bajos": 18.0,
-    "Polonia": 46.0, "Portugal": 39.0, "Reino Unido": 29.0, "República Checa": 43.0, "Rumania": 54.0,
-    "Rusia": 74.0, "San Marino": 30.0, "Serbia": 64.0, "Suecia": 18.0, "Suiza": 18.0,
-    "Turquía": 66.0, "Ucrania": 64.0, "Vaticano": 30.0,
+    "Albania": 63.78, "Alemania": 22.45, "Andorra": 30.14, "Austria": 29.56, "Bélgica": 27.12,
+    "Bielorrusia": 63.15, "Bosnia y Herzegovina": 65.74, "Bulgaria": 55.36, "Chipre": 47.61, "Croacia": 50.88,
+    "Dinamarca": 10.23, "Eslovaquia": 46.52, "Eslovenia": 44.18, "España": 40.72, "Estonia": 24.87,
+    "Finlandia": 13.45, "Francia": 29.11, "Grecia": 51.64, "Hungría": 58.17, "Irlanda": 23.95,
+    "Islandia": 28.34, "Italia": 44.83, "Kosovo": 59.41, "Letonia": 40.38, "Liechtenstein": 20.67,
+    "Lituania": 39.25, "Luxemburgo": 22.81, "Macedonia del Norte": 58.73, "Malta": 49.16, "Moldavia": 58.42,
+    "Mónaco": 25.68, "Montenegro": 54.91, "Noruega": 16.59, "País Vasco": 24.52, "Países Bajos": 18.73,
+    "Polonia": 46.89, "Portugal": 39.86, "Reino Unido": 29.82, "República Checa": 43.27, "Rumania": 54.65,
+    "Rusia": 74.19, "San Marino": 30.88, "Serbia": 64.35, "Suecia": 18.24, "Suiza": 18.91,
+    "Turquía": 66.71, "Ucrania": 64.62, "Vaticano": 30.55,
 
     // Oceanía (14)
-    "Australia": 25.0, "Fiyi": 48.0, "Islas Marshall": 55.0, "Islas Salomón": 57.0, "Kiribati": 55.0,
-    "Micronesia": 55.0, "Nauru": 55.0, "Nueva Zelanda": 15.0, "Palaos": 55.0, "Papúa Nueva Guinea": 71.0,
-    "Samoa": 56.0, "Tonga": 57.0, "Tuvalu": 55.0, "Vanuatu": 52.0
+    "Australia": 25.14, "Fiyi": 48.62, "Islas Marshall": 55.73, "Islas Salomón": 57.94, "Kiribati": 55.91,
+    "Micronesia": 55.28, "Nauru": 55.45, "Nueva Zelanda": 15.67, "Palaos": 55.86, "Papúa Nueva Guinea": 71.85,
+    "Samoa": 56.73, "Tonga": 57.16, "Tuvalu": 55.19, "Vanuatu": 52.64
 };
 
 // ÍNDICE DE POTENCIA DEPORTIVA (1 - 198 puntos / ranking exacto)
@@ -1349,6 +1350,7 @@ function obtenerIdiomaUI() {
 
 // FUNCIÓN PARA CAMBIAR A LA VISTA DE JUEGOS
 function mostrarJuego(tipoJuego) {
+    document.getElementById("pantalla-fin-juego").style.display = "none";
     vistaAtlas.style.display = 'none';
     vistaJuegos.style.display = 'block';
     ventanaFlotante.style.display = 'none'; 
@@ -2111,9 +2113,12 @@ function mostrarAtlas() {
 // FUNCIÓN PARA MOSTRAR SOLO LAS ESTADÍSTICAS
 function mostrarEstadisticas() {
     // 1. Limpieza de pantallas
+    document.getElementById("pantalla-fin-juego").style.display = "none";
     document.getElementById('vista-atlas').style.display = 'none';
     document.getElementById('vista-juegos').style.display = 'none';
+    document.getElementById('juego-comparador').style.display = 'none';
     if (typeof ventanaFlotante !== 'undefined') ventanaFlotante.style.display = 'none';
+    
     
     document.getElementById('vista-estadisticas').style.display = 'block';
 
@@ -2153,13 +2158,13 @@ function cambiarOrden() {
     const btn = document.getElementById('btn-orden');
     if (ordenActual === 'mayor') {
         ordenActual = 'menor';
-        btn.innerText = '🔽';
+        btn.innerText = '🔼';
     } else if (ordenActual === 'menor') {
         ordenActual = 'alfabetico';
         btn.innerText = '🔤';
     } else {
         ordenActual = 'mayor';
-        btn.innerText = '🔼';
+        btn.innerText = '🔽';
     }
     actualizarCuadriculaEstadisticas();
 }
@@ -2239,6 +2244,219 @@ tarjeta.innerHTML = `
 `;
 contenedor.appendChild(tarjeta);
         });
+}
+
+// --- VARIABLES GLOBALES DEL JUEGO ---
+let statActualJuego = "";
+let paisAntiguo = "";
+let paisNuevo = "";
+let puntuacionActual = 0;
+let paisesDisponiblesParaJugar = [];
+let esperandoRespuesta = false;
+
+// 1. INICIALIZAR EL MENÚ (Llama a esta función cuando abras la pestaña de "Juegos")
+function cargarMenuComparador() {
+    const selector = document.getElementById("selector-stat-juego");
+    selector.innerHTML = "";
+    
+    // Obtener los nombres de las estadísticas (asumiendo que tienes tu configEstadisticas)
+    // Las ordenamos alfabéticamente
+    const statsNombres = Object.keys(configEstadisticas).sort();
+    
+    statsNombres.forEach(statKey => {
+        const option = document.createElement("option");
+        option.value = statKey;
+        option.textContent = configEstadisticas[statKey].titulo;
+        selector.appendChild(option);
+    });
+}
+
+// 2. BOTÓN "EMPEZAR BATALLA"
+document.getElementById("btn-empezar-comparador").addEventListener("click", () => {
+    statActualJuego = document.getElementById("selector-stat-juego").value;
+    puntuacionActual = 0;
+    document.getElementById("puntos-comparador").textContent = puntuacionActual;
+    document.getElementById("titulo-stat-actual").textContent = configEstadisticas[statActualJuego].titulo;
+    
+    // Creamos una copia del array de todos los países para ir eliminándolos y que no se repitan
+    paisesDisponiblesParaJugar = Object.keys(configEstadisticas[statActualJuego].datos);
+    
+    // Ocultar menú, mostrar arena
+    document.getElementById("menu-comparador").style.display = "none";
+    document.getElementById("arena-comparador").style.display = "block";
+    
+    // Sacamos dos países aleatorios para empezar
+    paisAntiguo = sacarPaisAleatorio();
+    paisNuevo = sacarPaisAleatorio();
+    
+    actualizarPantallaDuelo();
+});
+
+// Función auxiliar para coger un país y quitarlo de la lista disponible
+function sacarPaisAleatorio() {
+    if (paisesDisponiblesParaJugar.length === 0) return null;
+    const indiceAzar = Math.floor(Math.random() * paisesDisponiblesParaJugar.length);
+    const pais = paisesDisponiblesParaJugar[indiceAzar];
+    paisesDisponiblesParaJugar.splice(indiceAzar, 1); // Lo borramos para que no salga repetido
+    return pais;
+}
+
+function obtenerBanderaParaDuelo(nombreBuscado) {
+    // Recorremos todos los continentes (africa, america, etc.)
+    for (const continenteKey in baseDatosMundo) {
+        const continente = baseDatosMundo[continenteKey];
+        
+        // Buscamos si el país está en este continente
+        const paisEncontrado = continente.paises.find(p => p.nombre.es === nombreBuscado);
+        
+        if (paisEncontrado) {
+            // Si es un país con bandera "especial" (como el País Vasco con su link de Wikipedia)
+            if (paisEncontrado.bandera.includes("wikipedia") || paisEncontrado.bandera.includes("http")) {
+                return paisEncontrado.bandera;
+            }
+            
+            // Para todos los demás, generamos la bandera en ALTA DEFINICIÓN (w1280) usando su 'id'
+            return `https://flagcdn.com/w1280/${paisEncontrado.id}.png`;
+        }
+    }
+    
+    // Si por algún motivo el país no está en la base de datos, no devolvemos nada para que salga el fondo oscuro
+    return ""; 
+}
+
+function actualizarPantallaDuelo() {
+    esperandoRespuesta = true;
+    
+    const datosStat = configEstadisticas[statActualJuego].datos;
+    const unidad = configEstadisticas[statActualJuego].unidad;
+
+    // 1. ACTUALIZAMOS TEXTOS
+    document.getElementById("nombre-pais-a").textContent = paisAntiguo;
+    document.getElementById("dato-pais-a").textContent = `${datosStat[paisAntiguo].toLocaleString()} ${unidad}`;
+    document.getElementById("dato-pais-a").style.opacity = "0";
+
+    document.getElementById("nombre-pais-b").textContent = paisNuevo;
+    document.getElementById("dato-pais-b").textContent = `${datosStat[paisNuevo].toLocaleString()} ${unidad}`;
+    document.getElementById("dato-pais-b").style.opacity = "0";
+
+    // 2. PONEMOS LAS BANDERAS DE FONDO CON NUESTRA NUEVA FUNCIÓN
+    const imgA = document.getElementById("img-pais-a");
+    const imgB = document.getElementById("img-pais-b");
+
+    imgA.src = obtenerBanderaParaDuelo(paisAntiguo);
+    imgB.src = obtenerBanderaParaDuelo(paisNuevo);
+
+    // Seguridad: si una bandera no carga, dejamos un fondo gris oscuro elegante
+    imgA.onerror = () => { imgA.style.backgroundColor = "#2c3e50"; imgA.src = ""; };
+    imgB.onerror = () => { imgB.style.backgroundColor = "#2c3e50"; imgB.src = ""; };
+}
+
+// 3. LÓGICA DEL JUEGO AL PULSAR
+function verificarRespuestaBatalla(eleccion) {
+    if (!esperandoRespuesta) return;
+    esperandoRespuesta = false;
+
+    const datosStat = configEstadisticas[statActualJuego].datos;
+    const valorA = datosStat[paisAntiguo];
+    const valorB = datosStat[paisNuevo];
+    
+    let esCorrecto = false;
+    if (eleccion === 'A') {
+        esCorrecto = valorA >= valorB;
+    } else {
+        esCorrecto = valorB >= valorA;
+    }
+
+    // Mostrar los datos durante 2 segundos
+    document.getElementById("dato-pais-a").style.opacity = "1";
+    document.getElementById("dato-pais-b").style.opacity = "1";
+
+    setTimeout(() => {
+        if (esCorrecto) {
+            // Acierto!
+            puntuacionActual++;
+            document.getElementById("puntos-comparador").textContent = puntuacionActual;
+            
+            // Relevo de países
+            paisAntiguo = paisNuevo; 
+            paisNuevo = sacarPaisAleatorio();
+            
+            if (paisNuevo) {
+                actualizarPantallaDuelo();
+            } else {
+                // Has ganado! (Te quedaste sin países)
+                alert("¡¡Felicidades, has completado todos los países!!");
+                mostrarFinDeJuego();
+            }
+        } else {
+            // FALLO - Mostramos la nueva pantalla en lugar de alert()
+            mostrarFinDeJuego();
+        }
+    }, 2000); // 2 segundos
+}
+
+// 4. NUEVAS FUNCIONES PARA CONTROLAR LA PANTALLA DE FIN
+function mostrarFinDeJuego() {
+    document.getElementById("arena-comparador").style.display = "none";
+    document.getElementById("pantalla-fin-juego").style.display = "block";
+    document.getElementById("puntos-finales-comparador").textContent = puntuacionActual;
+}
+
+// Configurar los botones de la pantalla final
+document.addEventListener("DOMContentLoaded", () => {
+    // Botón: Volver al menú
+    document.getElementById("btn-volver-menu").addEventListener("click", () => {
+        document.getElementById("pantalla-fin-juego").style.display = "none";
+        document.getElementById("menu-comparador").style.display = "block";
+    });
+
+    // Botón: Reintentar
+    document.getElementById("btn-reintentar").addEventListener("click", () => {
+        document.getElementById("pantalla-fin-juego").style.display = "none";
+        
+        // Reiniciamos puntuación y lista de países
+        puntuacionActual = 0;
+        document.getElementById("puntos-comparador").textContent = puntuacionActual;
+        paisesDisponiblesParaJugar = Object.keys(configEstadisticas[statActualJuego].datos);
+        
+        paisAntiguo = sacarPaisAleatorio();
+        paisNuevo = sacarPaisAleatorio();
+        
+        document.getElementById("arena-comparador").style.display = "block";
+        actualizarPantallaDuelo();
+    });
+});
+
+function abrirJuegoComparador() {
+    // 1. Ocultar el mapa principal
+    const mapa = document.getElementById("vista-atlas");
+    if(mapa) mapa.style.display = "none";
+
+    // 2. Ocultar la sección de estadísticas generales
+    const stats = document.getElementById("vista-estadisticas"); 
+    if(stats) stats.style.display = "none";
+
+    // 3. Ocultar la sección de los otros juegos
+    const juegos = document.getElementById("vista-juegos");
+    if(juegos) juegos.style.display = "none";
+
+    // 4. Mostrar nuestro nuevo juego
+    const juegoComparador = document.getElementById("juego-comparador");
+    if(juegoComparador) {
+        juegoComparador.style.display = "block";
+        
+        // Nos aseguramos de mostrar el menú y ocultar la arena al entrar
+        document.getElementById("menu-comparador").style.display = "block";
+        document.getElementById("arena-comparador").style.display = "none";
+        
+        // Llenar el desplegable con las categorías
+        cargarMenuComparador(); 
+    }
+}
+
+function volverAlMenuComparador() {
+    document.getElementById("arena-comparador").style.display = "none";
+    document.getElementById("menu-comparador").style.display = "block";
 }
 
 // --- VIGILANTES DE PANTALLA ---

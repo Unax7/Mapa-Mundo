@@ -28,6 +28,7 @@
                     <a href="#" onclick="mostrarJuego('adivinar')" id="nav-btn-adivinar">❓ Trivial</a>
                     <a href="#" onclick="mostrarJuego('capitales')" id="nav-btn-capitales">🏛️ De 3 en 3</a>
                     <a href="#" onclick="mostrarJuego('memory')" id="nav-btn-memory">🧠 Memory</a>
+                    <a href="#" onclick="abrirJuegoComparador()"><span class="icono">⚔️</span> Mayor o Menor</a>
                 </div>
             </li>
 
@@ -81,7 +82,7 @@
 
 <div id="contenedor-paises" class="cuadricula-dinamica"></div>
 
-<div id="contenedor-paises" class="cuadricula-paises"></div>
+<div id="contenedor-paises-2" class="cuadricula-paises"></div>
     
     <div style="width: 50px;"></div>
 </div>
@@ -94,6 +95,60 @@
         <h2 id="vf-nombre">Nombre</h2>
         <p id="vf-capital">Capital</p>
     </div>
+
+    <div id="juego-comparador" class="seccion-juego" style="display: none;">
+    
+    <div id="menu-comparador" class="menu-pre-juego">
+        <h2>Batalla de Estadísticas ⚔️</h2>
+        <p>Elige una categoría y adivina qué país está más arriba en el ranking.</p>
+        
+        <select id="selector-stat-juego">
+            </select>
+        <button id="btn-empezar-comparador" class="btn-empezar-batalla">Empezar</button>
+    </div>
+
+    <div id="arena-comparador" style="display: none;">
+        <div class="marcador-juego">
+            <span>Puntuación: <strong id="puntos-comparador">0</strong></span>
+            <h3 id="titulo-stat-actual">Área (km²)</h3>
+        </div>
+
+        <div class="zona-duelo">
+            <div id="tarjeta-pais-a" class="tarjeta-duelo" onclick="verificarRespuestaBatalla('A')">
+                <img id="img-pais-a" src="" alt="Bandera A">
+                <div class="filtro-oscuro"></div>
+                <h2 id="nombre-pais-a">País A</h2>
+                <div class="dato-oculto" id="dato-pais-a">???</div>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <div id="tarjeta-pais-b" class="tarjeta-duelo" onclick="verificarRespuestaBatalla('B')">
+                <img id="img-pais-b" src="" alt="Bandera B">
+                <div class="filtro-oscuro"></div>
+                <h2 id="nombre-pais-b">País B</h2>
+                <div class="dato-oculto" id="dato-pais-b">???</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pantalla-fin-juego" style="display: none; text-align: center; margin-top: 50px;">
+    <h2 style="font-size: 3em; color: #2c3e50;">¡Fallaste!</h2>
+    <p style="font-size: 1.5em; margin-bottom: 30px;">
+        Puntuación final: <strong id="puntos-finales-comparador" style="color: #e74c3c; font-size: 1.5em;">0</strong>
+    </p>
+    
+    <div>
+    <button id="btn-reintentar" class="btn-fin-juego btn-reintentar-style">
+        Reintentar
+    </button>
+    <button id="btn-volver-menu" class="btn-fin-juego btn-volver-style">
+        Volver al Menú
+    </button>
+</div>
+</div>
+
+</div>
 
     <script src="MapaMundo.js"></script>
 </body>

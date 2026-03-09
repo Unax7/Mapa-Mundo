@@ -402,3 +402,188 @@ nav { background-color: #2c3e50; position: sticky; top: 0; z-index: 500; display
     text-align: center;
     margin: 0 !important; 
 }
+
+/* --- ESTILOS DEL JUEGO COMPARADOR --- */
+
+.menu-pre-juego {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#selector-stat-juego {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+}
+
+.marcador-juego {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.zona-duelo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 60vh; /* Ocupa el 60% del alto de la pantalla */
+    min-height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.tarjeta-duelo {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.tarjeta-duelo:hover {
+    transform: scale(1.02);
+    z-index: 10; /* Para que quede por encima al hacer hover */
+}
+
+.tarjeta-duelo:hover .filtro-oscuro {
+    background: rgba(0, 0, 0, 0.3); /* Se aclara un poco al pasar el ratón */
+}
+
+/* El círculo del VS en el centro */
+.vs-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: #2c3e50;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 20;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* --- Ajustes CSS para el Juego Comparador --- */
+
+/* Asegura que la bandera cubra todo el fondo de la tarjeta de duelo */
+.tarjeta-duelo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Clave: la imagen se estira sin deformarse */
+    z-index: 1;
+}
+
+/* Oscurece la bandera para que el texto se lea bien */
+.filtro-oscuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro negro al 50% */
+    z-index: 2;
+}
+
+/* Estilos para el texto superpuesto */
+.tarjeta-duelo h2 {
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 3rem; /* Texto muy grande para el nombre del país */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    text-align: center;
+    margin: 0;
+}
+
+.dato-oculto {
+    position: relative;
+    z-index: 3;
+    color: #f1c40f; /* Color dorado para el número */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-top: 20px;
+}
+
+/* --- BOTONES PANTALLA FIN DE JUEGO --- */
+.btn-fin-juego {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+    color: white;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botón Reintentar (Verde) */
+.btn-reintentar-style {
+    background-color: #1abc9c; 
+}
+
+.btn-reintentar-style:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Botón Volver al Menú (Azul Oscuro) */
+.btn-volver-style {
+    background-color: #2c3e50; 
+}
+
+.btn-volver-style:hover {
+    background-color: #1a252f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* --- BOTÓN EMPEZAR BATALLA --- */
+.btn-empezar-batalla {
+    background-color: #1abc9c; /* Verde esmeralda característico de tu web */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+    margin-top: 20px; 
+}
+
+.btn-empezar-batalla:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
