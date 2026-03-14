@@ -119,7 +119,7 @@ const baseDatosMundo = {
             { id: "cn", nombre: { es: "China", en: "China", nat: "中国" }, capital: { es: "Pekín", en: "Beijing", nat: "北京" }, bandera: f('cn') },
             { id: "kp", nombre: { es: "Corea del Norte", en: "North Korea", nat: "조선" }, capital: { es: "Pionyang", en: "Pyongyang", nat: "평양" }, bandera: f('kp') },
             { id: "kr", nombre: { es: "Corea del Sur", en: "South Korea", nat: "한국" }, capital: { es: "Seúl", en: "Seoul", nat: "서울" }, bandera: f('kr') },
-            { id: "ae", nombre: { es: "Emiratos Árabes", en: "United Arab Emirates", nat: "الإمارات" }, capital: { es: "Abu Dabi", en: "Abu Dhabi", nat: "أبو ظبي" }, bandera: f('ae') },
+            { id: "ae", nombre: { es: "Emiratos Árabes Unidos", en: "United Arab Emirates", nat: "الإمارات" }, capital: { es: "Abu Dabi", en: "Abu Dhabi", nat: "أبو ظبي" }, bandera: f('ae') },
             { id: "ph", nombre: { es: "Filipinas", en: "Philippines", nat: "Pilipinas" }, capital: { es: "Manila", en: "Manila", nat: "Maynila" }, bandera: f('ph') },
             { id: "ge", nombre: { es: "Georgia", en: "Georgia", nat: "საქართველო" }, capital: { es: "Tiflis", en: "Tbilisi", nat: "თბილისი" }, bandera: f('ge') },
             { id: "in", nombre: { es: "India", en: "India", nat: "भारत" }, capital: { es: "Nueva Delhi", en: "New Delhi", nat: "नई दिल्ली" }, bandera: f('in') },
@@ -256,7 +256,7 @@ const areasPaises = {
     // Asia (47)
     "Afganistán": 652864, "Arabia Saudita": 2149690, "Armenia": 29743, "Azerbaiyán": 86600, "Bangladés": 147570,
     "Baréin": 760, "Myanmar": 676578, "Brunéi": 5765, "Bután": 38394, "Camboya": 181035, "Catar": 11586,
-    "China": 9596960, "Corea del Norte": 120540, "Corea del Sur": 100210, "Emiratos Árabes": 83600,
+    "China": 9596960, "Corea del Norte": 120540, "Corea del Sur": 100210, "Emiratos Árabes Unidos": 83600,
     "Filipinas": 300000, "Georgia": 69700, "India": 3287263, "Indonesia": 1904569, "Irak": 438317,
     "Irán": 1648195, "Israel": 22072, "Japón": 377975, "Jordania": 89342, "Kazajistán": 2724900,
     "Kirguistán": 199951, "Kuwait": 17818, "Laos": 236800, "Líbano": 10452, "Malasia": 330803,
@@ -311,7 +311,7 @@ const climaPaises = {
     // Asia (47)
     "Afganistán": 43, "Arabia Saudita": 38, "Armenia": 104, "Azerbaiyán": 108, "Bangladés": 48,
     "Baréin": 36, "Myanmar": 56, "Brunéi": 53, "Bután": 51, "Camboya": 58, "Catar": 35,
-    "China": 105, "Corea del Norte": 32, "Corea del Sur": 106, "Emiratos Árabes": 37,
+    "China": 105, "Corea del Norte": 32, "Corea del Sur": 106, "Emiratos Árabes Unidos": 37,
     "Filipinas": 63, "Georgia": 109, "India": 47, "Indonesia": 62, "Irak": 41,
     "Irán": 50, "Israel": 171, "Japón": 135, "Jordania": 134, "Kazajistán": 39,
     "Kirguistán": 45, "Kuwait": 33, "Laos": 57, "Líbano": 184, "Malasia": 59,
@@ -366,7 +366,7 @@ const corrupcionPaises = {
     // Asia (47)
     "Afganistán": 80.68, "Arabia Saudita": 48.92, "Armenia": 53.47, "Azerbaiyán": 77.54, "Bangladés": 76.81,
     "Baréin": 58.94, "Myanmar": 80.33, "Brunéi": 40.17, "Bután": 32.58, "Camboya": 78.41, "Catar": 42.66,
-    "China": 55.84, "Corea del Norte": 83.74, "Corea del Sur": 37.19, "Emiratos Árabes": 32.14,
+    "China": 55.84, "Corea del Norte": 83.74, "Corea del Sur": 37.19, "Emiratos Árabes Unidos": 32.14,
     "Filipinas": 66.83, "Georgia": 47.12, "India": 61.56, "Indonesia": 66.52, "Irak": 77.96,
     "Irán": 76.35, "Israel": 37.81, "Japón": 27.89, "Jordania": 54.23, "Kazajistán": 61.94,
     "Kirguistán": 74.63, "Kuwait": 54.78, "Laos": 72.39, "Líbano": 76.57, "Malasia": 50.46,
@@ -421,7 +421,7 @@ const deportesPaises = {
     // Asia (47)
     "Afganistán": 59, "Arabia Saudita": 105, "Armenia": 123, "Azerbaiyán": 124, "Bangladés": 60,
     "Baréin": 102, "Myanmar": 62, "Brunéi": 18, "Bután": 19, "Camboya": 64, "Catar": 104,
-    "China": 197, "Corea del Norte": 142, "Corea del Sur": 189, "Emiratos Árabes": 103,
+    "China": 197, "Corea del Norte": 142, "Corea del Sur": 189, "Emiratos Árabes Unidos": 103,
     "Filipinas": 107, "Georgia": 151, "India": 150, "Indonesia": 149, "Irak": 97,
     "Irán": 156, "Israel": 115, "Japón": 192, "Jordania": 99, "Kazajistán": 158,
     "Kirguistán": 83, "Kuwait": 101, "Laos": 63, "Líbano": 98, "Malasia": 108,
@@ -476,7 +476,7 @@ const desarrolloPaises = {
     // Asia (47)
     "Afganistán": 0.478, "Arabia Saudita": 0.875, "Armenia": 0.759, "Azerbaiyán": 0.745, "Bangladés": 0.661,
     "Baréin": 0.875, "Myanmar": 0.585, "Brunéi": 0.829, "Bután": 0.666, "Camboya": 0.593, "Catar": 0.855,
-    "China": 0.768, "Corea del Norte": 0.732, "Corea del Sur": 0.925, "Emiratos Árabes": 0.911,
+    "China": 0.768, "Corea del Norte": 0.732, "Corea del Sur": 0.925, "Emiratos Árabes Unidos": 0.911,
     "Filipinas": 0.699, "Georgia": 0.802, "India": 0.633, "Indonesia": 0.705, "Irak": 0.686,
     "Irán": 0.774, "Israel": 0.919, "Japón": 0.925, "Jordania": 0.720, "Kazajistán": 0.811,
     "Kirguistán": 0.692, "Kuwait": 0.831, "Laos": 0.607, "Líbano": 0.706, "Malasia": 0.803,
@@ -531,7 +531,7 @@ const economiaPaises = {
     // Asia (47)
     "Afganistán": 14000, "Arabia Saudita": 1069000, "Armenia": 24000, "Azerbaiyán": 72000, "Bangladés": 446000,
     "Baréin": 44000, "Myanmar": 63000, "Brunéi": 15000, "Bután": 2900, "Camboya": 30000, "Catar": 235000,
-    "China": 17700000, "Corea del Norte": 18000, "Corea del Sur": 1706000, "Emiratos Árabes": 504000,
+    "China": 17700000, "Corea del Norte": 18000, "Corea del Sur": 1706000, "Emiratos Árabes Unidos": 504000,
     "Filipinas": 436000, "Georgia": 30000, "India": 3732000, "Indonesia": 1417000, "Irak": 254000,
     "Irán": 366000, "Israel": 509000, "Japón": 4232000, "Jordania": 50000, "Kazajistán": 259000,
     "Kirguistán": 12000, "Kuwait": 159000, "Laos": 14000, "Líbano": 21000, "Malasia": 434000,
@@ -586,7 +586,7 @@ const educacionPaises = {
     // Asia (47)
     "Afganistán": 35.3, "Arabia Saudita": 85.3, "Armenia": 88.8, "Azerbaiyán": 87.8, "Bangladés": 69.9,
     "Baréin": 86.5, "Myanmar": 71.1, "Brunéi": 87.2, "Bután": 66.6, "Camboya": 70.5, "Catar": 88.3,
-    "China": 89.8, "Corea del Norte": 85.0, "Corea del Sur": 97.8, "Emiratos Árabes": 89.8,
+    "China": 89.8, "Corea del Norte": 85.0, "Corea del Sur": 97.8, "Emiratos Árabes Unidos": 89.8,
     "Filipinas": 81.3, "Georgia": 87.6, "India": 72.4, "Indonesia": 80.7, "Irak": 75.6,
     "Irán": 81.5, "Israel": 92.8, "Japón": 97.5, "Jordania": 84.2, "Kazajistán": 88.8,
     "Kirguistán": 86.6, "Kuwait": 84.1, "Laos": 70.7, "Líbano": 83.9, "Malasia": 86.6,
@@ -641,7 +641,7 @@ const felicidadPaises = {
     // Asia (47)
     "Afganistán": 1.721, "Arabia Saudita": 6.406, "Armenia": 5.342, "Azerbaiyán": 5.173, "Bangladés": 4.282,
     "Baréin": 6.173, "Myanmar": 4.394, "Brunéi": 5.800, "Bután": 5.300, "Camboya": 4.393, "Catar": 6.374,
-    "China": 5.818, "Corea del Norte": 3.200, "Corea del Sur": 5.951, "Emiratos Árabes": 6.571,
+    "China": 5.818, "Corea del Norte": 3.200, "Corea del Sur": 5.951, "Emiratos Árabes Unidos": 6.571,
     "Filipinas": 5.523, "Georgia": 5.109, "India": 4.036, "Indonesia": 5.399, "Irak": 4.941,
     "Irán": 4.876, "Israel": 7.473, "Japón": 6.129, "Jordania": 4.120, "Kazajistán": 6.144,
     "Kirguistán": 5.825, "Kuwait": 6.106, "Laos": 5.111, "Líbano": 2.392, "Malasia": 6.012,
@@ -696,7 +696,7 @@ const gastronomiaPaises = {
     // Asia (47)
     "Afganistán": 73.2, "Arabia Saudita": 76.5, "Armenia": 79.8, "Azerbaiyán": 78.4, "Bangladés": 77.1,
     "Baréin": 71.5, "Myanmar": 78.9, "Brunéi": 69.5, "Bután": 68.2, "Camboya": 79.5, "Catar": 75.0,
-    "China": 95.8, "Corea del Norte": 68.0, "Corea del Sur": 92.4, "Emiratos Árabes": 80.5,
+    "China": 95.8, "Corea del Norte": 68.0, "Corea del Sur": 92.4, "Emiratos Árabes Unidos": 80.5,
     "Filipinas": 85.2, "Georgia": 87.5, "India": 94.6, "Indonesia": 90.5, "Irak": 78.0,
     "Irán": 86.3, "Israel": 84.2, "Japón": 98.5, "Jordania": 81.5, "Kazajistán": 74.6,
     "Kirguistán": 72.1, "Kuwait": 73.8, "Laos": 77.4, "Líbano": 89.5, "Malasia": 91.2,
@@ -751,7 +751,7 @@ const limpiezaPaises = {
     // Asia (47)
     "Afganistán": 22.6, "Arabia Saudita": 53.2, "Armenia": 56.5, "Azerbaiyán": 52.4, "Bangladés": 29.5,
     "Baréin": 51.0, "Myanmar": 26.4, "Brunéi": 62.1, "Bután": 53.6, "Camboya": 38.1, "Catar": 53.0,
-    "China": 48.4, "Corea del Norte": 38.0, "Corea del Sur": 66.5, "Emiratos Árabes": 62.4,
+    "China": 48.4, "Corea del Norte": 38.0, "Corea del Sur": 66.5, "Emiratos Árabes Unidos": 62.4,
     "Filipinas": 43.1, "Georgia": 55.6, "India": 28.9, "Indonesia": 41.5, "Irak": 37.4,
     "Irán": 44.5, "Israel": 65.8, "Japón": 75.3, "Jordania": 53.6, "Kazajistán": 52.8,
     "Kirguistán": 43.2, "Kuwait": 54.2, "Laos": 36.8, "Líbano": 43.3, "Malasia": 58.1,
@@ -806,7 +806,7 @@ const longevidadPaises = {
     // Asia (47)
     "Afganistán": 62.0, "Arabia Saudita": 76.9, "Armenia": 72.0, "Azerbaiyán": 69.4, "Bangladés": 72.4,
     "Baréin": 78.8, "Myanmar": 65.7, "Brunéi": 74.6, "Bután": 71.8, "Camboya": 69.6, "Catar": 79.3,
-    "China": 78.2, "Corea del Norte": 73.3, "Corea del Sur": 83.7, "Emiratos Árabes": 79.2,
+    "China": 78.2, "Corea del Norte": 73.3, "Corea del Sur": 83.7, "Emiratos Árabes Unidos": 79.2,
     "Filipinas": 69.3, "Georgia": 71.7, "India": 67.2, "Indonesia": 67.6, "Irak": 70.4,
     "Irán": 73.9, "Israel": 82.6, "Japón": 84.8, "Jordania": 74.3, "Kazajistán": 69.4,
     "Kirguistán": 70.0, "Kuwait": 78.7, "Laos": 68.1, "Líbano": 75.0, "Malasia": 74.9,
@@ -861,7 +861,7 @@ const naturalezaPaises = {
     // Asia (47)
     "Afganistán": 42.5, "Arabia Saudita": 24.8, "Armenia": 58.4, "Azerbaiyán": 61.2, "Bangladés": 65.3,
     "Baréin": 15.2, "Myanmar": 86.5, "Brunéi": 81.4, "Bután": 85.7, "Camboya": 78.2, "Catar": 14.5,
-    "China": 95.2, "Corea del Norte": 62.8, "Corea del Sur": 68.4, "Emiratos Árabes": 22.1,
+    "China": 95.2, "Corea del Norte": 62.8, "Corea del Sur": 68.4, "Emiratos Árabes Unidos": 22.1,
     "Filipinas": 91.5, "Georgia": 72.6, "India": 93.8, "Indonesia": 98.7, "Irak": 31.4,
     "Irán": 64.5, "Israel": 51.2, "Japón": 76.8, "Jordania": 34.6, "Kazajistán": 63.2,
     "Kirguistán": 67.5, "Kuwait": 12.8, "Laos": 82.3, "Líbano": 48.5, "Malasia": 94.6,
@@ -916,7 +916,7 @@ const poblacionPaises = {
     // Asia (47)
     "Afganistán": 42200000, "Arabia Saudita": 36900000, "Armenia": 2770000, "Azerbaiyán": 10400000, "Bangladés": 172900000,
     "Baréin": 1480000, "Myanmar": 54500000, "Brunéi": 452000, "Bután": 787000, "Camboya": 16900000, "Catar": 2710000,
-    "China": 1425600000, "Corea del Norte": 26100000, "Corea del Sur": 51700000, "Emiratos Árabes": 9510000,
+    "China": 1425600000, "Corea del Norte": 26100000, "Corea del Sur": 51700000, "Emiratos Árabes Unidos": 9510000,
     "Filipinas": 117300000, "Georgia": 3720000, "India": 1428600000, "Indonesia": 277500000, "Irak": 45500000,
     "Irán": 89100000, "Israel": 9790000, "Japón": 123200000, "Jordania": 11300000, "Kazajistán": 19600000,
     "Kirguistán": 6730000, "Kuwait": 4310000, "Laos": 7630000, "Líbano": 5350000, "Malasia": 34300000,
@@ -971,7 +971,7 @@ const sanidadPaises = {
     // Asia (47)
     "Afganistán": 29.4, "Arabia Saudita": 74.5, "Armenia": 62.8, "Azerbaiyán": 60.5, "Bangladés": 52.4,
     "Baréin": 73.6, "Myanmar": 42.1, "Brunéi": 72.5, "Bután": 58.4, "Camboya": 50.6, "Catar": 78.2,
-    "China": 75.4, "Corea del Norte": 45.2, "Corea del Sur": 92.5, "Emiratos Árabes": 79.6,
+    "China": 75.4, "Corea del Norte": 45.2, "Corea del Sur": 92.5, "Emiratos Árabes Unidos": 79.6,
     "Filipinas": 62.5, "Georgia": 64.8, "India": 60.2, "Indonesia": 64.5, "Irak": 48.6,
     "Irán": 66.8, "Israel": 84.5, "Japón": 93.8, "Jordania": 70.4, "Kazajistán": 63.2,
     "Kirguistán": 55.4, "Kuwait": 71.8, "Laos": 48.5, "Líbano": 65.2, "Malasia": 82.4,
@@ -1026,7 +1026,7 @@ const seguridadPaises = {
     // Asia (47)
     "Afganistán": 12.5, "Arabia Saudita": 75.4, "Armenia": 68.5, "Azerbaiyán": 62.4, "Bangladés": 58.4,
     "Baréin": 72.5, "Myanmar": 22.4, "Brunéi": 82.5, "Bután": 85.4, "Camboya": 65.4, "Catar": 86.5,
-    "China": 78.4, "Corea del Norte": 45.2, "Corea del Sur": 88.5, "Emiratos Árabes": 85.4,
+    "China": 78.4, "Corea del Norte": 45.2, "Corea del Sur": 88.5, "Emiratos Árabes Unidos": 85.4,
     "Filipinas": 55.4, "Georgia": 72.5, "India": 58.4, "Indonesia": 68.5, "Irak": 25.4,
     "Irán": 52.4, "Israel": 45.2, "Japón": 92.5, "Jordania": 70.5, "Kazajistán": 68.4,
     "Kirguistán": 62.5, "Kuwait": 80.5, "Laos": 68.4, "Líbano": 35.2, "Malasia": 82.4,
@@ -1081,7 +1081,7 @@ const turismoPaises = {
     // Asia (47)
     "Afganistán": 15000, "Arabia Saudita": 17500000, "Armenia": 1900000, "Azerbaiyán": 3200000, "Bangladés": 320000,
     "Baréin": 3800000, "Myanmar": 4300000, "Brunéi": 330000, "Bután": 315000, "Camboya": 6600000, "Catar": 2100000,
-    "China": 65700000, "Corea del Norte": 100000, "Corea del Sur": 17500000, "Emiratos Árabes": 22700000,
+    "China": 65700000, "Corea del Norte": 100000, "Corea del Sur": 17500000, "Emiratos Árabes Unidos": 22700000,
     "Filipinas": 8200000, "Georgia": 9300000, "India": 17900000, "Indonesia": 16100000, "Irak": 1500000,
     "Irán": 9000000, "Israel": 4500000, "Japón": 31800000, "Jordania": 5300000, "Kazajistán": 8500000,
     "Kirguistán": 8500000, "Kuwait": 8500000, "Laos": 4700000, "Líbano": 1900000, "Malasia": 26100000,
@@ -1108,14 +1108,346 @@ const turismoPaises = {
     "Samoa": 180000, "Tonga": 54000, "Tuvalu": 3000, "Vanuatu": 120000
 };
 
+// SALARIO MEDIO MENSUAL NETO (En dólares USD con decimales para evitar empates)
+const salarioPaises = {
+    // África (54)
+    "Angola": 250.45, "Argelia": 300.12, "Benín": 100.85, "Botsuana": 400.30, "Burkina Faso": 150.25,
+    "Burundi": 50.14, "Cabo Verde": 250.88, "Camerún": 200.41, "Chad": 100.62, "Comoras": 150.77,
+    "Costa de Marfil": 200.19, "Egipto": 200.93, "Eritrea": 100.34, "Esuatini": 300.67, "Etiopía": 150.55,
+    "Gabón": 350.22, "Gambia": 100.71, "Ghana": 250.15, "Guinea": 100.98, "Guinea Ecuatorial": 300.44,
+    "Guinea Bisáu": 100.11, "Kenia": 300.89, "Lesoto": 150.36, "Liberia": 100.52, "Libia": 300.21,
+    "Madagascar": 100.47, "Malaui": 100.29, "Malí": 150.81, "Marruecos": 350.74, "Mauricio": 450.63,
+    "Mauritania": 150.12, "Mozambique": 150.94, "Namibia": 400.85, "Níger": 100.18, "Nigeria": 200.58,
+    "República Centroafricana": 100.37, "República Democrática del Congo": 100.82, "República del Congo": 200.76,
+    "Ruanda": 150.43, "Santo Tomé y Príncipe": 150.68, "Senegal": 200.33, "Seychelles": 800.15, "Sierra Leona": 100.05,
+    "Somalia": 100.91, "Sudáfrica": 1200.45, "Sudán": 100.24, "Sudán del Sur": 100.65, "Tanzania": 150.09,
+    "Togo": 150.52, "Túnez": 300.56, "Uganda": 150.28, "Yibuti": 200.84, "Zambia": 250.73, "Zimbabue": 250.39,
+
+    // América (35)
+    "Antigua y Barbuda": 1000.42, "Argentina": 400.75, "Bahamas": 1500.36, "Barbados": 1200.89, "Belice": 500.21,
+    "Bolivia": 350.64, "Brasil": 450.33, "Canadá": 3500.87, "Chile": 700.41, "Colombia": 350.18,
+    "Costa Rica": 800.55, "Cuba": 40.12, "Dominica": 600.74, "Ecuador": 450.92, "El Salvador": 400.26,
+    "Estados Unidos": 4500.68, "Granada": 700.15, "Guatemala": 400.83, "Guyana": 400.11, "Haití": 100.59,
+    "Honduras": 350.88, "Jamaica": 500.47, "México": 600.32, "Nicaragua": 250.61, "Panamá": 800.29,
+    "Paraguay": 400.94, "Perú": 450.16, "República Dominicana": 450.53, "San Cristóbal y Nieves": 1000.71,
+    "San Vicente y las Granadinas": 600.28, "Santa Lucía": 700.82, "Surinam": 300.49, "Trinidad y Tobago": 1000.18,
+    "Uruguay": 800.76, "Venezuela": 150.08,
+
+    // Asia (47)
+    "Afganistán": 150.21, "Arabia Saudita": 2000.54, "Armenia": 400.38, "Azerbaiyán": 400.91, "Bangladés": 200.67,
+    "Baréin": 1800.43, "Myanmar": 200.14, "Brunéi": 1500.88, "Bután": 250.31, "Camboya": 250.75, "Catar": 3500.29,
+    "China": 1000.62, "Corea del Norte": 50.85, "Corea del Sur": 2800.74, "Emiratos Árabes Unidos": 3500.16,
+    "Filipinas": 350.49, "Georgia": 450.82, "India": 400.51, "Indonesia": 350.17, "Irak": 500.93,
+    "Irán": 300.27, "Israel": 3000.65, "Japón": 2800.33, "Jordania": 600.19, "Kazajistán": 500.46,
+    "Kirguistán": 300.84, "Kuwait": 2500.72, "Laos": 200.58, "Líbano": 400.22, "Malasia": 800.61,
+    "Maldivas": 600.87, "Mongolia": 400.13, "Nepal": 200.95, "Omán": 1800.26, "Pakistán": 200.34,
+    "Palestina": 400.78, "Singapur": 4500.41, "Siria": 100.69, "Sri Lanka": 250.56, "Tailandia": 600.52,
+    "Taiwán": 1800.97, "Tayikistán": 200.25, "Timor Oriental": 250.83, "Turkmenistán": 300.48, "Uzbekistán": 300.71,
+    "Vietnam": 350.96, "Yemen": 100.16,
+
+    // Europa (48)
+    "Albania": 500.35, "Alemania": 3500.58, "Andorra": 2500.19, "Austria": 3200.84, "Bélgica": 3000.47,
+    "Bielorrusia": 500.81, "Bosnia y Herzegovina": 650.26, "Bulgaria": 900.63, "Chipre": 1500.75, "Croacia": 1200.38,
+    "Dinamarca": 4000.92, "Eslovaquia": 1200.86, "Eslovenia": 1500.24, "España": 2000.61, "Estonia": 1500.53,
+    "Finlandia": 3200.15, "Francia": 2800.79, "Grecia": 1200.11, "Hungría": 1100.48, "Irlanda": 3500.32,
+    "Islandia": 4200.67, "Italia": 2000.28, "Kosovo": 500.97, "Letonia": 1200.59, "Liechtenstein": 5500.43,
+    "Lituania": 1300.22, "Luxemburgo": 4500.85, "Macedonia del Norte": 600.76, "Malta": 1500.18, "Moldavia": 500.42,
+    "Mónaco": 6000.14, "Montenegro": 700.54, "Noruega": 4000.37, "País Vasco": 2200.88, "Países Bajos": 3500.95,
+    "Polonia": 1300.73, "Portugal": 1200.91, "Reino Unido": 3200.46, "República Checa": 1500.82, "Rumania": 900.27,
+    "Rusia": 700.68, "San Marino": 2500.51, "Serbia": 750.39, "Suecia": 3500.71, "Suiza": 6000.98,
+    "Turquía": 500.17, "Ucrania": 400.64, "Vaticano": 1500.31,
+
+    // Oceanía (14)
+    "Australia": 4000.25, "Fiyi": 400.86, "Islas Marshall": 800.34, "Islas Salomón": 300.57, "Kiribati": 250.92,
+    "Micronesia": 500.78, "Nauru": 1000.45, "Nueva Zelanda": 3500.66, "Palaos": 800.12, "Papúa Nueva Guinea": 300.81,
+    "Samoa": 400.23, "Tonga": 400.69, "Tuvalu": 300.44, "Vanuatu": 350.77
+};
+
+// ÍNDICE DE POTENCIA MILITAR (0.00 - 100.00 puntos. Con decimales para evitar empates)
+const potenciaPaises = {
+    // África (54)
+    "Angola": 65.41, "Argelia": 80.23, "Benín": 25.14, "Botsuana": 35.88, "Burkina Faso": 32.15,
+    "Burundi": 28.94, "Cabo Verde": 15.62, "Camerún": 45.33, "Chad": 48.71, "Comoras": 12.34,
+    "Costa de Marfil": 40.55, "Egipto": 85.92, "Eritrea": 52.19, "Esuatini": 18.76, "Etiopía": 68.45,
+    "Gabón": 22.11, "Gambia": 14.58, "Ghana": 42.67, "Guinea": 30.24, "Guinea Ecuatorial": 20.89,
+    "Guinea Bisáu": 16.73, "Kenia": 55.34, "Lesoto": 13.91, "Liberia": 17.42, "Libia": 50.84,
+    "Madagascar": 27.65, "Malaui": 24.31, "Malí": 46.82, "Marruecos": 70.56, "Mauricio": 19.43,
+    "Mauritania": 33.78, "Mozambique": 36.29, "Namibia": 31.54, "Níger": 38.67, "Nigeria": 72.15,
+    "República Centroafricana": 21.64, "República Democrática del Congo": 58.72, "República del Congo": 29.83,
+    "Ruanda": 44.51, "Santo Tomé y Príncipe": 10.25, "Senegal": 39.46, "Seychelles": 11.87, "Sierra Leona": 23.59,
+    "Somalia": 26.18, "Sudáfrica": 75.38, "Sudán": 62.47, "Sudán del Sur": 41.95, "Tanzania": 49.36,
+    "Togo": 25.82, "Túnez": 56.71, "Uganda": 53.28, "Yibuti": 28.14, "Zambia": 43.12, "Zimbabue": 47.63,
+
+    // América (35)
+    "Antigua y Barbuda": 8.45, "Argentina": 72.31, "Bahamas": 14.22, "Barbados": 11.56, "Belice": 16.84,
+    "Bolivia": 52.39, "Brasil": 88.54, "Canadá": 82.14, "Chile": 68.75, "Colombia": 75.22,
+    "Costa Rica": 5.41, "Cuba": 65.83, "Dominica": 7.12, "Ecuador": 58.46, "El Salvador": 45.19,
+    "Estados Unidos": 99.85, "Granada": 6.34, "Guatemala": 48.72, "Guyana": 22.15, "Haití": 15.89,
+    "Honduras": 42.61, "Jamaica": 28.53, "México": 78.64, "Nicaragua": 40.27, "Panamá": 18.92,
+    "Paraguay": 38.56, "Perú": 66.28, "República Dominicana": 55.47, "San Cristóbal y Nieves": 5.82,
+    "San Vicente y las Granadinas": 6.91, "Santa Lucía": 7.54, "Surinam": 20.36, "Trinidad y Tobago": 25.68,
+    "Uruguay": 49.81, "Venezuela": 70.15,
+
+    // Asia (47)
+    "Afganistán": 54.32, "Arabia Saudita": 84.56, "Armenia": 50.12, "Azerbaiyán": 66.87, "Bangladés": 74.23,
+    "Baréin": 45.67, "Myanmar": 76.81, "Brunéi": 28.45, "Bután": 15.34, "Camboya": 48.91, "Catar": 68.25,
+    "China": 98.12, "Corea del Norte": 86.74, "Corea del Sur": 94.32, "Emiratos Árabes Unidos": 75.64,
+    "Filipinas": 71.38, "Georgia": 46.52, "India": 95.45, "Indonesia": 87.63, "Irak": 73.19,
+    "Irán": 88.95, "Israel": 89.47, "Japón": 93.88, "Jordania": 62.14, "Kazajistán": 65.78,
+    "Kirguistán": 42.36, "Kuwait": 58.91, "Laos": 35.62, "Líbano": 52.84, "Malasia": 72.56,
+    "Maldivas": 12.45, "Mongolia": 44.18, "Nepal": 41.27, "Omán": 56.39, "Pakistán": 91.24,
+    "Palestina": 25.16, "Singapur": 78.41, "Siria": 64.53, "Sri Lanka": 59.28, "Tailandia": 79.15,
+    "Taiwán": 85.72, "Tayikistán": 38.46, "Timor Oriental": 18.23, "Turkmenistán": 49.57, "Uzbekistán": 63.82,
+    "Vietnam": 82.46, "Yemen": 55.89,
+
+    // Europa (48)
+    "Albania": 36.54, "Alemania": 89.91, "Andorra": 2.15, "Austria": 58.73, "Bélgica": 65.42,
+    "Bielorrusia": 70.28, "Bosnia y Herzegovina": 40.85, "Bulgaria": 56.12, "Chipre": 35.74, "Croacia": 54.68,
+    "Dinamarca": 62.35, "Eslovaquia": 52.91, "Eslovenia": 45.36, "España": 86.43, "Estonia": 48.57,
+    "Finlandia": 74.82, "Francia": 93.12, "Grecia": 80.56, "Hungría": 60.24, "Irlanda": 38.92,
+    "Islandia": 4.56, "Italia": 90.55, "Kosovo": 28.41, "Letonia": 44.29, "Liechtenstein": 1.84,
+    "Lituania": 49.75, "Luxemburgo": 22.38, "Macedonia del Norte": 39.61, "Malta": 16.54, "Moldavia": 32.17,
+    "Mónaco": 3.42, "Montenegro": 30.86, "Noruega": 72.18, "País Vasco": 15.21, "Países Bajos": 76.54,
+    "Polonia": 85.19, "Portugal": 68.32, "Reino Unido": 93.45, "República Checa": 64.87, "Rumania": 75.14,
+    "Rusia": 98.54, "San Marino": 2.87, "Serbia": 66.53, "Suecia": 78.91, "Suiza": 69.45,
+    "Turquía": 92.15, "Ucrania": 88.76, "Vaticano": 1.12,
+
+    // Oceanía (14)
+    "Australia": 85.34, "Fiyi": 24.15, "Islas Marshall": 5.12, "Islas Salomón": 8.34, "Kiribati": 3.21,
+    "Micronesia": 4.67, "Nauru": 2.58, "Nueva Zelanda": 65.21, "Palaos": 4.19, "Papúa Nueva Guinea": 26.84,
+    "Samoa": 6.45, "Tonga": 9.76, "Tuvalu": 2.11, "Vanuatu": 7.82
+};
+
+// ÍNDICE DE DEMOCRACIA Y LIBERTAD (0.00 - 100.00 puntos. Con decimales para evitar empates)
+const democraciaPaises = {
+    // África (54)
+    "Angola": 34.21, "Argelia": 36.85, "Benín": 58.12, "Botsuana": 77.34, "Burkina Faso": 39.45,
+    "Burundi": 21.14, "Cabo Verde": 86.52, "Camerún": 26.33, "Chad": 16.71, "Comoras": 44.34,
+    "Costa de Marfil": 41.55, "Egipto": 28.92, "Eritrea": 2.19, "Esuatini": 29.76, "Etiopía": 31.45,
+    "Gabón": 33.11, "Gambia": 46.58, "Ghana": 65.67, "Guinea": 24.24, "Guinea Ecuatorial": 18.89,
+    "Guinea Bisáu": 43.73, "Kenia": 53.34, "Lesoto": 62.91, "Liberia": 54.42, "Libia": 19.84,
+    "Madagascar": 56.65, "Malaui": 57.31, "Malí": 38.82, "Marruecos": 49.56, "Mauricio": 80.43,
+    "Mauritania": 40.78, "Mozambique": 42.29, "Namibia": 68.54, "Níger": 32.67, "Nigeria": 45.15,
+    "República Centroafricana": 14.64, "República Democrática del Congo": 17.72, "República del Congo": 22.83,
+    "Ruanda": 30.51, "Santo Tomé y Príncipe": 69.25, "Senegal": 59.46, "Seychelles": 71.87, "Sierra Leona": 63.59,
+    "Somalia": 11.18, "Sudáfrica": 74.38, "Sudán": 13.47, "Sudán del Sur": 10.95, "Tanzania": 50.36,
+    "Togo": 27.82, "Túnez": 58.71, "Uganda": 35.28, "Yibuti": 25.14, "Zambia": 52.12, "Zimbabue": 28.63,
+
+    // América (35)
+    "Antigua y Barbuda": 75.45, "Argentina": 68.31, "Bahamas": 78.22, "Barbados": 79.56, "Belice": 73.84,
+    "Bolivia": 48.39, "Brasil": 67.54, "Canadá": 88.14, "Chile": 79.75, "Colombia": 65.22,
+    "Costa Rica": 85.41, "Cuba": 12.83, "Dominica": 72.12, "Ecuador": 59.46, "El Salvador": 45.19,
+    "Estados Unidos": 78.85, "Granada": 74.34, "Guatemala": 46.72, "Guyana": 60.15, "Haití": 28.89,
+    "Honduras": 42.61, "Jamaica": 76.53, "México": 56.64, "Nicaragua": 22.27, "Panamá": 69.92,
+    "Paraguay": 58.56, "Perú": 62.28, "República Dominicana": 64.47, "San Cristóbal y Nieves": 77.82,
+    "San Vicente y las Granadinas": 76.91, "Santa Lucía": 75.54, "Surinam": 68.36, "Trinidad y Tobago": 73.68,
+    "Uruguay": 89.81, "Venezuela": 15.15,
+
+    // Asia (47)
+    "Afganistán": 3.32, "Arabia Saudita": 10.56, "Armenia": 54.12, "Azerbaiyán": 16.87, "Bangladés": 38.23,
+    "Baréin": 14.67, "Myanmar": 8.81, "Brunéi": 28.45, "Bután": 55.34, "Camboya": 25.91, "Catar": 29.25,
+    "China": 8.12, "Corea del Norte": 1.74, "Corea del Sur": 81.32, "Emiratos Árabes Unidos": 24.64,
+    "Filipinas": 58.38, "Georgia": 56.52, "India": 64.45, "Indonesia": 67.63, "Irak": 32.19,
+    "Irán": 9.95, "Israel": 73.47, "Japón": 82.88, "Jordania": 34.14, "Kazajistán": 30.78,
+    "Kirguistán": 36.36, "Kuwait": 37.91, "Laos": 12.62, "Líbano": 42.84, "Malasia": 68.56,
+    "Maldivas": 53.45, "Mongolia": 63.18, "Nepal": 51.27, "Omán": 26.39, "Pakistán": 39.24,
+    "Palestina": 27.16, "Singapur": 62.41, "Siria": 5.53, "Sri Lanka": 59.28, "Tailandia": 54.15,
+    "Taiwán": 89.72, "Tayikistán": 13.46, "Timor Oriental": 70.23, "Turkmenistán": 6.57, "Uzbekistán": 21.82,
+    "Vietnam": 18.46, "Yemen": 8.89,
+
+    // Europa (48)
+    "Albania": 59.54, "Alemania": 88.91, "Andorra": 85.15, "Austria": 83.73, "Bélgica": 84.42,
+    "Bielorrusia": 14.28, "Bosnia y Herzegovina": 51.85, "Bulgaria": 64.12, "Chipre": 76.74, "Croacia": 73.68,
+    "Dinamarca": 94.35, "Eslovaquia": 72.91, "Eslovenia": 78.36, "España": 81.43, "Estonia": 86.57,
+    "Finlandia": 95.82, "Francia": 80.12, "Grecia": 75.56, "Hungría": 66.24, "Irlanda": 92.92,
+    "Islandia": 94.56, "Italia": 79.55, "Kosovo": 53.41, "Letonia": 77.29, "Liechtenstein": 83.84,
+    "Lituania": 80.75, "Luxemburgo": 89.38, "Macedonia del Norte": 61.61, "Malta": 81.54, "Moldavia": 62.17,
+    "Mónaco": 82.42, "Montenegro": 63.86, "Noruega": 98.18, "País Vasco": 81.21, "Países Bajos": 89.54,
+    "Polonia": 70.19, "Portugal": 83.32, "Reino Unido": 82.45, "República Checa": 81.87, "Rumania": 65.14,
+    "Rusia": 12.54, "San Marino": 84.87, "Serbia": 59.53, "Suecia": 96.91, "Suiza": 91.45,
+    "Turquía": 33.15, "Ucrania": 50.76, "Vaticano": 40.12,
+
+    // Oceanía (14)
+    "Australia": 87.34, "Fiyi": 61.15, "Islas Marshall": 78.12, "Islas Salomón": 65.34, "Kiribati": 76.21,
+    "Micronesia": 79.67, "Nauru": 68.58, "Nueva Zelanda": 97.21, "Palaos": 77.19, "Papúa Nueva Guinea": 58.84,
+    "Samoa": 75.45, "Tonga": 64.76, "Tuvalu": 78.11, "Vanuatu": 72.82
+};
+
+// DENSIDAD DE POBLACIÓN (Habitantes por km². Con decimales para evitar empates)
+const densidadPaises = {
+    // África (54)
+    "Angola": 28.54, "Argelia": 18.92, "Benín": 118.23, "Botsuana": 4.15, "Burkina Faso": 83.45,
+    "Burundi": 472.14, "Cabo Verde": 145.62, "Camerún": 58.33, "Chad": 13.71, "Comoras": 467.34,
+    "Costa de Marfil": 85.55, "Egipto": 105.92, "Eritrea": 35.19, "Esuatini": 68.76, "Etiopía": 115.45,
+    "Gabón": 9.11, "Gambia": 245.58, "Ghana": 138.67, "Guinea": 55.24, "Guinea Ecuatorial": 52.89,
+    "Guinea Bisáu": 72.73, "Kenia": 95.34, "Lesoto": 75.91, "Liberia": 54.42, "Libia": 3.84,
+    "Madagascar": 50.65, "Malaui": 210.31, "Malí": 18.82, "Marruecos": 84.56, "Mauricio": 626.43,
+    "Mauritania": 4.78, "Mozambique": 41.29, "Namibia": 3.14, "Níger": 20.67, "Nigeria": 235.15,
+    "República Centroafricana": 8.64, "República Democrática del Congo": 42.72, "República del Congo": 17.83,
+    "Ruanda": 535.51, "Santo Tomé y Príncipe": 228.25, "Senegal": 88.46, "Seychelles": 215.87, "Sierra Leona": 115.59,
+    "Somalia": 27.18, "Sudáfrica": 50.38, "Sudán": 25.47, "Sudán del Sur": 18.95, "Tanzania": 70.36,
+    "Togo": 155.82, "Túnez": 76.71, "Uganda": 235.28, "Yibuti": 43.14, "Zambia": 26.12, "Zimbabue": 42.63,
+
+    // América (35)
+    "Antigua y Barbuda": 222.45, "Argentina": 16.31, "Bahamas": 39.22, "Barbados": 668.56, "Belice": 17.84,
+    "Bolivia": 11.39, "Brasil": 25.54, "Canadá": 4.14, "Chile": 26.75, "Colombia": 45.22,
+    "Costa Rica": 101.41, "Cuba": 105.83, "Dominica": 96.12, "Ecuador": 72.46, "El Salvador": 305.19,
+    "Estados Unidos": 36.85, "Granada": 331.34, "Guatemala": 168.72, "Guyana": 3.15, "Haití": 415.89,
+    "Honduras": 92.61, "Jamaica": 274.53, "México": 65.64, "Nicaragua": 55.27, "Panamá": 58.92,
+    "Paraguay": 18.56, "Perú": 26.28, "República Dominicana": 230.47, "San Cristóbal y Nieves": 183.82,
+    "San Vicente y las Granadinas": 284.91, "Santa Lucía": 301.54, "Surinam": 3.36, "Trinidad y Tobago": 273.68,
+    "Uruguay": 19.81, "Venezuela": 32.15,
+
+    // Asia (47)
+    "Afganistán": 61.32, "Arabia Saudita": 16.56, "Armenia": 98.12, "Azerbaiyán": 118.87, "Bangladés": 1320.23,
+    "Baréin": 2239.67, "Myanmar": 83.81, "Brunéi": 84.45, "Bután": 20.34, "Camboya": 95.91, "Catar": 248.25,
+    "China": 148.12, "Corea del Norte": 215.74, "Corea del Sur": 527.32, "Emiratos Árabes Unidos": 114.64,
+    "Filipinas": 376.38, "Georgia": 53.52, "India": 470.45, "Indonesia": 145.63, "Irak": 96.19,
+    "Irán": 54.95, "Israel": 425.47, "Japón": 332.88, "Jordania": 115.14, "Kazajistán": 7.78,
+    "Kirguistán": 34.36, "Kuwait": 240.91, "Laos": 32.62, "Líbano": 667.84, "Malasia": 99.56,
+    "Maldivas": 1739.45, "Mongolia": 2.18, "Nepal": 208.27, "Omán": 16.39, "Pakistán": 298.24,
+    "Palestina": 850.16, "Singapur": 8358.41, "Siria": 114.53, "Sri Lanka": 345.28, "Tailandia": 138.15,
+    "Taiwán": 652.72, "Tayikistán": 68.46, "Timor Oriental": 89.23, "Turkmenistán": 12.57, "Uzbekistán": 79.82,
+    "Vietnam": 315.46, "Yemen": 62.89,
+
+    // Europa (48)
+    "Albania": 99.54, "Alemania": 233.91, "Andorra": 165.15, "Austria": 109.73, "Bélgica": 382.42,
+    "Bielorrusia": 45.28, "Bosnia y Herzegovina": 63.85, "Bulgaria": 61.12, "Chipre": 131.74, "Croacia": 71.68,
+    "Dinamarca": 138.35, "Eslovaquia": 112.91, "Eslovenia": 103.36, "España": 94.43, "Estonia": 29.57,
+    "Finlandia": 16.82, "Francia": 118.12, "Grecia": 80.56, "Hungría": 104.24, "Irlanda": 73.92,
+    "Islandia": 3.56, "Italia": 196.55, "Kosovo": 165.41, "Letonia": 29.29, "Liechtenstein": 243.84,
+    "Lituania": 42.75, "Luxemburgo": 253.38, "Macedonia del Norte": 81.61, "Malta": 1640.54, "Moldavia": 102.17,
+    "Mónaco": 26337.42, "Montenegro": 45.86, "Noruega": 14.18, "País Vasco": 302.21, "Países Bajos": 518.54,
+    "Polonia": 122.19, "Portugal": 111.32, "Reino Unido": 277.45, "República Checa": 136.87, "Rumania": 82.14,
+    "Rusia": 8.54, "San Marino": 554.87, "Serbia": 86.53, "Suecia": 25.91, "Suiza": 215.45,
+    "Turquía": 110.15, "Ucrania": 68.76, "Vaticano": 2043.12,
+
+    // Oceanía (14)
+    "Australia": 3.34, "Fiyi": 49.15, "Islas Marshall": 235.12, "Islas Salomón": 25.34, "Kiribati": 147.21,
+    "Micronesia": 164.67, "Nauru": 515.58, "Nueva Zelanda": 19.21, "Palaos": 39.19, "Papúa Nueva Guinea": 21.84,
+    "Samoa": 70.45, "Tonga": 144.76, "Tuvalu": 383.11, "Vanuatu": 25.82
+};
+
+// PATRIMONIOS DE LA HUMANIDAD (Número entero. Sin comas)
+const patrimoniosPaises = {
+    // África (54)
+    "Angola": 1, "Argelia": 7, "Benín": 3, "Botsuana": 2, "Burkina Faso": 3,
+    "Burundi": 0, "Cabo Verde": 1, "Camerún": 2, "Chad": 2, "Comoras": 0,
+    "Costa de Marfil": 5, "Egipto": 7, "Eritrea": 1, "Esuatini": 0, "Etiopía": 11,
+    "Gabón": 2, "Gambia": 2, "Ghana": 2, "Guinea": 1, "Guinea Ecuatorial": 0,
+    "Guinea Bisáu": 0, "Kenia": 7, "Lesoto": 1, "Liberia": 0, "Libia": 5,
+    "Madagascar": 3, "Malaui": 2, "Malí": 4, "Marruecos": 9, "Mauricio": 2,
+    "Mauritania": 2, "Mozambique": 1, "Namibia": 2, "Níger": 3, "Nigeria": 2,
+    "República Centroafricana": 2, "República Democrática del Congo": 5, "República del Congo": 2,
+    "Ruanda": 2, "Santo Tomé y Príncipe": 0, "Senegal": 7, "Seychelles": 2, "Sierra Leona": 0,
+    "Somalia": 0, "Sudáfrica": 10, "Sudán": 3, "Sudán del Sur": 0, "Tanzania": 7,
+    "Togo": 1, "Túnez": 8, "Uganda": 3, "Yibuti": 0, "Zambia": 1, "Zimbabue": 5,
+
+    // América (35)
+    "Antigua y Barbuda": 1, "Argentina": 11, "Bahamas": 0, "Barbados": 1, "Belice": 1,
+    "Bolivia": 7, "Brasil": 23, "Canadá": 22, "Chile": 7, "Colombia": 9,
+    "Costa Rica": 4, "Cuba": 9, "Dominica": 1, "Ecuador": 5, "El Salvador": 1,
+    "Estados Unidos": 24, "Granada": 0, "Guatemala": 4, "Guyana": 0, "Haití": 1,
+    "Honduras": 2, "Jamaica": 1, "México": 35, "Nicaragua": 2, "Panamá": 5,
+    "Paraguay": 1, "Perú": 13, "República Dominicana": 1, "San Cristóbal y Nieves": 1,
+    "San Vicente y las Granadinas": 0, "Santa Lucía": 1, "Surinam": 3, "Trinidad y Tobago": 0,
+    "Uruguay": 3, "Venezuela": 3,
+
+    // Asia (47)
+    "Afganistán": 2, "Arabia Saudita": 7, "Armenia": 3, "Azerbaiyán": 5, "Bangladés": 3,
+    "Baréin": 3, "Myanmar": 2, "Brunéi": 0, "Bután": 0, "Camboya": 4, "Catar": 1,
+    "China": 57, "Corea del Norte": 2, "Corea del Sur": 16, "Emiratos Árabes Unidos": 1,
+    "Filipinas": 6, "Georgia": 4, "India": 42, "Indonesia": 10, "Irak": 6,
+    "Irán": 27, "Israel": 9, "Japón": 25, "Jordania": 6, "Kazajistán": 6,
+    "Kirguistán": 3, "Kuwait": 0, "Laos": 3, "Líbano": 5, "Malasia": 4,
+    "Maldivas": 0, "Mongolia": 6, "Nepal": 4, "Omán": 5, "Pakistán": 6,
+    "Palestina": 4, "Singapur": 1, "Siria": 6, "Sri Lanka": 8, "Tailandia": 7,
+    "Taiwán": 0, "Tayikistán": 4, "Timor Oriental": 0, "Turkmenistán": 3, "Uzbekistán": 7,
+    "Vietnam": 8, "Yemen": 5,
+
+    // Europa (48)
+    "Albania": 4, "Alemania": 52, "Andorra": 1, "Austria": 12, "Bélgica": 16,
+    "Bielorrusia": 4, "Bosnia y Herzegovina": 4, "Bulgaria": 10, "Chipre": 3, "Croacia": 10,
+    "Dinamarca": 11, "Eslovaquia": 8, "Eslovenia": 5, "España": 50, "Estonia": 2,
+    "Finlandia": 7, "Francia": 52, "Grecia": 19, "Hungría": 8, "Irlanda": 2,
+    "Islandia": 3, "Italia": 59, "Kosovo": 0, "Letonia": 3, "Liechtenstein": 0,
+    "Lituania": 5, "Luxemburgo": 1, "Macedonia del Norte": 2, "Malta": 3, "Moldavia": 1,
+    "Mónaco": 0, "Montenegro": 4, "Noruega": 8, "País Vasco": 1, "Países Bajos": 13,
+    "Polonia": 17, "Portugal": 17, "Reino Unido": 33, "República Checa": 17, "Rumania": 9,
+    "Rusia": 31, "San Marino": 1, "Serbia": 5, "Suecia": 15, "Suiza": 13,
+    "Turquía": 21, "Ucrania": 8, "Vaticano": 2,
+
+    // Oceanía (14)
+    "Australia": 20, "Fiyi": 1, "Islas Marshall": 1, "Islas Salomón": 1, "Kiribati": 1,
+    "Micronesia": 1, "Nauru": 0, "Nueva Zelanda": 3, "Palaos": 1, "Papúa Nueva Guinea": 1,
+    "Samoa": 0, "Tonga": 0, "Tuvalu": 0, "Vanuatu": 1
+};
+
+// TASA DE DESEMPLEO (% de la población activa. Con un decimal usando punto para evitar empates)
+const tasaDesempleo = {
+    // África (54)
+    "Angola": 14.5, "Argelia": 11.6, "Benín": 1.7, "Botsuana": 23.4, "Burkina Faso": 4.3,
+    "Burundi": 1.0, "Cabo Verde": 12.1, "Camerún": 4.0, "Chad": 1.4, "Comoras": 5.7,
+    "Costa de Marfil": 2.6, "Egipto": 7.1, "Eritrea": 6.7, "Esuatini": 22.4, "Etiopía": 3.4,
+    "Gabón": 21.5, "Gambia": 6.2, "Ghana": 3.9, "Guinea": 4.4, "Guinea Ecuatorial": 8.9,
+    "Guinea Bisáu": 6.0, "Kenia": 5.6, "Lesoto": 22.5, "Liberia": 2.8, "Libia": 18.5,
+    "Madagascar": 1.9, "Malaui": 5.5, "Malí": 6.2, "Marruecos": 11.2, "Mauricio": 6.4,
+    "Mauritania": 10.5, "Mozambique": 3.2, "Namibia": 20.4, "Níger": 0.5, "Nigeria": 4.1,
+    "República Centroafricana": 6.0, "República Democrática del Congo": 4.2, "República del Congo": 21.8,
+    "Ruanda": 13.2, "Santo Tomé y Príncipe": 13.5, "Senegal": 3.7, "Seychelles": 2.1, "Sierra Leona": 3.5,
+    "Somalia": 19.9, "Sudáfrica": 32.6, "Sudán": 17.5, "Sudán del Sur": 12.4, "Tanzania": 2.6,
+    "Togo": 3.1, "Túnez": 15.2, "Uganda": 4.3, "Yibuti": 26.1, "Zambia": 13.0, "Zimbabue": 7.9,
+
+    // América (35)
+    "Antigua y Barbuda": 11.0, "Argentina": 6.5, "Bahamas": 10.1, "Barbados": 8.2, "Belice": 6.1,
+    "Bolivia": 4.5, "Brasil": 7.8, "Canadá": 5.4, "Chile": 8.5, "Colombia": 10.2,
+    "Costa Rica": 7.6, "Cuba": 1.4, "Dominica": 23.0, "Ecuador": 3.8, "El Salvador": 5.0,
+    "Estados Unidos": 3.8, "Granada": 14.0, "Guatemala": 2.6, "Guyana": 11.8, "Haití": 13.7,
+    "Honduras": 5.5, "Jamaica": 4.5, "México": 2.8, "Nicaragua": 5.1, "Panamá": 7.4,
+    "Paraguay": 5.8, "Perú": 5.4, "República Dominicana": 5.5, "San Cristóbal y Nieves": 12.0,
+    "San Vicente y las Granadinas": 18.0, "Santa Lucía": 15.0, "Surinam": 8.5, "Trinidad y Tobago": 4.2,
+    "Uruguay": 8.3, "Venezuela": 29.8,
+
+    // Asia (47)
+    "Afganistán": 13.3, "Arabia Saudita": 5.1, "Armenia": 13.0, "Azerbaiyán": 5.5, "Bangladés": 4.7,
+    "Baréin": 5.4, "Myanmar": 2.2, "Brunéi": 4.9, "Bután": 4.3, "Camboya": 0.4, "Catar": 0.1,
+    "China": 5.2, "Corea del Norte": 2.5, "Corea del Sur": 2.7, "Emiratos Árabes Unidos": 2.8,
+    "Filipinas": 4.3, "Georgia": 17.3, "India": 7.8, "Indonesia": 5.3, "Irak": 14.2,
+    "Irán": 9.4, "Israel": 3.5, "Japón": 2.5, "Jordania": 22.8, "Kazajistán": 4.8,
+    "Kirguistán": 4.9, "Kuwait": 2.2, "Laos": 1.3, "Líbano": 14.5, "Malasia": 3.5,
+    "Maldivas": 4.2, "Mongolia": 5.4, "Nepal": 4.5, "Omán": 2.4, "Pakistán": 6.8,
+    "Palestina": 24.5, "Singapur": 2.1, "Siria": 10.6, "Sri Lanka": 4.8, "Tailandia": 1.0,
+    "Taiwán": 3.4, "Tayikistán": 6.9, "Timor Oriental": 4.6, "Turkmenistán": 4.1, "Uzbekistán": 8.8,
+    "Vietnam": 2.1, "Yemen": 13.5,
+
+    // Europa (48)
+    "Albania": 10.9, "Alemania": 3.1, "Andorra": 1.7, "Austria": 4.8, "Bélgica": 5.6,
+    "Bielorrusia": 3.5, "Bosnia y Herzegovina": 13.3, "Bulgaria": 4.3, "Chipre": 6.1, "Croacia": 6.1,
+    "Dinamarca": 4.9, "Eslovaquia": 5.8, "Eslovenia": 3.6, "España": 11.8, "Estonia": 6.5,
+    "Finlandia": 7.2, "Francia": 7.3, "Grecia": 10.4, "Hungría": 3.9, "Irlanda": 4.1,
+    "Islandia": 3.4, "Italia": 7.6, "Kosovo": 20.4, "Letonia": 6.5, "Liechtenstein": 1.3,
+    "Lituania": 6.8, "Luxemburgo": 4.8, "Macedonia del Norte": 13.1, "Malta": 2.9, "Moldavia": 3.8,
+    "Mónaco": 2.1, "Montenegro": 14.7, "Noruega": 3.6, "País Vasco": 7.5, "Países Bajos": 3.5,
+    "Polonia": 2.8, "Portugal": 6.5, "Reino Unido": 4.2, "República Checa": 2.6, "Rumania": 5.6,
+    "Rusia": 3.2, "San Marino": 5.2, "Serbia": 8.9, "Suecia": 7.5, "Suiza": 4.1,
+    "Turquía": 9.7, "Ucrania": 19.5, "Vaticano": 0.0,
+
+    // Oceanía (14)
+    "Australia": 3.7, "Fiyi": 4.3, "Islas Marshall": 14.0, "Islas Salomón": 0.9, "Kiribati": 8.9,
+    "Micronesia": 13.7, "Nauru": 23.0, "Nueva Zelanda": 3.9, "Palaos": 1.7, "Papúa Nueva Guinea": 2.5,
+    "Samoa": 9.8, "Tonga": 3.1, "Tuvalu": 8.5, "Vanuatu": 2.1
+};
+
 
 const configEstadisticas = {
     "area": { titulo: "Área", unidad: "km²", datos: areasPaises },
-    "poblacion": { titulo: "Población", unidad: "hab.", datos: poblacionPaises },
     "clima": { titulo: "Clima", unidad: "pts", datos: climaPaises},
     "corrupcion" : { titulo: "Corrupción", unidad: "pts", datos: corrupcionPaises},
+    "democracia": { titulo: "Democracia", unidad: "pts", datos: democraciaPaises},
+    "densidad": { titulo: "Densidad", unidad: "hab/km²", datos: densidadPaises},
     "deportes": { titulo: "Deportes", unidad: "pts", datos: deportesPaises},
     "desarrollo": { titulo: "Desarrollo", unidad: "IDH", datos: desarrolloPaises},
+    "desempleo": {titulo: "Desempleo", unidad: "%", datos: tasaDesempleo},
     "economia": { titulo: "Economía", unidad: "PIB", datos: economiaPaises},
     "educacion": { titulo: "Educación", unidad: "pts", datos: educacionPaises},
     "felicidad": { titulo: "Felicidad", unidad: "pts", datos: felicidadPaises},
@@ -1123,6 +1455,10 @@ const configEstadisticas = {
     "limpieza": { titulo: "Limpieza", unidad: "pts", datos: limpiezaPaises},
     "longevidad": { titulo: "Longevidad", unidad: "años", datos: longevidadPaises},
     "naturaleza": { titulo: "Naturaleza", unidad: "pts", datos: naturalezaPaises},
+    "patrimonio": { titulo: "Patrimonios", unidad: "lugares", datos: patrimoniosPaises},
+    "poblacion": { titulo: "Población", unidad: "hab.", datos: poblacionPaises },
+    "potencia": { titulo: "Potencia Militar", unidad: "pts", datos: potenciaPaises},
+    "salario": { titulo: "Salario Medio", unidad: "USD", datos: salarioPaises},
     "sanidad": { titulo: "Sanidad", unidad: "pts", datos: sanidadPaises},
     "seguridad": { titulo: "Seguridad", unidad: "pts", datos: seguridadPaises},
     "turismo": { titulo: "Turismo", unidad: "visitantes", datos: turismoPaises}
@@ -1153,10 +1489,19 @@ const contenedorJuegoActivo = document.getElementById('contenedor-juego-activo')
 // FUNCIÓN PRINCIPAL PARA DIBUJAR TODO SEGÚN EL IDIOMA
 function renderizarAtlas() {
 
+
+    
+    document.getElementById('pantalla-resultados-test').style.display = 'none';
     // LIMPIEZA DE PANTALLAS: Nos aseguramos de que solo se vea el Atlas
     document.getElementById('vista-estadisticas').style.display = 'none';
     document.getElementById('vista-juegos').style.display = 'none';
     document.getElementById('vista-atlas').style.display = 'block';
+    // Asegúrate de usar los IDs correctos que tengas en tu HTML
+    document.getElementById('juego-test').style.display = 'none';
+
+// Pon el ID correcto de tu juego de estadísticas aquí:
+    document.getElementById('juego-comparador').style.display = 'none';
+    document.getElementById('pantalla-fin-juego').style.display = 'none';
     // 1. Limpiamos contenedores
     menuPaises.innerHTML = ''; 
     contenedorAtlas.innerHTML = '';
@@ -1176,6 +1521,16 @@ function renderizarAtlas() {
         enlaceMenu.onclick = () => {
             vistaAtlas.style.display = 'block';
             vistaJuegos.style.display = 'none';
+
+            // Al hacer clic en un continente, aseguramos que se vea el Atlas y se oculten los juegos
+            document.getElementById('vista-atlas').style.display = 'block';
+            
+            // Apagamos TODO lo demás
+            document.getElementById('vista-juegos').style.display = 'none';
+            document.getElementById('vista-estadisticas').style.display = 'none';
+            document.getElementById('juego-comparador').style.display = 'none';
+            document.getElementById('juego-test').style.display = 'none';
+            document.getElementById('pantalla-fin-juego').style.display = 'none';
         };
         menuPaises.appendChild(enlaceMenu);
 
@@ -1939,6 +2294,10 @@ if (btnNavStats) btnNavStats.textContent = uiNav.stats;
 });
 
 function generarTableroRelacionar() {
+    document.getElementById('juego-test').style.display = 'none';
+
+// Pon el ID correcto de tu juego de estadísticas aquí:
+    document.getElementById('juego-comparador').style.display = 'none';
     // 1. Cargamos el idioma aquí también
     const ui = textosJuego[obtenerIdiomaUI()]; 
     
@@ -2056,6 +2415,10 @@ function manejarClickFicha(btn) {
 }
 
 function arrancarModoTrios() {
+    document.getElementById('juego-test').style.display = 'none';
+
+// Pon el ID correcto de tu juego de estadísticas aquí:
+    document.getElementById('juego-comparador').style.display = 'none';
     // 1. Escondemos la pantalla inicial
     const pantallaInicio = document.getElementById('pantalla-inicio-trios');
     if (pantallaInicio) pantallaInicio.style.display = 'none'; 
@@ -2098,12 +2461,18 @@ function mostrarResultadosTrios() {
 
 // FUNCIÓN PARA MOSTRAR SOLO EL ATLAS (MAPA)
 function mostrarAtlas() {
-    // 1. Apagamos las otras pantallas
+    // 1. Mostrar la vista del mapa
+    document.getElementById('vista-atlas').style.display = 'block';
+
+    // 2. Apagar TODO lo demás (incluido el mensaje de fallaste)
     document.getElementById('vista-juegos').style.display = 'none';
     document.getElementById('vista-estadisticas').style.display = 'none';
+    document.getElementById('juego-comparador').style.display = 'none';
+    document.getElementById('juego-test').style.display = 'none';
     
-    // 2. Encendemos SOLO la de los países
-    document.getElementById('vista-atlas').style.display = 'block';
+    // Aquí está la clave para limpiar el Game Over
+    document.getElementById('pantalla-fin-juego').style.display = 'none';
+    document.getElementById('pantalla-resultados-test').style.display = 'none';
     
     // 3. Ocultamos la ventanita flotante por si se quedó pillada
     const ventana = document.getElementById('ventana-info');
@@ -2459,6 +2828,916 @@ function volverAlMenuComparador() {
     document.getElementById("menu-comparador").style.display = "block";
 }
 
+// Variable para saber en qué modo estamos
+let modoTestActual = '';
+
+// 1. Función para abrir el menú del Test
+function abrirJuegoTest() {
+    document.getElementById('vista-atlas').style.display = 'none';
+
+    // Pon el ID correcto de tu juego de estadísticas aquí:
+    document.getElementById('juego-comparador').style.display = 'none';
+    
+    document.getElementById('juego-test').style.display = 'block';
+    document.getElementById('menu-test').style.display = 'block';
+    
+    document.getElementById('arena-test').style.display = 'none';
+    document.getElementById('pantalla-resultados-test').style.display = 'none';
+}
+
+// 2. Función para pintar el test según el botón que pulses
+function iniciarTest(modo) {
+    modoTestActual = modo;
+    document.getElementById('menu-test').style.display = 'none';
+    document.getElementById('arena-test').style.display = 'block';
+    
+    // Cambiamos el título
+    let titulo = document.getElementById('titulo-modo-test');
+    if(modo === 'paises') titulo.innerText = "Escribe el nombre del País";
+    if(modo === 'capitales') titulo.innerText = "Escribe el nombre de la Capital";
+    if(modo === 'completo') titulo.innerText = "Escribe el País y su Capital";
+
+    let contenedor = document.getElementById('contenedor-preguntas-test');
+    contenedor.innerHTML = ''; // Limpiamos pruebas anteriores
+    
+    // Recolectamos todos los países
+    let todosLosPaises = [];
+    for (const continente in baseDatosMundo) {
+        todosLosPaises = todosLosPaises.concat(baseDatosMundo[continente].paises);
+    }
+
+    // 1. EL ORDEN ALEATORIO (Descomentamos esta línea)
+    // Esto baraja el array de países para que salgan desordenados
+    todosLosPaises.sort(() => Math.random() - 0.5);
+
+    // Creamos las tarjetas
+    todosLosPaises.forEach((pais, index) => {
+        let tarjeta = document.createElement('div');
+        tarjeta.className = 'tarjeta-pregunta-test';
+        
+        let htmlContenido = `<img src="${pais.bandera}" alt="Bandera">`;
+        
+        if(modo === 'paises' || modo === 'completo') {
+            htmlContenido += `<input type="text" class="input-test" id="input-pais-${index}" placeholder="País..." data-respuesta="${pais.nombre.es}">`;
+        }
+        if(modo === 'capitales' || modo === 'completo') {
+            htmlContenido += `<input type="text" class="input-test" id="input-capital-${index}" placeholder="Capital..." data-respuesta="${pais.capital.es}">`;
+        }
+        
+        tarjeta.innerHTML = htmlContenido;
+        contenedor.appendChild(tarjeta);
+    });
+
+    // 2. NAVEGACIÓN CON TECLADO (Solo con Enter)
+    let todosLosInputs = document.querySelectorAll('.input-test');
+    
+    todosLosInputs.forEach((input, index) => {
+        input.addEventListener('keydown', function(event) {
+            // Si el usuario pulsa Enter, pasamos a la siguiente casilla
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Evitamos que el Enter intente enviar un formulario o recargar la página
+                
+                let siguienteInput = todosLosInputs[index + 1];
+                if (siguienteInput) {
+                    siguienteInput.focus(); // Ponemos el cursor en la siguiente
+                }
+            }
+        });
+    });
+
+    // Autoselect: Ponemos el cursor automáticamente en el primer input para empezar a jugar ya
+    if (todosLosInputs.length > 0) {
+        todosLosInputs[0].focus();
+    }
+}
+
+// 3. Función para comprobar (La que va en el botón de abajo del todo)
+function comprobarTest() {
+    let puntos = 0;
+    let totalPreguntas = 0;
+    
+    let listaDeFallos = []; 
+
+    const normalizarTexto = (texto) => {
+        return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+    };
+
+    let todosLosInputs = document.querySelectorAll('.input-test');
+    
+    todosLosInputs.forEach(input => {
+        totalPreguntas++;
+        
+        let valorOriginalUsuario = input.value; 
+        let respuestaUsuario = normalizarTexto(valorOriginalUsuario);
+        let respuestaCorrecta = normalizarTexto(input.getAttribute('data-respuesta'));
+        let respuestaReal = input.getAttribute('data-respuesta'); 
+
+        if (respuestaUsuario === respuestaCorrecta && respuestaUsuario !== '') {
+            puntos++;
+            input.classList.add('input-correcto');
+            input.classList.remove('input-incorrecto');
+            input.disabled = true; 
+        } else {
+            input.classList.add('input-incorrecto');
+            input.classList.remove('input-correcto');
+            
+            let loQueEscribio = valorOriginalUsuario.trim() === '' ? '' : valorOriginalUsuario;
+            
+            // --- MAGIA NUEVA: CAPTURAMOS LA BANDERA Y EL TIPO DE PREGUNTA ---
+            // Buscamos la imagen de la bandera dentro de la misma tarjeta que el input
+            let urlBandera = input.parentElement.querySelector('img').src;
+            // Cogemos si preguntaba "País..." o "Capital..." y le quitamos los puntitos
+            let tipoPregunta = input.placeholder.replace('...', ''); 
+
+            listaDeFallos.push({
+                bandera: urlBandera,
+                tipo: tipoPregunta,
+                esperaba: respuestaReal,
+                escribio: loQueEscribio
+            });
+            
+            input.value = `${valorOriginalUsuario} (Era: ${respuestaReal})`; 
+        }
+    });
+
+    document.getElementById('arena-test').style.display = 'none';
+    document.getElementById('pantalla-resultados-test').style.display = 'block';
+    document.getElementById('puntos-finales-test').innerText = `${puntos} / ${totalPreguntas}`;
+
+    // --- PINTAR LOS FALLOS CON BANDERAS ---
+    let contenedorFallos = document.getElementById('contenedor-fallos-test');
+    if (!contenedorFallos) {
+        contenedorFallos = document.createElement('div');
+        contenedorFallos.id = 'contenedor-fallos-test';
+        contenedorFallos.style.marginTop = '30px'; 
+        // Lo centramos todo
+        contenedorFallos.style.display = 'flex';
+        contenedorFallos.style.flexDirection = 'column';
+        contenedorFallos.style.alignItems = 'center';
+        document.getElementById('pantalla-resultados-test').appendChild(contenedorFallos);
+    }
+
+    contenedorFallos.innerHTML = ''; 
+
+    if (listaDeFallos.length === 0) {
+        contenedorFallos.innerHTML = '<h3 style="color: green;">¡Increíble! Pleno absoluto.</h3>';
+    } else {
+        // Creamos un contenedor flex para que las tarjetas de fallo se vean en lista
+        let htmlFallos = '<h3>Tus fallos a repasar:</h3><div style="display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 400px;">';
+        
+        listaDeFallos.forEach(fallo => {
+            // Diseñamos una mini tarjeta para cada fallo
+            htmlFallos += `
+            <div style="display: flex; align-items: center; gap: 15px; background: #f8f9fa; padding: 10px 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #c62828;">
+                <img src="${fallo.bandera}" style="width: 70px; height: auto; border: 1px solid #ddd; border-radius: 4px;" alt="Bandera">
+                <div style="text-align: left; font-size: 15px; line-height: 1.4;">
+                    <strong style="color: #333; font-size: 13px; text-transform: uppercase;">${fallo.tipo}</strong><br>
+                    <span style="color: #2e7d32; font-weight: bold;">✓ ${fallo.esperaba}</span><br>
+                    <span style="color: #c62828; text-decoration: line-through;">✗ ${fallo.escribio}</span>
+                </div>
+            </div>`;
+        });
+        
+        htmlFallos += '</div>';
+        contenedorFallos.innerHTML = htmlFallos;
+    }
+}
+
+// ==========================================
+// 🧹 LA BARREDORA MÁGICA
+// ==========================================
+function limpiarPantalla() {
+    // 1. Apagamos las 3 vistas principales de la web
+    document.getElementById('vista-atlas').style.display = 'none';
+    document.getElementById('vista-juegos').style.display = 'none';
+    document.getElementById('vista-estadisticas').style.display = 'none';
+
+    // 2. Apagamos los contenedores de los juegos independientes
+    document.getElementById('juego-comparador').style.display = 'none';
+    document.getElementById('juego-test').style.display = 'none';
+
+    // 3. Apagamos las "sub-pantallas" rebeldes (como el ¡Fallaste!) para que no se queden pilladas
+    document.getElementById('arena-comparador').style.display = 'none';
+    document.getElementById('pantalla-fin-juego').style.display = 'none';
+    
+    document.getElementById('arena-test').style.display = 'none';
+    document.getElementById('pantalla-resultados-test').style.display = 'none';
+}
+
+// ==========================================
+// FUNCIONES PARA ABRIR LOS JUEGOS
+// ==========================================
+
+// Abrir la Batalla de Estadísticas (Mayor o Menor)
+function abrirJuegoComparador() {
+    limpiarPantalla(); // 1º Limpiamos toda la basura
+    
+    // 2º Encendemos SOLO lo de este juego
+    document.getElementById('juego-comparador').style.display = 'block';
+    document.getElementById('menu-comparador').style.display = 'block';
+}
+
+// Abrir el Mega Test Mundial
+function abrirJuegoTest() {
+    limpiarPantalla(); // 1º Limpiamos toda la basura
+    
+    // 2º Encendemos SOLO lo de este juego
+    document.getElementById('juego-test').style.display = 'block';
+    document.getElementById('menu-test').style.display = 'block';
+}
+
+function abrirJuegoMapa() {
+    // 1. Ocultar el mapa principal (el atlas normal)
+    const mapa = document.getElementById("vista-atlas");
+    if(mapa) mapa.style.display = "none";
+
+    // 2. Ocultar la sección de estadísticas
+    const stats = document.getElementById("vista-estadisticas"); 
+    if(stats) stats.style.display = "none";
+
+    // 3. Ocultar la sección de los juegos base
+    const juegos = document.getElementById("vista-juegos");
+    if(juegos) juegos.style.display = "none";
+
+    // 4. Ocultar el comparador y el test (por si venimos directamente de ellos)
+    const juegoComparador = document.getElementById("juego-comparador");
+    if(juegoComparador) juegoComparador.style.display = "none";
+    
+    // Si tu test mundial tiene su propio ID (ej: "juego-test"), ocúltalo aquí también
+    // const juegoTest = document.getElementById("juego-test");
+    // if(juegoTest) juegoTest.style.display = "none";
+
+    // 5. Mostrar nuestro nuevo juego del mapa
+    const juegoMapa = document.getElementById("juego-mapa");
+    if(juegoMapa) {
+        juegoMapa.style.display = "block";
+        
+        const escenario = document.getElementById("escenario-mapa-interactivo");
+        if(escenario) escenario.style.display = "block";
+        
+        // Opcional: limpiar los textos por si el jugador entra por segunda vez
+        const nombreObjetivo = document.getElementById("nombre-objetivo-mapa");
+        if(nombreObjetivo) nombreObjetivo.innerText = "???";
+        
+        const banderaObjetivo = document.getElementById("bandera-objetivo-mapa");
+        if(banderaObjetivo) banderaObjetivo.src = "";
+    }
+}
+
+// Variable para guardar el país que el jugador tiene que buscar ahora mismo
+let paisObjetivoActualMapa = null;
+let puntuacionMapa = 0;
+
+// Variable global que ya teníamos
+// let paisObjetivoActualMapa = null;
+// let puntuacionMapa = 0;
+
+// Variable para controlar el tamaño del mapa
+let anchoActualMapa = 100; // Empieza al 100%
+
+function hacerZoomMapa(direccion) {
+    // Si direccion es 1 (acercar), sumamos 40%. Si es -1 (alejar), restamos 40%
+    if (direccion > 0) {
+        anchoActualMapa += 40; 
+    } else {
+        anchoActualMapa -= 40; 
+    }
+    
+    // Ponemos límites lógicos (no más pequeño del 100%, no más grande del 500%)
+    if (anchoActualMapa < 100) anchoActualMapa = 100;
+    if (anchoActualMapa > 500) anchoActualMapa = 500;
+
+    // Aplicamos el nuevo tamaño al mapa
+    document.getElementById('svg-mapa-mundo').style.width = anchoActualMapa + '%';
+}
+
+function resetearZoomMapa() {
+    anchoActualMapa = 100;
+    document.getElementById('svg-mapa-mundo').style.width = anchoActualMapa + '%';
+}
+
+// Esto se ejecuta nada más abrir la página para preparar el mapa
+window.addEventListener('DOMContentLoaded', () => {
+    const elementosMapa = document.querySelectorAll('#svg-mapa-mundo path, #svg-mapa-mundo circle');
+    
+    elementosMapa.forEach(elemento => {
+        // Pintamos todos los países e islas con el mismo gris claro
+        elemento.style.fill = '#d3d3d3'; 
+    });
+
+    inicializarPistaBandera();
+});
+
+// Buscamos el mapa en el documento
+const mapaSvg = document.getElementById('svg-mapa-mundo');
+
+// Le añadimos un "escuchador" para el evento de doble clic ('dblclick')
+mapaSvg.addEventListener('dblclick', function(evento) {
+    // Evitamos que el navegador haga cosas raras por defecto (como seleccionar texto cercano)
+    evento.preventDefault(); 
+    
+    // Llamamos a la función de zoom que ya tienes creada. 
+    // Le pasamos un '1' porque esa era nuestra señal para "Acercar"
+    hacerZoomMapa(1);
+});
+
+// Variable para guardar el elemento de la bandera flotante
+let elementoBanderaFlotante = null;
+
+function inicializarPistaBandera() {
+    // 1. Buscamos los elementos necesarios
+    const contenedorMapa = document.getElementById('contenedor-mapa-zoom');
+    elementoBanderaFlotante = document.getElementById('bandera-flotante-pista');
+    
+    // 2. Le añadimos un "escuchador" de movimiento de ratón al contenedor
+    contenedorMapa.addEventListener('mousemove', function(evento) {
+        
+        // ¡NUEVO!: Si no estamos en un modo de hacer clic, escondemos la bandera y no hacemos nada más
+        if (modoJuegoActual !== 'trivial' && modoJuegoActual !== 'muerte-subita' && modoJuegoActual !== 'test') {
+            if (elementoBanderaFlotante) elementoBanderaFlotante.style.display = 'none';
+            return; 
+        }
+
+        // Si SÍ estamos en un modo de clic, la movemos con el ratón
+        if (elementoBanderaFlotante) {
+            const xContenedor = evento.offsetX;
+            const yContenedor = evento.offsetY;
+
+            const desfaseX = 15; 
+            const desfaseY = -50; 
+
+            elementoBanderaFlotante.style.left = (xContenedor + desfaseX) + 'px';
+            elementoBanderaFlotante.style.top = (yContenedor + desfaseY) + 'px';
+            
+            // Forzamos a que se vea
+            elementoBanderaFlotante.style.display = 'block';
+        }
+    });
+
+    // 3. Ocultamos la bandera si el ratón sale del mapa
+    contenedorMapa.addEventListener('mouseout', function(evento) {
+        // Solo si venimos del mapa, no de un hijo (como un path o circle)
+        if (!contenedorMapa.contains(evento.relatedTarget) && elementoBanderaFlotante) {
+            elementoBanderaFlotante.style.display = 'none';
+        }
+    });
+}
+
+const contenedorMapaArrastre = document.getElementById('contenedor-mapa-zoom');
+
+// Variables para guardar el estado del arrastre
+let estaArrastrando = false;
+let inicioX;
+let inicioY;
+let scrollIzquierdaInicial;
+let scrollArribaInicial;
+
+// 1. Cuando pulsamos el botón del ratón (empezar a arrastrar)
+contenedorMapaArrastre.addEventListener('mousedown', (evento) => {
+    estaArrastrando = true;
+    
+    // Le ponemos la clase CSS para que la mano se cierre
+    contenedorMapaArrastre.classList.add('arrastrando');
+    
+    // Guardamos dónde hemos hecho clic exactamente
+    inicioX = evento.pageX - contenedorMapaArrastre.offsetLeft;
+    inicioY = evento.pageY - contenedorMapaArrastre.offsetTop;
+    
+    // Guardamos cómo estaban las barras de scroll en ese momento
+    scrollIzquierdaInicial = contenedorMapaArrastre.scrollLeft;
+    scrollArribaInicial = contenedorMapaArrastre.scrollTop;
+});
+
+// 2. Cuando soltamos el botón (terminar de arrastrar)
+contenedorMapaArrastre.addEventListener('mouseup', () => {
+    estaArrastrando = false;
+    contenedorMapaArrastre.classList.remove('arrastrando'); // La mano se vuelve a abrir
+});
+
+// 3. Por si el ratón se sale del mapa mientras arrastramos (terminar de arrastrar)
+contenedorMapaArrastre.addEventListener('mouseleave', () => {
+    estaArrastrando = false;
+    contenedorMapaArrastre.classList.remove('arrastrando');
+});
+
+// 4. Cuando movemos el ratón (la magia de mover el mapa)
+contenedorMapaArrastre.addEventListener('mousemove', (evento) => {
+    // Si no estamos pulsando el botón, no hacemos nada
+    if (!estaArrastrando) return;
+    
+    // Evitamos cosas raras del navegador como seleccionar imágenes por error
+    evento.preventDefault();
+    
+    // Calculamos dónde está el ratón ahora
+    const xActual = evento.pageX - contenedorMapaArrastre.offsetLeft;
+    const yActual = evento.pageY - contenedorMapaArrastre.offsetTop;
+    
+    // Calculamos la distancia que hemos movido el ratón
+    const distanciaX = (xActual - inicioX);
+    const distanciaY = (yActual - inicioY);
+    
+    // Movemos las barras de scroll restando esa distancia
+    contenedorMapaArrastre.scrollLeft = scrollIzquierdaInicial - distanciaX;
+    contenedorMapaArrastre.scrollTop = scrollArribaInicial - distanciaY;
+});
+
+// Sustituye tu evento 'wheel' anterior por este:
+contenedorMapaArrastre.addEventListener('wheel', (evento) => {
+    evento.preventDefault();
+
+    // 1. Medimos todo ANTES de hacer el zoom
+    const rect = contenedorMapaArrastre.getBoundingClientRect();
+    const ratonX = evento.clientX - rect.left;
+    const ratonY = evento.clientY - rect.top;
+
+    // Posición exacta en el mapa gigante (incluyendo lo que no se ve por el scroll)
+    const scrollXInicial = contenedorMapaArrastre.scrollLeft + ratonX;
+    const scrollYInicial = contenedorMapaArrastre.scrollTop + ratonY;
+
+    // Ancho actual del mapa antes de cambiar de tamaño
+    const anchoAnterior = mapaSvg.getBoundingClientRect().width;
+
+    // 2. Aplicamos el zoom
+    if (evento.deltaY < 0) {
+        hacerZoomMapa(1);  // Acercar
+    } else {
+        hacerZoomMapa(-1); // Alejar
+    }
+
+    // 3. Calculamos y aplicamos el nuevo centro un instante después 
+    // (requestAnimationFrame espera a que el navegador redibuje el nuevo tamaño)
+    requestAnimationFrame(() => {
+        const anchoNuevo = mapaSvg.getBoundingClientRect().width;
+        
+        // ¿Cuánto ha crecido o encogido en proporción?
+        const factorEscala = anchoNuevo / anchoAnterior;
+
+        // Si ya estamos al máximo/mínimo de zoom y no ha cambiado el tamaño, no hacemos nada
+        if (factorEscala === 1) return;
+
+        // Calculamos dónde tienen que estar las barras de scroll ahora
+        const nuevoScrollX = (scrollXInicial * factorEscala) - ratonX;
+        const nuevoScrollY = (scrollYInicial * factorEscala) - ratonY;
+
+        // Movemos el mapa
+        contenedorMapaArrastre.scrollLeft = nuevoScrollX;
+        contenedorMapaArrastre.scrollTop = nuevoScrollY;
+    });
+});
+
+// Variable global para saber a qué estamos jugando
+let modoJuegoActual = null;
+
+// Función principal para cambiar de modo
+function cambiarModoJuego(nuevoModo) {
+    modoJuegoActual = nuevoModo;
+
+    // 1. Reiniciar el mapa (pintar todo de gris de nuevo)
+    const todosLosPaises = document.querySelectorAll('#svg-mapa-mundo path');
+    todosLosPaises.forEach(pais => {
+        pais.style.fill = '#cccccc'; // Color gris por defecto
+    });
+
+    // 2. Ocultar todos los paneles de interfaz
+    const paneles = document.querySelectorAll('.panel-juego');
+    paneles.forEach(panel => panel.style.display = 'none');
+
+    // 3. Quitar la clase "activo" de todos los botones del menú
+    const botones = document.querySelectorAll('.btn-modo');
+    botones.forEach(btn => btn.classList.remove('activo'));
+    // Marcar el botón pulsado (buscando por el onclick)
+    event.currentTarget.classList.add('activo');
+
+    if (nuevoModo === 'adivina-nombre') {
+        iniciarAdivinaNombre();
+    }
+
+    // 4. Mostrar la interfaz correcta y preparar el juego según el modo
+    if (nuevoModo === 'trivial' || nuevoModo === 'muerte-subita' || nuevoModo === 'test') {
+        document.getElementById('ui-clic-mapa').style.display = 'block';
+        
+        // Cambiamos el título según el modo
+        const titulos = {
+            'trivial': 'Modo Trivial',
+            'muerte-subita': 'Muerte Súbita (¡Un fallo y fin!)',
+            'test': 'Tipo Test (Aciertos y fallos)'
+        };
+        document.getElementById('titulo-modo-clic').innerText = titulos[nuevoModo];
+        
+        // AQUÍ LUEGO LLAMAREMOS A LA FUNCIÓN DE INICIAR ESTOS JUEGOS
+        iniciarJuegoClic(); 
+
+    } else if (nuevoModo === 'adivina-nombre') {
+        document.getElementById('ui-adivina-nombre').style.display = 'block';
+        document.getElementById('input-adivina-nombre').value = ''; // Limpiar caja
+        // iniciarAdivinaNombre();
+
+    } else if (nuevoModo === 'lluvia-paises') {
+        document.getElementById('ui-lluvia-paises').style.display = 'block';
+        document.getElementById('input-lluvia-paises').value = ''; // Limpiar caja
+        //document.getElementById('cronometro-lluvia').innerText = '20:00';
+        iniciarLluviaPaises();
+    }
+}
+
+let paisesPendientes = []; // Aquí meteremos los países que faltan por adivinar
+let puntuacionActualMapa = 0;
+
+function cargarSiguientePaisMapa() {
+    // Si ya no quedan países en la lista, ¡ha ganado!
+    if (paisesPendientes.length === 0) {
+        mostrarPantallaFinal("¡Enhorabuena! 🎉", "¡Has conseguido adivinar todos los países del mapa!");
+        return;
+    }
+
+    // 1. Elegimos un país al azar SOLO de los que quedan en paisesPendientes
+    const indiceAleatorio = Math.floor(Math.random() * paisesPendientes.length);
+    paisObjetivoActualMapa = paisesPendientes[indiceAleatorio];
+
+    // 2. Mostramos la bandera grande y el "???"
+    document.getElementById('bandera-objetivo-mapa').src = paisObjetivoActualMapa.bandera;
+    document.getElementById('nombre-objetivo-mapa').innerText = "???";
+
+    // 3. (Lo que hicimos antes) Actualizamos la banderita flotante
+    const imgFlotante = document.querySelector('#bandera-flotante-pista img');
+    if(imgFlotante) imgFlotante.src = paisObjetivoActualMapa.bandera;
+}
+
+function iniciarJuegoClic() {
+    // 1. Recopilar TODOS los países de tu base de datos en la baraja de pendientes
+    paisesPendientes = [];
+    for (const continente in baseDatosMundo) {
+        paisesPendientes.push(...baseDatosMundo[continente].paises);
+    }
+    
+    // 2. Reseteamos puntos y el texto
+    puntuacionActualMapa = 0;
+    document.getElementById('puntuacion-clic').innerText = "Puntuación: " + puntuacionActualMapa;
+
+    // 3. Cargamos el primer país
+    cargarSiguientePaisMapa();
+}
+
+// Busca tu evento click en los paths del mapa y actualízalo a esto:
+document.querySelectorAll('#svg-mapa-mundo path').forEach(path => {
+    path.addEventListener('click', function(evento) {
+        
+        // Si no estamos en uno de los modos de hacer clic, ignoramos el clic
+        if (modoJuegoActual !== 'trivial' && modoJuegoActual !== 'muerte-subita' && modoJuegoActual !== 'test') {
+            return; 
+        }
+
+        const idPaisClicado = this.getAttribute('id'); // O como identifiques tú al país
+
+        // ¿HEMOS ACERTADO?
+        if (idPaisClicado.toLowerCase() === paisObjetivoActualMapa.id.toLowerCase()) {
+            
+            // 1. Se pone en verde
+            this.style.fill = '#2ecc71'; 
+            
+            // 2. Sumamos puntos y actualizamos pantalla
+            puntuacionActualMapa++;
+            document.getElementById('puntuacion-clic').innerText = "Puntuación: " + puntuacionActualMapa;
+
+            // 3. ELIMINAMOS el país de la lista de pendientes para que no vuelva a salir
+            paisesPendientes = paisesPendientes.filter(pais => pais.id !== paisObjetivoActualMapa.id);
+
+            // 4. Pasamos al siguiente
+            cargarSiguientePaisMapa();
+
+        } 
+        // ¿HEMOS FALLADO?
+        else {
+            
+            if (modoJuegoActual === 'muerte-subita') {
+                // MUERTE SÚBITA: Se pinta rojo y Game Over
+                this.style.fill = '#e74c3c'; 
+                
+                setTimeout(() => {
+                    // Mensaje seguro sin variables raras
+                    mostrarPantallaFinal("¡Has Fallado! 💥", "Has tocado un país incorrecto.");
+                }, 400);
+
+            } else if (modoJuegoActual === 'test') {
+                // TIPO TEST: Se pinta rojo, pero le dejamos seguir intentándolo
+                this.style.fill = '#e74c3c'; 
+                // No cargamos el siguiente país, tiene que seguir buscando el correcto.
+
+            } else if (modoJuegoActual === 'trivial') {
+                // TRIVIAL: Pon aquí la regla que tuvieras antes (ej. pierde vida, se pone rojo, pasa al siguiente...)
+                this.style.fill = '#e74c3c';
+            }
+        }
+    });
+});
+
+function mostrarPantallaFinal(titulo, mensaje) {
+    // 1. Mostramos el panel flotante
+    const pantalla = document.getElementById('pantalla-final-mapa');
+    if (pantalla) pantalla.style.display = 'flex';
+    
+    // 2. Rellenamos los textos
+    const tituloDoc = document.getElementById('titulo-final-mapa');
+    const mensajeDoc = document.getElementById('mensaje-final-mapa');
+    if (tituloDoc) tituloDoc.innerText = titulo;
+    if (mensajeDoc) mensajeDoc.innerText = mensaje;
+    
+    // 3. PUNTUACIÓN SEGURA (Aquí estaba el fallo)
+    let textoPuntos = "0";
+    
+    if (modoJuegoActual === 'lluvia-paises') {
+        // En el modo lluvia, los "puntos" son los países adivinados
+        textoPuntos = paisesAdivinadosLluvia.length;
+    } else {
+        // En otros modos, intentamos leer el marcador normal
+        const spanPuntos = document.querySelector('#marcador-mapa span');
+        if (spanPuntos) {
+            textoPuntos = spanPuntos.innerText;
+        }
+    }
+
+    const puntFinal = document.getElementById('puntuacion-final-mapa');
+    if (puntFinal) {
+        puntFinal.innerText = "Países encontrados: " + textoPuntos;
+    }
+}
+
+// Función para el botón "Volver al Menú"
+function volverAlMenuMapa() {
+    // 1. Ocultamos el panel flotante
+    document.getElementById('pantalla-final-mapa').style.display = 'none';
+    
+    // 2. Quitamos la clase 'activo' de los botones azules
+    const botones = document.querySelectorAll('.btn-modo');
+    botones.forEach(btn => btn.classList.remove('activo'));
+    
+    // 3. Limpiamos el mapa (todos los países en gris otra vez)
+    const todosLosPaises = document.querySelectorAll('#svg-mapa-mundo path');
+    todosLosPaises.forEach(pais => {
+        pais.style.fill = '#cccccc'; 
+    });
+    
+    // 4. Paramos el juego
+    modoJuegoActual = null;
+    document.getElementById('ui-clic-mapa').style.display = 'none';
+}
+
+// --- VARIABLES PARA "ADIVINA EL NOMBRE" ---
+let paisesPendientesAdivina = [];
+let paisObjetivoActualAdivina = null;
+let puntuacionAdivina = 0;
+
+function iniciarAdivinaNombre() {
+    // Escondemos otros paneles y mostramos el nuestro
+    document.getElementById('ui-adivina-nombre').style.display = 'block';
+    
+    // Reiniciamos puntuación
+    puntuacionAdivina = 0;
+    const spanPuntos = document.querySelector('#marcador-mapa span');
+    if (spanPuntos) spanPuntos.innerText = puntuacionAdivina;
+    
+    // --- ¡NUEVO! Juntamos todos los países de todos los continentes ---
+    paisesPendientesAdivina = [];
+    for (let continente in baseDatosMundo) {
+        // Añadimos los países de este continente a nuestra lista de juego
+        paisesPendientesAdivina = paisesPendientesAdivina.concat(baseDatosMundo[continente].paises);
+    }
+    
+    // Limpiamos todo el mapa poniéndolo gris
+    const todosLosPaises = document.querySelectorAll('#svg-mapa-mundo path');
+    todosLosPaises.forEach(pais => pais.style.fill = '#cccccc');
+    
+    // Cargamos el primero
+    cargarSiguientePaisAdivina();
+}
+
+function cargarSiguientePaisAdivina() {
+    const input = document.getElementById('input-adivina-nombre');
+    if (input) {
+        input.value = '';
+        input.focus();
+    }
+
+    if (paisesPendientesAdivina.length === 0) {
+        mostrarPantallaFinal("¡Mapa Completado! 🌍", "Has terminado el modo Adivina el Nombre.");
+        return;
+    }
+
+    const indiceAleatorio = Math.floor(Math.random() * paisesPendientesAdivina.length);
+    paisObjetivoActualAdivina = paisesPendientesAdivina.splice(indiceAleatorio, 1)[0];
+
+    const paisEnMapa = document.getElementById(paisObjetivoActualAdivina.id);
+    if (paisEnMapa) {
+        // Primero lo pintamos de amarillo normal
+        paisEnMapa.style.fill = '#f1c40f'; 
+        // Y luego le metemos el parpadeo
+        paisEnMapa.classList.add('pais-parpadeando');
+    } else {
+        // Si el ID no existe en el SVG, saltamos al siguiente automáticamente
+        cargarSiguientePaisAdivina(); 
+    }
+}
+
+function comprobarPaisAmarillo() {
+    if (!paisObjetivoActualAdivina) return;
+
+    const input = document.getElementById('input-adivina-nombre');
+    const intentoUsuario = input ? input.value : "";
+    
+    // 1. Buscamos el país en el mapa
+    const paisEnMapa = document.getElementById(paisObjetivoActualAdivina.id);
+
+    // 2. IMPORTANTE: Quitamos el parpadeo YA
+    if (paisEnMapa) {
+        paisEnMapa.classList.remove('pais-parpadeando');
+        paisEnMapa.style.fill = ""; // Limpiamos cualquier rastro para que acepte el nuevo color
+    }
+
+    // 3. Lógica de nombres
+    const nombreReal = paisObjetivoActualAdivina.nombre.es;
+    const intentoLimpio = limpiarTextoAdivina(intentoUsuario);
+    const realLimpio = limpiarTextoAdivina(nombreReal);
+
+    // 4. Pintamos según acierto o fallo
+    if (intentoLimpio === realLimpio) {
+        if (paisEnMapa) paisEnMapa.style.fill = '#2ecc71'; // Verde
+        puntuacionAdivina++;
+        const spanPuntos = document.querySelector('#marcador-mapa span');
+        if (spanPuntos) spanPuntos.innerText = puntuacionAdivina;
+    } else {
+        if (paisEnMapa) paisEnMapa.style.fill = '#e74c3c'; // Rojo
+    }
+
+    // 5. PASAR AL SIGUIENTE (Siempre, aunque falle o acierte)
+    // Usamos un pequeño delay de 600ms para que el usuario vea si se puso verde o rojo
+    setTimeout(() => {
+        cargarSiguientePaisAdivina();
+    }, 600);
+}
+
+// Función "perdonadora" para quitar tildes, mayúsculas y espacios sobrantes
+function limpiarTextoAdivina(texto) {
+    if (!texto) return "";
+    return texto.toLowerCase()
+                .normalize("NFD") 
+                .replace(/[\u0300-\u036f]/g, "") 
+                .trim(); 
+}
+
+// --- ESCUCHAR LA TECLA ENTER EN EL MODO ADIVINA EL NOMBRE ---
+document.getElementById('input-adivina-nombre').addEventListener('keydown', function(event) {
+    // Si la tecla pulsada es el "Enter"
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Evita comportamientos raros del navegador
+        
+        // Comprueba si realmente estamos jugando a este modo antes de hacer nada
+        if (modoJuegoActual === 'adivina-nombre') {
+            comprobarPaisAmarillo();
+        }
+    }
+});
+
+let tiempoRestanteLluvia = 1200; // 20 minutos en segundos
+let intervaloCronometro;
+let paisesAdivinadosLluvia = [];
+let totalPaisesLluvia = 0;
+
+function iniciarLluviaPaises() {
+    // 1. ARRANCAMOS EL RELOJ PRIMERO (Para que nada lo detenga)
+    tiempoRestanteLluvia = 1200; 
+    if (intervaloCronometro) clearInterval(intervaloCronometro);
+
+    intervaloCronometro = setInterval(function() {
+        if (tiempoRestanteLluvia > 0) {
+            tiempoRestanteLluvia--;
+            let mins = Math.floor(tiempoRestanteLluvia / 60);
+            let segs = tiempoRestanteLluvia % 60;
+            let texto = (mins < 10 ? "0" : "") + mins + ":" + (segs < 10 ? "0" : "") + segs;
+            
+            const reloj = document.getElementById('cronometro-lluvia');
+            if (reloj) reloj.innerText = texto;
+        } else {
+            clearInterval(intervaloCronometro);
+            finalizarJuegoLluvia("¡Se acabó el tiempo!");
+        }
+    }, 1000);
+
+    // 2. Ahora todo lo demás con seguridad (usando "if" para no dar errores)
+    const panel = document.getElementById('ui-lluvia-paises');
+    if (panel) panel.style.display = 'block';
+
+    paisesAdivinadosLluvia = [];
+    totalPaisesLluvia = 198;
+    
+    const cont = document.getElementById('contador-lluvia');
+    if (cont) cont.innerText = "0 / 198";
+
+    document.querySelectorAll('#svg-mapa-mundo path').forEach(p => p.style.fill = '#cccccc');
+
+    const input = document.getElementById('input-lluvia-paises');
+    if (input) {
+        input.value = '';
+        input.focus();
+    }
+}
+
+function actualizarContadorLluvia() {
+    const contadorHTML = document.getElementById('contador-lluvia');
+    if (contadorHTML) {
+        contadorHTML.innerText = paisesAdivinadosLluvia.length + " / 198";
+    }
+}
+
+function actualizarReloj() {
+    const mins = Math.floor(tiempoRestanteLluvia / 60);
+    const segs = tiempoRestanteLluvia % 60;
+    const reloj = document.getElementById('cronometro-lluvia'); // Asegúrate de tener este ID en el HTML
+    if (reloj) {
+        reloj.innerText = `${mins}:${segs < 10 ? '0' : ''}${segs}`;
+    }
+
+    if (tiempoRestanteLluvia <= 0) {
+        clearInterval(intervaloCronometro);
+        finalizarJuegoLluvia("¡Tiempo agotado!");
+    }
+    tiempoRestanteLluvia--;
+}
+
+function comprobarLluvia() {
+    const input = document.getElementById('input-lluvia-paises');
+    if (!input) return;
+
+    const textoUsuario = limpiarTextoAdivina(input.value);
+    if (textoUsuario.length < 3) return; 
+
+    for (let continente in baseDatosMundo) {
+        const paisEncontrado = baseDatosMundo[continente].paises.find(p => 
+            limpiarTextoAdivina(p.nombre.es) === textoUsuario
+        );
+
+        if (paisEncontrado && !paisesAdivinadosLluvia.includes(paisEncontrado.id)) {
+            paisesAdivinadosLluvia.push(paisEncontrado.id);
+            
+            const elementos = document.querySelectorAll(`[id='${paisEncontrado.id}']`);
+            
+            elementos.forEach(el => {
+                if (el.tagName.toLowerCase() === 'g') {
+                    const hijos = el.querySelectorAll('path');
+                    hijos.forEach(h => h.style.fill = '#2ecc71');
+                } else {
+                    el.style.fill = '#2ecc71';
+                }
+            });
+
+            input.value = ''; 
+            actualizarContadorLluvia(); // Esta función ya actualiza el texto
+            break; 
+        }
+    }
+
+    // Al final de la función comprobarLluvia()
+    if (paisesAdivinadosLluvia.length === 198) {
+    finalizarJuegoLluvia("¡ENHORABUENA! ¡HAS COMPLETADO EL MUNDO!");
+}
+}
+
+function finalizarJuegoLluvia(tituloMensaje) {
+    // 1. Detener el reloj
+    clearInterval(intervaloCronometro);
+
+    // 2. Preparar los datos
+    const totalLogrado = paisesAdivinadosLluvia.length;
+    let mensajeCuerpo = `Has encontrado ${totalLogrado} de 198 países.`;
+    
+    if (totalLogrado === 198) {
+        mensajeCuerpo = "¡Increíble! Tienes una memoria geográfica perfecta.";
+    }
+
+    // 3. Mostrar la pantalla final (reutilizando tu función segura)
+    mostrarPantallaFinalLluvia(tituloMensaje, mensajeCuerpo);
+}
+
+// Asegúrate de que tu función mostrarPantallaFinalLluvia tenga el botón de cerrar/volver
+function mostrarPantallaFinalLluvia(titulo, mensaje) {
+    const pantalla = document.getElementById('pantalla-final-mapa');
+    if (pantalla) {
+        pantalla.style.display = 'flex';
+        
+        document.getElementById('titulo-final-mapa').innerText = titulo;
+        document.getElementById('mensaje-final-mapa').innerText = mensaje;
+        
+        // Configuramos el botón de volver al menú
+        // Asumiendo que tienes un botón con id "btn-reiniciar-final" o similar
+        const btnVolver = document.getElementById('btn-volver-menu'); 
+        if (btnVolver) {
+            btnVolver.onclick = function() {
+                pantalla.style.display = 'none';
+                location.reload(); // La forma más limpia de volver al menú inicial
+            };
+        }
+    }
+}
+
 // --- VIGILANTES DE PANTALLA ---
 // 1. Si hace clic en el botón principal "Países"
 document.getElementById('nav-btn-paises').addEventListener('click', function() {
@@ -2485,7 +3764,10 @@ renderizarAtlas();
 Área.
 Clima.
 Corrupción.
+Democracia.
+Densidad.
 Deportes.
+Desempleo.
 Desarrollo.
 Economía.
 Educación.
@@ -2494,7 +3776,10 @@ Gastronomía.
 Limpieza.
 Longevidad.
 Naturaleza.
+Patrimonios.
 Población.
+Potencia militar.
+Salario medio.
 Sanidad.
 Seguridad.
 Turismo.

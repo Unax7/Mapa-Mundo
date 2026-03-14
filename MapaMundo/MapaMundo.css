@@ -587,3 +587,115 @@ nav { background-color: #2c3e50; position: sticky; top: 0; z-index: 500; display
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
+.cuadricula-test {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta-pregunta-test {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarjeta-pregunta-test img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-test {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Clases para cuando compruebes las respuestas */
+.input-correcto {
+    border-color: #27ae60;
+    background-color: #e8f8f5;
+}
+
+.input-incorrecto {
+    border-color: #e74c3c;
+    background-color: #fdedec;
+}
+
+/* Magia para el mapa interactivo */
+#svg-mapa-mundo path, 
+#svg-mapa-mundo circle {
+    fill: #cccccc; /* Color base de los países */
+    stroke: black; /* Bordes blancos */
+    stroke-width: 0.5;
+    transition: fill 0.2s ease;
+}
+
+/* Al pasar el ratón por encima, se iluminan */
+/* Aseguramos que tanto los paths como los círculos (islas) se iluminen */
+#svg-mapa-mundo path:hover, 
+#svg-mapa-mundo circle:hover {
+    fill: #ffeb3b !important; /* El !important fuerza el amarillo por encima de cualquier otro color */
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
+
+#svg-mapa-mundo {
+    /* ... lo que ya tuvieras aquí ... */
+    user-select: none; /* Evita que el mapa se "sombreé" en azul al hacer clics rápidos */
+}
+
+#contenedor-mapa-zoom {
+    /* ... lo que ya tuvieras aquí (width, height, overflow, etc.) ... */
+    position: relative; /* 👇 AÑADE ESTA LÍNEA 👇 */
+    cursor: grab;
+}
+
+/* Y una clase extra que usaremos con JavaScript al hacer clic */
+#contenedor-mapa-zoom.arrastrando {
+    cursor: grabbing; /* Cursor de mano cerrada al arrastrar */
+}
+
+.btn-modo {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-modo:hover {
+    background-color: #2980b9;
+}
+
+.btn-modo.activo {
+    background-color: #2ecc71; /* Verde para el modo seleccionado */
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+@keyframes latidoPais {
+    0% { stroke: #333; stroke-width: 1px; }
+    50% { stroke: black; stroke-width: 2px; } /* Solo animamos el borde para que sea menos conflictivo */
+    100% { stroke: #333; stroke-width: 1px; }
+}
+
+.pais-parpadeando {
+    animation: latidoPais 0.8s infinite !important;
+    fill: #f1c40f !important; /* El amarillo sí lo mantenemos fuerte aquí */
+}
